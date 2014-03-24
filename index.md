@@ -54,10 +54,10 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 * Uses [Jekyll](https://github.com/mojombo/jekyll),
   [Stylus](http://learnboost.github.com/stylus/),
   GNU `make`, and a little bit of PHP (for
-  [the contact form](/source/contact/) and
-  [redirecting](http://code.s.zeid.me/site-design/src/master/_static/redirect.php)
-  [old URLs](/source/_redirects)).  Edited in Vim. 
-  [See the source here.](/source/)
+  [the contact form](http://code.s.zeid.me/site/src/master/contact/) and
+  [redirecting](http://code.s.zeid.me/site-design/src/master/static/redirect.php)
+  [old URLs](http://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
+  [See the source here.](http://code.s.zeid.me/site/src)
 * Designed by me.  Supports all modern Web browsers (including mobile) and
   IE 8 (older versions of IE get the color scheme and fonts and that's it). 
   Uses responsive design.

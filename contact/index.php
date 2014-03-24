@@ -117,7 +117,7 @@ if ($show_form) {
   <p style="font-size: smaller; max-width: 30.8em;">
    <em>
     Powered by
-    <a href="{{site.url}}/source/contact/super-mailer-bros.phps"
+    <a href="http://code.s.zeid.me/site/src/master/contact/super-mailer-bros.php"
      >Super Mailer Bros. 3</a>.
    </em>
   </p>
