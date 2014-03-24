@@ -1,0 +1,70 @@
+--- 
+layout: page
+title:  Home
+icon:   favicon.ico
+contents:
+ Tech:                tech
+ Coding:              coding
+ Music:               music
+ About this Web site: site
+description: >
+ I am a computer science student and sometimes penguin in Dallas, Texas.
+
+---
+
+I am a computer science student and sometimes penguin in Dallas, Texas.
+
+## Tech
+
+* Linux (currently Fedora), Android (I have a Nexus 5 and a 2013 Nexus 7
+  running Carbon, and a Xoom running CyanogenMod), Firefox
+* [IPv6 sage](http://ipv6.he.net/certification/scoresheet.php?pass_name=scottywz)
+* [Minceraft](https://craft.bnay.me/)
+* [Anti-Apple](http://www.stallman.org/apple.html) (although I do maintain
+  [an iPhone app](projects/appbackup/) from back when I didn't hate them
+  (which was before summer 2009).
+
+## Coding
+
+* Python, PHP, HTML 5/CSS 3, JavaScript, shell, C/C++/Objective-C
+* Vim ([rc](http://s.zeid.me/vimrc))
+* I indent with one space.
+* [Bitbucket](http://code.s.zeid.me/)
+
+## Music
+
+* Current favorites:  Ludovico Einaudi
+* I also like Celtic music (especially [Solas][] and [Lúnasa][]), [Antje Duvekot][Antje],
+  Le Vent du Nord, Marconi Union, Blow Up Hollywood, and Ludovico Einaudi.
+* I sing second bass and I am a proud member of [Eric Whitacre's Virtual Choir][EWVC],
+  starting with [version 2.0 ("Sleep")][Sleep]{: style="display: inline-block;"}.
+* [My Last.fm profile](https://www.last.fm/user/ScottyWZ)
+  <span class="fill-in-last-fm-status hide"> — </span>
+* [A graph of my music listening trends]({{ site.url }}/other/lastgraph/)
+* Did I mention I like Ludovico Einaudi's music?
+
+[Solas]:     http://www.solasmusic.com/
+[Lúnasa]:    http://www.lunasa.ie/
+[Antje]:     http://www.antjeduvekot.com/
+[EWVC]:      http://ericwhitacre.com/the-virtual-choir
+[Sleep]:     https://www.youtube.com/watch?v=6WhWDCw3Mng
+
+## About this Web site {#site}
+
+* Uses [Jekyll](https://github.com/mojombo/jekyll),
+  [Stylus](http://learnboost.github.com/stylus/),
+  GNU `make`, and a little bit of PHP (for
+  [the contact form](/source/contact/) and
+  [redirecting](http://code.s.zeid.me/site-design/src/master/_static/redirect.php)
+  [old URLs](/source/_redirects)).  Edited in Vim. 
+  [See the source here.](/source/)
+* Designed by me.  Supports all modern Web browsers (including mobile) and
+  IE 8 (older versions of IE get the color scheme and fonts and that's it). 
+  Uses responsive design.
+* The design is maintained separately in its
+  [its own Git repository](http://code.s.zeid.me/site-design).
+* Hosted at [prgmr.com](http://prgmr.com/) on an {% lsbrelease %} VPS. 
+  (I'm currently on their 256 MB package, and I plan on switching it to
+  Fedora soon.)
+* The owner of this Web site is a Ludovico Einaudi fan.
+* `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net)

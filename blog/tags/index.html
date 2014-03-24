@@ -1,0 +1,29 @@
+---
+layout: blog
+title:  Tags
+---
+
+{% strip %}{% for i in site.tags %}<nav>
+ <h2>
+  <a href="{{ site.url }}/blog/tags/{{ i[0] | uri_escape }}">{{ i[0] }}</a>
+ </h2>
+ <ul>{% assign n = "*" %}
+ {% for p in site.posts %}{% if p.tags contains i[0] %}
+  {% if n contains "*******" %}{% elsif n contains "******" %}
+  <li>
+   <a href="{{ site.url }}/blog/tags/{{ i[0] | uri_escape }}">
+    More... ({{ i[1] | size }} total)
+   </a>
+  </li>
+  {% else %}
+  <li>
+   <a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a>
+   <time datetime="{{ p.date | date: "%Y-%m-%dT%H:%M:%S" }}">
+    {{ p.date | date: "%A, %B %d, %Y %H:%M" }}
+   </time>
+  </li>
+  {% endif %}
+  {% capture n %}{{ n }}*{% endcapture %}
+ {% endif %}{% endfor %}
+ </ul>
+</nav>{% endfor %}{% endstrip %}

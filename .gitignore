@@ -1,0 +1,9 @@
+.*.swp
+._build
+_site
+_
+
+_comments/*
+!_comments/freecomment.conf.dist
+!_comments/freecomment.php
+contact/config.php
