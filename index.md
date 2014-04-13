@@ -1,7 +1,7 @@
 --- 
 layout: page
 title:  Home
-icon:   favicon.ico
+icon:   favicon.png
 contents:
  Tech:                tech
  Coding:              coding
