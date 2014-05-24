@@ -20,7 +20,17 @@ $.get("/more/?json", function(portal) {
     a.parent().addClass("current");
   }
  });
- $(".fill-in-last-fm-status").append(
-  $("<span></span>").html(portal.sites["last.fm"].desc)
- ).show();
+ $(".fill-in-last-fm-status").append((function() {
+  var span = $("<span></span>");
+  var a = $("<a href='' target='_blank'></a>");
+  var text = portal.sites["last.fm"].desc;
+  text.replace(/^([^:]+)(:(&nbsp;|\s)+)(.*)$/, function(match, prefix, sep, _, song) {
+   song = $("<span></span>").html(song).text();
+   span.html(prefix + sep);
+   a.html(song);
+   a.attr("href", "https://duckduckgo.com/?q=" + encodeURIComponent(song));
+   return "";
+  });
+  return span.append(a);
+ })()).show();
 }, "json");
