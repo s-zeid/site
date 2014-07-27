@@ -2,10 +2,24 @@
 layout: page
 title:  Rain Animation
 icon:   icon.png
+stylus: |
+ @media screen
+  .no-screen
+   display: none;
 ---
 
-![](screenshot.png){.right}
- This TI-83+/84+ program is an animation of rain as viewed from behind a window, written in Axe.
+<aside style="float: right; text-align: center; margin: 0.25em 0 1em 1em;">
+ <iframe id="rain" src="http://ti-rain.srwz.us/#embed" class="no-print"
+         style="width: 192px; height: 128px; border: none; background: transparent;">
+  <img src="screenshot.png" alt="" />
+ </iframe>
+ <img src="screenshot.png" class="no-screen" alt="" />
+</aside>
+
+This TI-83+/84+ program is an animation of rain as viewed from
+[behind a window](https://www.youtube.com/watch?v=Ubsxc77YPCs "I'm taking this song out of context a bit; Ludovico says that “[i]t describes the moment when you are looking through a window and you *see something happening outside that grabs your attention*” \(emphasis mine\), as opposed to just watching the rain."){: style="color: inherit;"},
+written in Axe.
+{: style="margin-top: 0;"}
 
 ## [Download and Info Page on ticalc.org](http://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
 
