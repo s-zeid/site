@@ -21,7 +21,8 @@ This TI-83+/84+ program is an animation of rain as viewed from
 written in Axe.
 {: style="margin-top: 0;"}
 
-## [Download and Info Page on ticalc.org](http://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
+## [Download from ticalc.org](http://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
+## [Download from uploads.s.zeid.me](//uploads.s.zeid.me/rain2.0.zip)
 
 ## Web-based Version {#web}
 
