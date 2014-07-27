@@ -9,7 +9,7 @@ stylus: |
 ---
 
 <aside style="float: right; text-align: center; margin: 0.25em 0 1em 1em;">
- <iframe id="rain" src="http://ti-rain.srwz.us/#embed" class="no-print"
+ <iframe id="rain" src="http://ti-rain.s.zeid.me/#embed" class="no-print"
          style="width: 192px; height: 128px; border: none; background: transparent;">
   <img src="screenshot.png" alt="" />
  </iframe>
@@ -26,7 +26,7 @@ written in Axe.
 ## Web-based Version {#web}
 
 A Web-based version of this animation is available at
-[ti-rain.srwz.us](//ti-rain.srwz.us/).&nbsp; It requires a recent Web
+[ti-rain.s.zeid.me](//ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
 browser, such as Firefox or Google Chrome, that supports the HTML 5 Canvas
 element.&nbsp; It may also work in Internet Explorer 7 or later; however, I have only
 tested it in Google Chrome at the time of this writing.
