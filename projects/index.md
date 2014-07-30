@@ -1,6 +1,8 @@
 --- 
 layout: page
 title: Projects
+nav:
+ sort-key: /aaa/projects
 ---
 
 Some projects of mine.  There's more on
