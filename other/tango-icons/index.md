@@ -2,6 +2,7 @@
 layout: page
 title: Tango Icons
 contents:
+ Boot:    boot
  Google+: google-plus
  iTunes:  itunes
  TI-84 Plus Silver Edition: ti-84-plus-silver-edition
@@ -11,6 +12,29 @@ contents:
 ---
 
 Here are some Tango-style icons I've made.
+
+## Boot {#boot}
+
+This is very loosely based on
+[the App\_bootman icon](//uploads.s.zeid.me/tango-icons/Boot/App_bootman.svg)
+from [the Haiku operating system](https://www.haiku-os.org/).
+
+<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="http://uploads.s.zeid.me/tango-icons/display.php?icon=Boot" width="448"><!----></iframe>
+
+**SVGs:**
+[16x16](http://uploads.s.zeid.me/tango-icons/Boot/Boot-16.svg)
+[48x48](http://uploads.s.zeid.me/tango-icons/Boot/Boot-48.svg)
+
+[Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:Boot_icon.svg)
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/3.0/80x15.png)](https://creativecommons.org/licenses/by/3.0/)
+This icon is dual-licensed under the [X11 License](#license) and
+[the Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
+The original icon from Haiku is released under [the MIT License](https://tldrlegal.com/license/mit-license).
+For the Creative Commons license, the suggested attribution is
+**Scott Zeid, based on work by the Haiku project**.
+
+This icon was made on July 29 and 30, 2014.
 
 ## Google+ {#google-plus}
 
