@@ -40,9 +40,9 @@ both from the Tango project.
 
 [Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:ITunes.svg)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/3.0/80x15.png)](https://creativecommons.org/licenses/by/3.0/)
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/80x15.png)](https://creativecommons.org/licenses/by-sa/3.0/)
 This icon is licensed under
-[a Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/).
+[the Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 This icon was made in 2008.
 
@@ -65,8 +65,8 @@ the TilEm project as the application's official icon,
 [Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:Calculator-ti-84-plus-silver-edition.svg)
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/3.0/80x15.png)](https://creativecommons.org/licenses/by/3.0/)
-This icon is dual-licensed under the <a href="#license">X11 License</a> and
-[a Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
+This icon is dual-licensed under the [X11 License](#license) and
+[the Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 
 This icon was made on September 13, 2008.
 
@@ -91,9 +91,9 @@ drawings of trademarked logos, but I really do not care what you do with
 those icons. However, I would appreciate it if you give the original trademark
 holders (if any) credit and then give me credit.
 
-Other icons are dual-licensed under the X11 License, a simple permissive license
-compatible with the GNU GPL, and
-[a Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/),
+Unless otherwise noted, the other icons are dual-licensed under the X11 License,
+a simple permissive license compatible with the GNU GPL, and
+[the Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/),
 which is not compatible with the GPL. These icons are dual-licensed like this
 specifically to ensure compatibility with the GPL, and to encourage use in works
 of all licenses, including
