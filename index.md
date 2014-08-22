@@ -20,9 +20,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
   running Carbon, and a Xoom running CyanogenMod), Firefox
 * [IPv6 sage](http://ipv6.he.net/certification/scoresheet.php?pass_name=scottywz)
 * [Minceraft](https://craft.bnay.me/)
-* [Anti-Apple](http://www.stallman.org/apple.html) (although I do maintain
-  [an iPhone app](projects/appbackup/) from back when I didn't hate them
-  (which was before summer 2009).
+* [Anti-Apple](https://www.stallman.org/apple.html)
 
 ## Coding
 
@@ -33,7 +31,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 
 ## Music
 
-* Current favorites:  Ludovico Einaudi
+* Current favorites:  Ludovico Einaudi, Nils Frahm
 * I also like Celtic music (especially [Solas][] and [Lúnasa][]), [Antje Duvekot][Antje],
   Le Vent du Nord, Marconi Union, Blow Up Hollywood, and Ludovico Einaudi.
 * I sing second bass and I am a proud member of [Eric Whitacre's Virtual Choir][EWVC],
