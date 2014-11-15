@@ -38,7 +38,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
   starting with [version 2.0 ("Sleep")][Sleep]{: style="display: inline-block;"}.
 * [My Last.fm profile](https://www.last.fm/user/ScottyWZ)
   <span class="fill-in-last-fm-status hide"> — </span>
-* [A graph of my music listening trends]({{ site.url }}/other/lastgraph/)
+* [A graph of my music listening trends]({% dotdot %}/other/lastgraph/)
 * Did I mention I like Ludovico Einaudi's music?
 
 [Solas]:     http://www.solasmusic.com/

@@ -6,7 +6,7 @@ categories:
  - AppBackup
 ---
 
-[AppBackup]({{ site.url }}/projects/appbackup/) 2.0.1 has been released and should be
+[AppBackup]({% dotdot %}/projects/appbackup/) 2.0.1 has been released and should be
 on Cydia soon.  It fixes the bug where the app was hanging on the Please Wait screen.
 
 Changes:

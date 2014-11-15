@@ -83,7 +83,7 @@ of this needs to be tested for AppBackup 2.x.)
 
 **Compatibility Note:**  I am unable to test AppBackup on iOS 4 or later because
 I only have a 2G iPhone.  However, users have reported that AppBackup does work
-on iOS 6.1.  If you have problems, please [contact me]({{ site.url }}/contact). 
+on iOS 6.1.  If you have problems, please [contact me]({% dotdot %}/contact). 
 You may also try uninstalling and reinstalling AppBackup (you will not lose your
 saved data in the process).
 
@@ -103,7 +103,7 @@ saved data in the process).
 ## [Download AppBackup](http://uploads.s.zeid.me/AppBackup/latest.php) {#download}
 
 AppBackup is available via BigBoss's repository
-(or [mine]({{ site.url }}/iphone/cydia-repository))
+(or [mine]({% dotdot %}/iphone/cydia-repository))
 on Cydia!  You can find it under the Utilities section.
 
 [You can find older versions here.](http://uploads.s.zeid.me/AppBackup/)
@@ -494,7 +494,7 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * Changed some strings to stress that this doesn't backup the actual apps, but
   just their saved data
 * **Added support for localization. If you want to help translate AppBackup into
-  a different language, please [contact me]({{ site.url }}/contact}}).**
+  a different language, please [contact me]({% dotdot %}/contact}}).**
 * Other small code changes
 
 ### AppBackup 1.0.1 (2008-08-19) {#changes-1.0.1}

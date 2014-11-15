@@ -12,7 +12,7 @@ require("form.php");
 if ($show_form) {
 ?>
 <p>If you're contacting me about a problem with
- <a href="{{ site.url }}/projects/appbackup/">AppBackup</a>,
+ <a href="{% dotdot %}/projects/appbackup/">AppBackup</a>,
  please attach the last crash log file from the
  <code>/var/mobile/Library/Logs/CrashReporter</code> folder that starts with
  <strong>AppBackupGUI_</strong>, if there is one.
@@ -39,7 +39,7 @@ if ($show_form) {
 
 <p>All fields except the attachments field are required.</p>
 
-<form action="{{ site.url }}/contact/" method="post"
+<form action="{% dotdot %}/contact/" method="post"
       enctype="multipart/form-data">
  <section>
   <label for="name">Name</label>

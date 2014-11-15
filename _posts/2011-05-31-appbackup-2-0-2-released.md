@@ -6,7 +6,7 @@ categories:
  - AppBackup
 ---
 
-[AppBackup]({{ site.url }}/projects/appbackup/) 2.0.2 is out and fixes the following
+[AppBackup]({% dotdot %}/projects/appbackup/) 2.0.2 is out and fixes the following
 issues:
 
 * Fixed a bug with translations where if something wasn't translated then nothing

@@ -6,7 +6,7 @@ categories:
  - AppBackup
 ---
 
-After a long wait, the new version of [AppBackup]({{ site.url }}/projects/appbackup/)
+After a long wait, the new version of [AppBackup]({% dotdot %}/projects/appbackup/)
 **AppBackup 2.0**, is finished and has been submitted to BigBoss.  It will show up
 on Cydia within a day.  Here is what has changed in 2.0:
 
