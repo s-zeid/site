@@ -100,13 +100,13 @@ saved data in the process).
  </section>
 <!--]]]--></aside>
 
-## [Download AppBackup](http://uploads.s.zeid.me/AppBackup/latest.php) {#download}
+## [Download AppBackup](//uploads.s.zeid.me/AppBackup/latest.php) {#download}
 
 AppBackup is available via BigBoss's repository
 (or [mine]({% dotdot %}/iphone/cydia-repository))
 on Cydia!  You can find it under the Utilities section.
 
-[You can find older versions here.](http://uploads.s.zeid.me/AppBackup/)
+[You can find older versions here.](//uploads.s.zeid.me/AppBackup/)
 
 [Get the source code here.](#source)
 
@@ -114,8 +114,8 @@ on Cydia!  You can find it under the Utilities section.
 
 <div class="screenshots">{% for i in (1..6) %}
  <a data-lightbox="screenshots"
-    href="http://uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png">
-  <img src="http://uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png" alt="" />
+    href="//uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png">
+  <img src="//uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png" alt="" />
  </a>{% endfor %}
 </div>
 
