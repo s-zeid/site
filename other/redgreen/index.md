@@ -30,10 +30,16 @@ summaries of each episode.
 There are some more detailed lists on [Ninewords][ninewords] and
 [TV.com][tv.com].
 
-[wp]: https://en.wikipedia.org/wiki/The_Red_Green_Show
-[archive]: https://web.archive.org/web/20121022134055/http://www.redgreen.com/episodes.htm
+I appear in the lodge meeting in [episode 288, "New Yorkshire Puddings"][288].
+(I'm on the front row, right hand side from the camera's point of view,
+ second from the aisle.)
+
+[wp]:        https://en.wikipedia.org/wiki/The_Red_Green_Show
+[archive]:   https://web.archive.org/web/20121022134055/http://www.redgreen.com/episodes.htm
 [ninewords]: http://ninewords.com/Fun/The%20Red%20Green%20Show/The%20Red%20Green%20Show.html
-[tv.com]: http://www.tv.com/shows/the-red-green-show/trivia/
+[tv.com]:    http://www.tv.com/shows/the-red-green-show/trivia/
+[288]:       #episode-288
+
 
 Season 1 (Episodes 1–24) {#season-1}
 --------
