@@ -87,7 +87,7 @@ on iOS 6.1.  If you have problems, please [contact me]({% dotdot %}/contact). 
 You may also try uninstalling and reinstalling AppBackup (you will not lose your
 saved data in the process).
 
-<span id="social"><!--[[[--></span>  
+<div id="social"><!--[[[--></div>  
 <aside class="screen-only" style="float: right;clear: right;margin: 1em 0 1em 0.5em;">
  <section>
   <iframe style="border-style: none; overflow: hidden; width: 292px; height: 250px;" src="https://www.facebook.com/connect/connect.php?id=116861589753&amp;connections=10&amp;stream=0"><!-- Facebook widget --></iframe>
@@ -197,7 +197,7 @@ If you want to "backup the backups," you should back up the entire
     is backed up by iTunes.
 
 5.  **How do I get my AppBackup backups out of my backup in iTunes?**
-    {#extract-itunes-backup}
+    {: #extract-itunes-backup}
     
     For Windows:  (these instructions were tested in Windows 7 x64 Service Pack 1)
     
@@ -297,7 +297,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 
 ## Changes
 
-### AppBackup 2.0.2 (2011-05-31) {#changes-2.0.2}
+### AppBackup 2.0.2 (2011-05-31) 
+{: id='changes-2.0.2'}
 
 * Fixed a bug with translations where if something wasn't translated then nothing
   would appear in the UI (expected behavior is that the English text would appear
@@ -305,7 +306,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * AppBackup no longer crashes if backuptimes.plist is corrupted or malformed.
 * Updated the Czech, Japanese, and Korean translations.
 
-### AppBackup 2.0.1 (2011-05-27) {#changes-2.0.1}
+### AppBackup 2.0.1 (2011-05-27) 
+{: id='changes-2.0.1'}
 
 * Fixed the problem where AppBackup was hanging on the Please Wait screen for many
   people.
@@ -313,7 +315,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * Updated Spanish translation.
 * ini-to-strings.py now sorts the list of language files before converting them.
 
-### AppBackup 2.0 (2011-05-26) {#changes-2.0}
+### AppBackup 2.0 (2011-05-26) 
+{: id='changes-2.0'}
 
 * AppBackup now works on iOS versions 4.3.x and later (and it still works with
   iOS 3; untested on iOS 2).
@@ -339,7 +342,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
   [Transifex (https://www.transifex.net/)](https://www.transifex.net/)
   and converted to Apple's Localizable.strings format at build time.
 
-### AppBackup 1.0.14 (2011-05-05) {#changes-1.0.14}
+### AppBackup 1.0.14 (2011-05-05) 
+{: id='changes-1.0.14'}
 
 * **<span style="text-decoration: underline;">SECURITY UPDATE:</span>**
   FixPermissions now ensures that no directory other than `/var` is a link.
@@ -347,7 +351,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * This does NOT fix the incompatibility with iOS 4.3.x.  I am still working
   on fixing that.
 
-### AppBackup 1.0.13 (2011-01-13) {#changes-1.0.13}
+### AppBackup 1.0.13 (2011-01-13) 
+{: id='changes-1.0.13'}
 
 * Added the ability to ignore and un-ignore apps in the backup list and when
   using the All button.
@@ -357,7 +362,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * The unique bundle ID of each app is now displayed under its name in the
   backup/restore prompt.
 
-### AppBackup 1.0.12 (2010-11-27) {#changes-1.0.12}
+### AppBackup 1.0.12 (2010-11-27) 
+{: id='changes-1.0.12'}
 
 * Fixed a bug where AppBackup would crash if the modification time of a backup
   file was used instead of a non-existent backuptimes.plist entry.
@@ -369,7 +375,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * The action argument of `on(OneApp/AllApps)``DoAction_withModalView_` takes an
   unlocalized string now.
 
-### AppBackup 1.0.11 (2010-11-25) {#changes-1.0.11}
+### AppBackup 1.0.11 (2010-11-25) 
+{: id='changes-1.0.11'}
 
 * Added a Dutch translation by Dennis Morren.
 * Added a Russian translation by Nikita "ZAY" Peshkov.
@@ -404,7 +411,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
    * README and LICENSE files added.
    * Trivial changes.
 
-### AppBackup 1.0.10 (2010-08-03) {#changes-1.0.10}
+### AppBackup 1.0.10 (2010-08-03) 
+{: id='changes-1.0.10'}
 
 * Added an Italian translation by Pietropaolo Mastromarco.
 * Fixed a bug where the restore option didn't appear if we couldn't get a
@@ -413,7 +421,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * (Only of interest to developers) Sorted the functions in `include/globals.py`
   alphabetically, except for a couple of long ones which were left at the bottom.
 
-### AppBackup 1.0.9.9 (2010-06-10) {#changes-1.0.9.9}
+### AppBackup 1.0.9.9 (2010-06-10) 
+{: id='changes-1.0.9.9'}
 
 * Added a Spanish translation by Ramón Cutanda.
 * Changed the debug logging method again.
@@ -421,34 +430,41 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * This version is mainly intended to help me figure out crashing problems that
   people are having, although the above change might help some.
 
-### AppBackup 1.0.9.2 (2010-01-14) {#changes-1.0.9.2}
+### AppBackup 1.0.9.2 (2010-01-14) 
+{: id='changes-1.0.9.2'}
 
 * Fixed another problem when upgrading to 1.0.7 or later from 1.0.6 or earlier.
 
-### AppBackup 1.0.9.1 (2010-01-13) {#changes-1.0.9.1}
+### AppBackup 1.0.9.1 (2010-01-13) 
+{: id='changes-1.0.9.1'}
 
 * AppBackup no longer crashes on a new install.
 * Fixed complications when upgrading to 1.0.7 or later from 1.0.6 or earlier.
 
-### AppBackup 1.0.9 (2010-01-11) {#changes-1.0.9}
+### AppBackup 1.0.9 (2010-01-11) 
+{: id='changes-1.0.9'}
 
 * Attempted to fix AppBackup crashing on new installs.
 
-### AppBackup 1.0.8 {#changes-1.0.8}
+### AppBackup 1.0.8 
+{: id='changes-1.0.8'}
 
 * There is **<u>NO</u>** version 1.0.8!
 
-### AppBackup 1.0.7 (2010-01-10) {#changes-1.0.7}
+### AppBackup 1.0.7 (2010-01-10) 
+{: id='changes-1.0.7'}
 
 * Moved backup location to `/var/mobile/Library/Preferences/AppBackup`
   so that iTunes will back them up.
 
-### AppBackup 1.0.6 (2009-09-19?) {#changes-1.0.6}
+### AppBackup 1.0.6 (2009-09-19?) 
+{: id='changes-1.0.6'}
 
 * Added a French translation by Marc Klein and I forgot to mention it.
 * Worked around a problem caused by MobileSubstrate support, which was removed.
 
-### AppBackup 1.0.5 (2009-08-17) {#changes-1.0.5}
+### AppBackup 1.0.5 (2009-08-17) 
+{: id='changes-1.0.5'}
 
 * Fixed a problem where apps whose .app folders' names had non-ASCII characters
   in them (e.g. "é" or "™") would crash AppBackup.
@@ -463,7 +479,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * Changed the debug logging process.
 * Made other small changes.
 
-### AppBackup 1.0.4 (2009-07-09) {#changes-1.0.4}
+### AppBackup 1.0.4 (2009-07-09) 
+{: id='changes-1.0.4'}
 
 * Works on iPhoneOS 3.0
 * Worked around bug where an app that localized its name on the SpringBoard and
@@ -474,7 +491,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
   doing this earlier, translators)
 * Added MobileSubstrate support
 
-### AppBackup 1.0.3final (2008-09-27) {#changes-1.0.3final}
+### AppBackup 1.0.3final (2008-09-27) 
+{: id='changes-1.0.3final'}
 
 * Added German and Swedish translations
 * Uses date format according to user's locale and preferences
@@ -485,7 +503,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
   now on separate rows. This is to better support translated strings.
 * Sorting of apps in the list is now done case-insensitively.
 
-### AppBackup 1.0.2 (2008-09-02) {#changes-1.0.2}
+### AppBackup 1.0.2 (2008-09-02) 
+{: id='changes-1.0.2'}
 
 * Fixed a problem where if an app's Info.plist file didn't exist, AppBackup
   would crash by checking to see if it exists (thanks Steven B.)
@@ -497,7 +516,8 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
   a different language, please [contact me]({% dotdot %}/contact}}).**
 * Other small code changes
 
-### AppBackup 1.0.1 (2008-08-19) {#changes-1.0.1}
+### AppBackup 1.0.1 (2008-08-19) 
+{: id='changes-1.0.1'}
 
 * Now outputs debugging info to `/var/mobile/Library/AppBackup/``debug.log`
 * Fixed a problem with BigBoss-provided debs causing it to crash
@@ -506,6 +526,7 @@ AppBackup is written in Objective-C, Python 2.5, bash, and C.
 * Added thanks to BigBoss for hosting it
 * Some minor, unnoticeable changes (like changing some comments in the code)
 
-### AppBackup 1.0 (2008-08-17) {#changes-1.0}
+### AppBackup 1.0 (2008-08-17)
+{: id='changes-1.0'}
 
 * Initial public release
