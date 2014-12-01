@@ -11,7 +11,15 @@ require("form.php");
 
 if ($show_form) {
 ?>
-<p>If you're contacting me about a problem with
+<blockquote>
+ <strong>
+  <a href="{% dotdot %}/projects/appbackup/#ios-8-notice">
+   AppBackup does not currently work on iOS 8.  Click here for more information.
+  </a>
+ </strong>
+</blockquote>
+
+<p>If you're contacting me about another problem with
  <a href="{% dotdot %}/projects/appbackup/">AppBackup</a>,
  please attach the last crash log file from the
  <code>/var/mobile/Library/Logs/CrashReporter</code> folder that starts with
