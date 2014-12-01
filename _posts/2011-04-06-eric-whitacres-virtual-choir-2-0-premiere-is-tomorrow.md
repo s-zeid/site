@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title:  Eric Whitacre's Virtual Choir 2.0 Premiere is tomorrow!
 date:   2011-04-06 17:54:34Z

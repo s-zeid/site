@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title:  Welcome to my new site!
 date:   2011-01-10 19:12:51Z

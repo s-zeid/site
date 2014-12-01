@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title:  Google+ Tango Icon
 date:   2011-07-16 02:55:24Z
