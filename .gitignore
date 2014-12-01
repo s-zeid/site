@@ -7,3 +7,5 @@ _comments/*
 !_comments/freecomment.conf.dist
 !_comments/freecomment.php
 contact/config.php
+
+_static/other/lastgraph/graph.svg
