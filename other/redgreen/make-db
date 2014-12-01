@@ -1,0 +1,105 @@
+#!/bin/sh
+
+# I don't know why I did this in shell....
+# "Any tool can be the right tool!" —Red Green
+
+season_db_file=`        dirname "$0"`/db/seasons
+episode_db_file=`       dirname "$0"`/db/episodes
+episode_names_file=`    dirname "$0"`/db/names
+episode_summaries_file=`dirname "$0"`/db/summaries
+cache_dir=`             dirname "$0"`/cache
+episode_urls_file=`     dirname "$0"`/cache/episode-urls
+
+IFS='
+'
+
+mkdir -p "$cache_dir"
+
+main() {
+ get_seasons
+ get_episode_urls
+ make_db
+}
+
+get_seasons() {
+ local line season playlist_url cache_file r
+ for line in `cat "$season_db_file"`; do
+  season=`      printf '%s' "$line" | cut -d'|' -f1`
+  playlist_url=`printf '%s' "$line" | cut -d'|' -f3`
+  cache_file="$cache_dir/$season"
+  if [ ! -e "$cache_file" ]; then
+   echo "$0: error: $cache_file must be a file containing <id>|<title> for each episode"
+   return 1
+  fi
+ done
+}
+
+season_numbers() {
+ local line season
+ for line in `cat "$season_db_file"`; do
+  season=`      printf '%s' "$line" | cut -d'|' -f1`
+  printf '%s\n' "$season"
+ done
+}
+
+parse_seasons() {
+ local fixup_program season cache_file line id title episode name url
+ fixup_program='s/Season [0-9]* Episode [0-9]* (#\([0-9]*\))/Ep \1/g'
+ for season in $(season_numbers); do
+  cache_file="$cache_dir/$season"
+  for line in `cat "$cache_file"`; do
+   id=`     printf '%s' "$line" |cut -d'|' -f1`
+   title=`  printf '%s' "$line" |cut -d'|' -f2`
+   fixup=`  printf '%s' "$title"|sed -e "$fixup_program"`
+   episode=`printf '%s' "$fixup"|grep -o ' Ep[^ ]* [0-9][0-9]*'| grep -o '[0-9][0-9]*'`
+   name=`   printf '%s' "$fixup"|grep -o "\('.*'\(.*'\)*\)"    | sed -e "s/^'//g;s/'$//g"`
+   url="https://www.youtube.com/watch?v=$id"
+   printf '%03d|%s|%s|%s\n' "$episode" "$url" "$name" "$title"
+  done
+ done
+}
+
+fix_line_numbers() {
+ local n line episode
+ n=1
+ for line in `cat`; do
+  episode=`printf '%s' "$line" | cut -d'|' -f1 | sed -e 's/^0*//g'`
+  if [ $episode != $n ]; then
+   echo "$0: warning: episode $n has no video (probably a special)" >&2
+   while [ $episode != $n ]; do
+    printf '\n'
+    n=$((n+1))
+   done
+  fi
+  printf '%s\n' "$line"
+  n=$((n+1))
+ done
+}
+
+get_episode_urls() {
+ parse_seasons | sort -g -t '|' | fix_line_numbers > "$episode_urls_file"
+}
+
+season_range() {
+ local season line range
+ season=$1
+ range=`grep "^$season|" "$season_db_file" | head -n1 | cut -d'|' -f2 | sed 's/,/\n/g'`
+ printf '%s\n' "$range"
+}
+
+make_db() {
+ local season episode url name summary
+ printf '' > "$episode_db_file"
+ for season in $(season_numbers); do
+  for episode in $(seq `season_range $season`); do
+   episode=`printf '%03d' "$episode"`
+   url=`    grep "^$episode|" "$episode_urls_file"      | head -n1 | cut -d'|' -f2`
+   name=`   grep "^$episode|" "$episode_names_file"     | head -n1 | cut -d'|' -f2`
+   summary=`grep "^$episode|" "$episode_summaries_file" | head -n1 | cut -d'|' -f2`
+   printf '%s|%s|%s|%s|%s\n' "$episode" "$season" "$name" "$url" "$summary" \
+    >> "$episode_db_file"
+  done
+ done
+}
+
+main "$@"

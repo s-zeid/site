@@ -1,0 +1,126 @@
+#!/usr/bin/env python2
+#-*- coding: utf-8 -*-
+
+import os
+import re
+import sys
+
+from collections import namedtuple
+
+root            = os.path.dirname(sys.argv[0])
+
+season_db_file  = os.path.join(root, "db", "seasons")
+episode_db_file = os.path.join(root, "db", "episodes")
+
+make_db         = os.path.join(root, "make-db")
+
+seasons         = []
+episodes        = []
+
+Season          = namedtuple("Season",  "n,range,url")
+Episode         = namedtuple("Episode", "n,season,name,url,summary")
+
+class Season(Season):
+ def xrange(self):
+  return xrange(self.range[0] - 1, self.range[1])
+
+def main(argv):
+ if not os.path.exists(episode_db_file):
+  subprocess.call([make_db])
+ load_db()
+ 
+ template = argv[1] if len(argv) > 1 else None
+ print make_markdown(template)
+
+def load_db():
+ global seasons, episodes
+ with open(season_db_file, "rb") as f:
+  seasons_db = [l.split("|") for l in f.read().splitlines()]
+ for row in seasons_db:
+  row[0] = int(row[0])
+  row[1] = tuple(int(i) for i in row[1].split(","))
+  seasons += [Season(*row)]
+ with open(episode_db_file, "rb") as f:
+  episodes_db = [l.split("|") for l in f.read().splitlines()]
+ for row in episodes_db:
+  row[0] = int(row[0])
+  episodes += [Episode(*row)]
+
+def markdown_header(level, text, id=None, extra=None):
+ r = ""
+ if level <= 2:
+  # setext-style header
+  r += text
+  if extra: r += " %s"    % extra
+  if id:    r += " {#%s}" % id
+  r += "\n"
+  if level <= 1:
+   r += "=" * len(text)
+  else:
+   r += "-" * len(text)
+ else:
+  # atx-style-header
+  r += "#" * level
+  r += " "
+  r += text
+  if extra: r += " %s"    % extra
+  if id:    r += " {#%s}" % id
+ return r
+
+def markdown_episodes():
+ r = ""
+ for season in seasons:
+  range = '%s–%s' % season.range
+  if season.n > 1: r += "\n\n* * * *\n\n"
+  r += markdown_header(2, "Season %d" % season.n, "season-%d" % season.n,
+                          "(Episodes %s) [#](#season-%d)" % (range, season.n))
+  
+  for episode in (episodes[n] for n in season.xrange()):
+   r += '\n\n'
+   r += markdown_header(3, "Episode %d — %s" % (episode.n, episode.name),
+                           "episode-%d" % episode.n,
+                           "[#](#episode-%d)" % episode.n)
+   r += '\n\n'
+   r += episode.summary.replace(r"\n", "\n")
+   if episode.url:
+    r += '\n\n[Watch on YouTube](%s){: target="_blank"}' % episode.url
+ return r
+
+def markdown_contents():
+ r = ""
+ longest_length = 0
+ for season in seasons:
+  range = '%s–%s' % season.range
+  text = "Season %d (Episodes %s)" % (season.n, range)
+  length = len(text)
+  if length > longest_length:
+   longest_length = length
+ for season in seasons:
+  if season.n > 1: r += "\n"
+  range = '%s–%s' % season.range
+  text = "Season %d (Episodes %s)" % (season.n, range)
+  length = len(text)
+  padding = " " * (longest_length - length)
+  r += ' %s:%s %s' % (text, padding, "season-%d" % season.n)
+ return r
+
+def make_markdown(template=None):
+ if template:
+  contents = markdown_contents()
+  episodes = markdown_episodes()
+  with open(template, "rb") as f:
+   r = f.read()
+  r = re.sub(r"\{\$ *contents *\$\}", contents, r)
+  r = re.sub(r"\{\$ *episodes *\$\}", episodes, r)
+  r = re.sub(r"\{\$ *[a-zA-Z0-9_-]+ *\$\}", "", r)
+  r = r.lstrip("\n")
+ else:
+  r = markdown_episodes()
+  r += "\n"
+ return r
+
+if __name__ == "__main__":
+ try:
+  sys.exit(main(sys.argv))
+ except KeyboardInterrupt:
+  pass
