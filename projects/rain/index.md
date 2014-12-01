@@ -9,7 +9,7 @@ stylus: |
 ---
 
 <aside style="float: right; text-align: center; margin: 0.25em 0 1em 1em;">
- <iframe id="rain" src="http://ti-rain.s.zeid.me/#embed" class="no-print"
+ <iframe id="rain" src="//s.zeid.me/_/ti-rain/#embed" class="no-print"
          style="width: 192px; height: 128px; border: none; background: transparent;">
   <img src="screenshot.png" alt="" />
  </iframe>
