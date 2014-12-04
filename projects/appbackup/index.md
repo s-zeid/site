@@ -76,7 +76,7 @@ released under [the X11 License](#credits-and-license). 
 If you want to help translate AppBackup into a different language, please see the
 [Translations](#translations) section.
 
-> {: #ios-8-notice}
+{: #ios-8-notice}
 > **AppBackup does not currently work on iOS 8.**
 > 
 > This is [being tracked as issue #2 on the bug tracker][issue-2]. 
