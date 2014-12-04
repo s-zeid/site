@@ -13,14 +13,14 @@ if ($show_form) {
 ?>
 <blockquote>
  <strong>
-  <a href="{% dotdot %}/projects/appbackup/#ios-8-notice">
+  <a href="{% root %}/projects/appbackup/#ios-8-notice">
    AppBackup does not currently work on iOS 8.  Click here for more information.
   </a>
  </strong>
 </blockquote>
 
 <p>If you're contacting me about another problem with
- <a href="{% dotdot %}/projects/appbackup/">AppBackup</a>,
+ <a href="{% root %}/projects/appbackup/">AppBackup</a>,
  please attach the last crash log file from the
  <code>/var/mobile/Library/Logs/CrashReporter</code> folder that starts with
  <strong>AppBackupGUI_</strong>, if there is one.
@@ -47,7 +47,7 @@ if ($show_form) {
 
 <p>All fields except the attachments field are required.</p>
 
-<form action="{% dotdot %}/contact/" method="post"
+<form action="{% root %}/contact/" method="post"
       enctype="multipart/form-data">
  <section>
   <label for="name">Name</label>

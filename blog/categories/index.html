@@ -5,19 +5,19 @@ title:  Categories
 
 {% strip %}{% for i in site.categories %}<nav>
  <h2>
-  <a href="{% dotdot %}/blog/categories/{{ i[0] | uri_escape }}">{{ i[0] }}</a>
+  <a href="{% root %}/blog/categories/{{ i[0] | uri_escape }}">{{ i[0] }}</a>
  </h2>
  <ul>{% assign n = "*" %}
  {% for p in site.posts %}{% if p.categories contains i[0] %}
   {% if n contains "*******" %}{% elsif n contains "******" %}
   <li>
-   <a href="{% dotdot %}/blog/categories/{{ i[0] | uri_escape }}">
+   <a href="{% root %}/blog/categories/{{ i[0] | uri_escape }}">
     More... ({{ i[1] | size }} total)
    </a>
   </li>
   {% else %}
   <li>
-   <a href="{% dotdot %}{{ p.url }}">{{ p.title }}</a>
+   <a href="{% root %}{{ p.url }}">{{ p.title }}</a>
    <time datetime="{{ p.date | date: "%Y-%m-%dT%H:%M:%S" }}">
     {{ p.date | date: "%A, %B %d, %Y %H:%M" }}
    </time>

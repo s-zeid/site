@@ -13,4 +13,4 @@ I've made a [Tango-style](https://en.wikipedia.org/wiki/Tango_Desktop_Project)
 </iframe>
 
 [For more information and SVG downloads, see my Tango Icons page.
-]({% dotdot %}/other/tango-icons/#google-plus)
+]({% root %}/other/tango-icons/#google-plus)

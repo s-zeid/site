@@ -75,7 +75,7 @@ upgrading iTango.
   * Am I Rich
   * Ambiance
   * APlogger
-  * [AppBackup]({% dotdot %}/projects/appbackup)
+  * [AppBackup]({% root %}/projects/appbackup)
   * Band
   * biteSMS
   * Bloomberg
@@ -239,7 +239,7 @@ Tango icons are © Tango Desktop Project and are released under the
 
 ### iTango Version 2.1 (2008-08-19)
 
-* Added:  [AppBackup]({% dotdot %}/projects/appbackup) (redundant, I know, since
+* Added:  [AppBackup]({% root %}/projects/appbackup) (redundant, I know, since
   it's my own app), Dock Prefs, Exposure, GRiS, MobileChat, and scrobble
 * Changed:  Finder, FileBrowser, iCommander, and iPocket
 * An `F***ING NDA` icon can be found under the `Dev` folder in the source package
