@@ -68,7 +68,8 @@ restore the saved data and settings for your App Store apps.  **AppBackup DOES
 NOT back up the apps themselves, just the stuff they save (like settings, game
 progress, etc.)**
 
-AppBackup is Free Software released under [the X11 License](#credits-and-license). 
+AppBackup is [Free Software](https://www.gnu.org/philosophy/free-sw.html)
+released under [the X11 License](#credits-and-license). 
 [The source code for AppBackup](#source) is available on
 [Bitbucket](http://code.s.zeid.me/appbackup).
 
