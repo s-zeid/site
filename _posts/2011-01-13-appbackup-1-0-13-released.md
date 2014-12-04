@@ -16,5 +16,5 @@ I've released version 1.0.13 of AppBackup, which brings the following changes wi
 * The unique bundle ID of each app is now displayed under its name in the
   backup/restore prompt.
 
-[Download](http://uploads.srwz.us/AppBackup/latest.php) or wait for it to show up on
+[Download](//uploads.s.zeid.me/AppBackup/latest.php) or wait for it to show up on
 BigBoss.

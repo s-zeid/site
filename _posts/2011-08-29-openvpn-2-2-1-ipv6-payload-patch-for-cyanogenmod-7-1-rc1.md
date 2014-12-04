@@ -9,21 +9,21 @@ I've ported [Gert Döring's IPv6 payload patch for OpenVPN](http://www.greenie.n
 to [CyanogenMod](http://www.cyanogenmod.com/).  I want to try to get it into the
 CM source tree someday, but here are the goods in the meantime.
 
-* [Binary built for the original CDMA Droid (sholes) on 2011-08-26](http://uploads.srwz.us/openvpn-2.2.1-ipv6-cm7.1rc1-sholes-20110826)
+* [Binary built for the original CDMA Droid (sholes) on 2011-08-26](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-cm7.1rc1-sholes-20110826)
   * Install to your phone as _<code>/system/xbin/openvpn</code>_.
   * Change owner and group to <code>root</code> and permissions to <code>0755</code>.
   * May work on other ARM phones running CM, although I haven't tested it on any of
     them except my Droid 1.
   * May not work on other Android ROMs because the paths to ifconfig/route/ip are
     configured at compile time.
-  * [SHA-256 sum](http://uploads.srwz.us/openvpn-2.2.1-ipv6-cm7.1rc1-sholes-20110826.sha256sum)
-* [CyanogenMod patch (valid as of 2011-08-26)](http://uploads.srwz.us/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz)
+  * [SHA-256 sum](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-cm7.1rc1-sholes-20110826.sha256sum)
+* [CyanogenMod patch (valid as of 2011-08-26)](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz)
   * `cd /path/to/cm/source/external/openvpn`
   * `zcat /path/to/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz | patch -p1`
-  * [SHA-256 sum](http://uploads.srwz.us/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz.sha256sum)
+  * [SHA-256 sum](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz.sha256sum)
 * [GitHub fork of CyanogenMod/android_external_openvpn](https://github.com/scottywz/android_external_openvpn_ipv6)
-* [I had to rebase Gert's patch for OpenVPN 2.2.1.  Here it is.](http://uploads.srwz.us/openvpn-2.2.1-ipv6-20110825-1.patch.gz)
-  * [SHA-256 sum](http://uploads.srwz.us/openvpn-2.2.1-ipv6-20110825-1.patch.gz.sha256sum)
+* [I had to rebase Gert's patch for OpenVPN 2.2.1.  Here it is.](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-20110825-1.patch.gz)
+  * [SHA-256 sum](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-20110825-1.patch.gz.sha256sum)
 
 Enjoy!
 <span style="background-color: #ff0; color: #000;">

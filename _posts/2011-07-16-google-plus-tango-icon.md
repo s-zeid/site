@@ -7,8 +7,8 @@ date:   2011-07-16 02:55:24Z
 I've made a [Tango-style](https://en.wikipedia.org/wiki/Tango_Desktop_Project)
 [Google+](https://en.wikipedia.org/wiki/Google%2B) icon.
 
-<iframe src="http://uploads.s.zeid.me/tango-icons/display.php?icon=Google-Plus" style="width: 448px; height: 256px; overflow: hidden; border-style: none;">
- Go to http://uploads.s.zeid.me/tango-icons/display.php?icon=Google-Plus to
+<iframe src="//uploads.s.zeid.me/tango-icons/display.php?icon=Google-Plus" style="width: 448px; height: 256px; overflow: hidden; border-style: none;">
+ Go to https://uploads.s.zeid.me/tango-icons/display.php?icon=Google-Plus to
  preview the icon.
 </iframe>
 

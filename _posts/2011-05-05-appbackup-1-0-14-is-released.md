@@ -13,5 +13,5 @@ update **AS SOON AS POSSIBLE** in order to keep your device secure.
 security reasons.** I am in the process of rewriting AppBackup so that it will work
 on iOS 4.3.x, and I am very sorry for the long wait.
 
-[Download](http://uploads.srwz.us/AppBackup/latest.php) or wait for it to show up
+[Download](//uploads.s.zeid.me/AppBackup/latest.php) or wait for it to show up
 on BigBoss.
