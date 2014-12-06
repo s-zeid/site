@@ -23,6 +23,11 @@ stylus: |
      font-weight: bold;
      img
       margin-right: 0.5em;
+      @media (min-resolution: 160dpi),
+             handheld, (max-width: 480px), (max-device-width: 480px)
+       for type in min max
+        for dim in width height
+         {type}-{dim}: 22px;
     &:not(:last-child) > p
      > span
       padding-bottom: 0.5em;
