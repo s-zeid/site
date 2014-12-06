@@ -5,8 +5,8 @@ title:  AppBackup
 icon:   icon.png
 
 description: >
- AppBackup is an iOS app that lets you back up and restore saved data from
- App Store apps.
+ AppBackup is an app for jailbroken iOS devices that lets you back up and
+ restore the saved data and settings of App Store apps.
 
 contents:
  Introduction:                        intro
@@ -63,9 +63,9 @@ stylus: |
  </section>
 <!--]]]--></aside>
 
-AppBackup is a program for the iPhone and iPod touch that lets you back up and
-restore the saved data and settings for your App Store apps.  **AppBackup DOES
-NOT back up the apps themselves, just the stuff they save (like settings, game
+AppBackup is an app for jailbroken iOS devices that lets you back up and
+restore the saved data and settings of App Store apps.  **AppBackup DOES NOT
+back up the apps themselves, just the stuff they save (like settings, game
 progress, etc.)**
 
 AppBackup is [Free Software](https://www.gnu.org/philosophy/free-sw.html)
