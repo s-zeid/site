@@ -5,7 +5,7 @@ title:  AppBackup
 icon:   icon.png
 
 description: >
- Appbackup is an iOS app that lets you back up and restore saved data from
+ AppBackup is an iOS app that lets you back up and restore saved data from
  App Store apps.
 
 contents:
