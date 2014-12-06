@@ -49,7 +49,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 
 ## About this Web site {#site}
 
-* Uses [Jekyll](https://github.com/mojombo/jekyll),
+* Uses [Jekyll](https://github.com/jekyll/jekyll),
   [Stylus](http://learnboost.github.com/stylus/),
   GNU `make`, and a little bit of PHP (for
   [the contact form](http://code.s.zeid.me/site/src/master/contact/) and
