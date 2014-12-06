@@ -2,6 +2,9 @@
 layout: page
 title:  Rain Animation
 icon:   icon.png
+description: >
+ An animation of rain as viewed from behind a window, for TI-83+/84+ and
+ modern Web browsers.
 stylus: |
  @media screen
   .no-screen

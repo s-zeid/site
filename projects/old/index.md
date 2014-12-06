@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Old
+nav:
+ sort-key: /projects/zzz/old
+description: >
+ Old stuff that I should probably remove from this site at some point.
 ---
 
 Old stuff that I should probably remove from this site at some point.
