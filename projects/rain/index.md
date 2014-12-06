@@ -31,7 +31,7 @@ written in Axe.
 ## Web-based Version {#web}
 
 A Web-based version of this animation is available at
-[ti-rain.s.zeid.me](//ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
+[ti-rain.s.zeid.me](http://ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
 browser, such as Firefox or Google Chrome, that supports the HTML 5 Canvas
 element.&nbsp; It may also work in Internet Explorer 7 or later; however, I have only
 tested it in Google Chrome at the time of this writing.
