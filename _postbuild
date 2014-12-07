@@ -13,7 +13,10 @@
 BUILD_DIR=$1
 SITE_DIR=$2
 
-rm -rf $BUILD_DIR/more $BUILD_DIR/source
+rm -rf $BUILD_DIR/more #$BUILD_DIR/source
 ln -s ../_/more $BUILD_DIR/more
-ln -s .. $BUILD_DIR/source
-rm -f $SITE_DIR/more $SITE_DIR/source
+#ln -s .. $BUILD_DIR/source
+rm -f $SITE_DIR/more
+if [ -h "$SITE_DIR/source" ]; then
+ rm -f "$SITE_DIR/source"
+fi
