@@ -47,8 +47,8 @@ Some projects of mine.  There's more on
   <li class="{%if p.nav.current%} current{%elsif p.nav.parent%} parent{%endif%}{%if p.title == "Home"%} home{%endif%}{%if p.nav.has_children%} has-children{%endif%}">
   {% endcapture %}
   {{ li | replace: 'class=" ', 'class="' | replace: ' class=""', "" }}
-   <a href="{%if p.nav.url%}{{p.nav.url|uri_escape}}{%else%}{%root%}{{p.nav.slug|uri_escape}}{%endif%}"{%if p.nav.target%} target="{{p.nav.target}}"{%endif%}>
-    <span>{% if p.icon %}<img src="{% root %}{% if p.nav.dir != "/" %}{{ p.nav.dir }}{% endif %}/{{ p.icon }}" alt="" class="left" />{% endif %}</span>
+   <a href="{%if p.nav.url%}{{p.nav.url|uri_escape}}{%else%}{%root%}{{p.nav.slug|uri_escape}}{%endif%}"{%if p.nav.target%} target="{{p.nav.target|xml_escape}}"{%endif%}>
+    <span>{% if p.icon %}<img src="{% root %}{% if p.nav.dir != "/" %}{{ p.nav.dir | uri_escape }}{% endif %}/{{ p.icon | uri_escape }}" alt="" class="left" />{% endif %}</span>
    {% if p.menu-text %}
     <span>{{p.menu-text}}</span>
    {% elsif p.title != "Home" %}
