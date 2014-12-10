@@ -5,6 +5,8 @@ h1: True
 nav:
  hide: True
 stylus: |
+ main
+  background: url("64-checkerboard.png") #ece;
  iframe
   display: block;
   margin: 0 auto;
