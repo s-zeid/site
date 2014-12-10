@@ -1,4 +1,4 @@
-$.get("/more/?json", function(portal) {
+$.get($("html").attr("data-root") + "/more/?json", function(portal) {
  var showMinibarIcons = true;
  var showIndexIcons   = false;
  
