@@ -7,13 +7,12 @@ nav:
 stylus: |
  main
   background: url("64-checkerboard.png") #ece;
-  > article
-   background: transparent url("../penguin-bg.png") no-repeat right bottom;
  iframe
   display: block;
   margin: 0 auto;
  @media (min-width: 640px)
   main > article
+   background: transparent url("../penguin-bg.png") no-repeat left bottom;
    > :first-child
     float: right;
     position: relative; top: 0.25em;
