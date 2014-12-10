@@ -7,6 +7,8 @@ nav:
 stylus: |
  main
   background: url("64-checkerboard.png") #ece;
+  > article
+   background: transparent url("../penguin-bg.png") no-repeat right bottom;
  iframe
   display: block;
   margin: 0 auto;
