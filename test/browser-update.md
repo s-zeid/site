@@ -1,9 +1,6 @@
 ---
 layout: page
 title: Browser Update Test
-h1: True
-nav:
- hide: True
 stylus: |
  #buorg
   position: relative;

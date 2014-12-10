@@ -1,9 +1,6 @@
 ---
 layout: page
 title:  Quotes Test
-h1:     True
-nav:
- hide:  True
 ---
 
 > Hello, world!
