@@ -23,5 +23,5 @@ stylus: |
      position: relative; top: -0.5em;
 ---
 
-<iframe src="//www.youtube-nocookie.com/embed/FVPG2B3pdrU?rel=0"
+<iframe src="https://www.youtube.com/embed/FVPG2B3pdrU"
         style="width: 360px; height: 570px;" frameborder="0" allowfullscreen></iframe>
