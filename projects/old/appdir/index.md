@@ -3,8 +3,9 @@ layout: page
 title: appdir
 ---
 
-**Note:**  This is obsolete, especially with iOS 8 changing the layout of apps
-on disk.  Use [`iosapplist`](http://code.s.zeid.me/iosapplist) instead.
+**Note:**  This is obsolete, especially with iOS 8 changing the layout of
+apps on disk.  Use my [`iosapplist`](http://code.s.zeid.me/iosapplist)
+package instead.
 
 `iosapplist` is also cross-platform; you can use it with a copy of an iOS
 `/var/mobile` directory or the `Applications` or `Containers` directories
