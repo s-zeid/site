@@ -3,6 +3,18 @@ layout: page
 title: appdir
 ---
 
+**Note:**  This is obsolete, especially with iOS 8 changing the layout of apps
+on disk.  Use [`iosapplist`](http://code.s.zeid.me/iosapplist) instead.
+
+`iosapplist` is also cross-platform; you can use it with a copy of an iOS
+`/var/mobile` directory or the `Applications` or `Containers` directories
+inside of it, or even with the data directory of an iOS Simulator instance.
+It is [available in PyPI](https://pypi.python.org/pypi/iosapplist):
+
+    sudo pip install --pre iosapplist
+
+* * * *
+
 This is a simple Python script that outputs the absolute path of any installed
 App Store app.
 
