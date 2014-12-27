@@ -15,9 +15,10 @@ contents:
  Requirements:                        requirements
  Installation:                        installation
  Usage:                               usage
- Backup Location:                     backup-location
+ Backup location:                     backup-location
  FAQ:                                 faq
       Extracting backups from iTunes: extract-itunes-backup
+ Command-line interface:              command-line-interface
  Translations:                        translations
  Credits / License:                   credits-and-license
  Source Code:                         source
@@ -86,41 +87,8 @@ If you want to help translate AppBackup into a different language, please see th
 > memory management on my part (probably because I wrote that part of the
 > code when I was in high school).
 > 
-> The command-line interface has been updated for iOS 8 and can be installed
-> on a jailbroken iOS device as follows (run these commands on your device):
-> 
->     $ sudo apt-get install setuptools
->     $ sudo easy_install -U iosappbackup
-> 
-> Usage examples:
-> 
->     $ iosappbackup ls
->     Chrome (com.google.chrome.ios):  (not backed up)
->     Facebook (com.facebook.Facebook):  (ignored)
->     Test App, Please Ignore (example.Test-App--Please-Ignore):  2014-12-19 08:56:39
->     $ iosappbackup backup com.google.chrome.ios
->     $ iosappbackup unignore com.facebook.Facebook
->     $ iosappbackup backup --all  # or -a
->     $ iosappbackup ignore com.facebook.Facebook
->     $ iosappbackup restore example.Test-App--Please-Ignore
->     $ iosappbackup restore --all
->     $ iosappbackup ls -l
->     Chrome (com.google.chrome.ios):
->                 Bundle name:  Chrome.app
->       Bundle container path:  /var/mobile/Containers/Bundle/Application/B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
->       Bundle container UUID:  B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
->         Data container path:  /var/mobile/Containers/Data/Application/67E32582-EB57-48B0-B5F8-9C6375E71641
->         Data container UUID:  67E32582-EB57-48B0-B5F8-9C6375E71641
->                     Useable:  True
->                     Ignored:  False
->                 Backup time:  2014-12-27 14:12:01
->                 Backup path:  /var/mobile/Library/Preferences/AppBackup/tarballs/com.google.chrome.ios.tar.gz
->     
->     [...]
-> 
-> You can also run `iosappbackup --help` or just `iosappbackup` for more help
-> with the command-line interface, or `iosappbackup <command> --help` for help
-> with a particular command.
+> The command-line interface has been updated for iOS 8.  [Instructions on
+> how to install and use it can be found here.](#command-line-interface)
 > 
 > This page, the bug tracker, and the app's Facebook and Google+ pages
 > will be updated if and when I can get it fixed.  I am very sorry for
@@ -201,7 +169,7 @@ Store.  If you have just reset your device and you want to restore app data, the
 you must first reinstall the apps whose data you want to restore before AppBackup
 will let you restore their data.
 
-## Backup Location {#backup-location}
+## Backup location {#backup-location}
 
 Backups are stored in `/var/mobile/Library/Preferences/``AppBackup/tarballs`
 as files called `bundleid.tar.gz`, where `bundleid` is a given app's bundle
@@ -281,6 +249,56 @@ If you want to "backup the backups," you should back up the entire
         `/var/mobile/Library/Preferences` on your iDevice in order to use it.
     
     Mac OS X instructions coming soon.
+
+## Command-line interface
+
+AppBackup also has a command-line interface (which currently works with
+at least iOS 2.x—8.1.x).  It is available as part of the Cydia package or
+[from the Python Package Index](https://pypi.python.org/pypi/iosappbackup).
+
+The command-line interface that comes with the Cydia package is called
+`appbackup`, and the one in PyPI is called `iosappbackup`.  Currently, the
+Cydia one is outdated (I'm waiting to update it in Cydia until I have the
+GUI working on iOS 8, in order to avoid confusion), while the PyPI one is
+the one that works on iOS 8.  In AppBackup 3, these will both be the same
+thing, but the name difference will remain in order to avoid conflicts
+between the two.
+
+To install the command-line interface from PyPI on a jailbroken iOS device,
+run these two commands on your device:
+
+    $ sudo apt-get install setuptools
+    $ sudo easy_install -U iosappbackup
+
+Usage examples (only for the new `iosappbackup`):
+
+    $ iosappbackup ls
+    Chrome (com.google.chrome.ios):  (not backed up)
+    Facebook (com.facebook.Facebook):  (ignored)
+    Test App, Please Ignore (example.Test-App--Please-Ignore):  2014-12-19 08:56:39
+    $ iosappbackup backup com.google.chrome.ios
+    $ iosappbackup unignore com.facebook.Facebook
+    $ iosappbackup backup --all  # or -a
+    $ iosappbackup ignore com.facebook.Facebook
+    $ iosappbackup restore example.Test-App--Please-Ignore
+    $ iosappbackup restore --all
+    $ iosappbackup ls -l
+    Chrome (com.google.chrome.ios):
+                Bundle name:  Chrome.app
+      Bundle container path:  /var/mobile/Containers/Bundle/Application/B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
+      Bundle container UUID:  B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
+        Data container path:  /var/mobile/Containers/Data/Application/67E32582-EB57-48B0-B5F8-9C6375E71641
+        Data container UUID:  67E32582-EB57-48B0-B5F8-9C6375E71641
+                    Useable:  True
+                    Ignored:  False
+                Backup time:  2014-12-27 14:12:01
+                Backup path:  /var/mobile/Library/Preferences/AppBackup/tarballs/com.google.chrome.ios.tar.gz
+    
+    [...]
+
+You can also run `iosappbackup --help` or just `iosappbackup` for more help
+with the command-line interface, or `iosappbackup <command> --help` for help
+with a particular command.
 
 ## Translations
 
