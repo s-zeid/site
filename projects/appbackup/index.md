@@ -31,7 +31,7 @@ stylus: |
   height: 150px;
 
 head: |
- <meta property="og:image" content="Square-Logo-Small.png" />
+ <meta property="og:image" content="./Square-Logo-Small.png" />
 
 ---
 
