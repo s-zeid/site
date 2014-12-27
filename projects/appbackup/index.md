@@ -3,7 +3,7 @@
 layout:   page
 title:    AppBackup
 icon:     icon.png
-og-image: Square-Logo-Small.png
+og-image: Square-Logo-Medium.png
 
 description: >
  AppBackup is an app for jailbroken iOS devices that lets you back up and
