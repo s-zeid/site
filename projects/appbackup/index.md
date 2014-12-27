@@ -30,6 +30,9 @@ stylus: |
  .screenshots > a > img
   height: 150px;
 
+head: |
+ <meta property="og:image" content="Square-Logo-Small.png" />
+
 ---
 
 <div id="intro"><!--[[[--></div>  
