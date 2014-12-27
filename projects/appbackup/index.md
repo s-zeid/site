@@ -87,7 +87,7 @@ If you want to help translate AppBackup into a different language, please see th
 > code when I was in high school).
 > 
 > The command-line interface has been updated for iOS 8 and can be installed
-> on an iOS device as follows (run these commands on your device):
+> on a jailbroken iOS device as follows (run these commands on your device):
 > 
 >     $ sudo apt-get install setuptools
 >     $ sudo easy_install -U iosappbackup
@@ -128,15 +128,9 @@ If you want to help translate AppBackup into a different language, please see th
 > 
 > [issue-6]: http://code.s.zeid.me/appbackup/issue/6/fix-sporadic-crashes-on-ios-8
 
-**If you are using Backgrounder, disable the option to "Enable at Launch." If
-this is enabled, then AppBackup will crash when you open it.**  You can disable
-it just for AppBackup by going into Overrides, tapping Add, and choosing
-AppBackup. Then select AppBackup and turn off "Enable at Launch."  (The necessity
-of this needs to be tested for AppBackup 2.x.)
-
 **Compatibility Note:**  I am unable to test AppBackup on iOS 4 or later because
 I only have a 2G iPhone.  However, users have reported that AppBackup does work
-on iOS 6.1.  If you have problems, please [contact me]({% root %}/contact). 
+on iOS 7.  If you have problems, please [contact me]({% root %}/contact). 
 You may also try uninstalling and reinstalling AppBackup (you will not lose your
 saved data in the process).
 
@@ -194,7 +188,7 @@ To back up one app, open AppBackup, select the app, and then select Backup.
 To restore an app, select it and then select Restore.  (If there is no restore
 option, then it hasn't been backed up yet.)  You can also choose to delete an
 app's backup, or to ignore or un-ignore the app (i.e. prevent it from being
-backed up or restored).
+backed up, restored, or deleted).
 
 To back up all apps at once, tap All at the top-left of the screen, and select
 Backup.  To restore all apps that have been backed up at once, tap All and
@@ -228,28 +222,21 @@ If you want to "backup the backups," you should back up the entire
     
     No. This is because jailbreak apps store their data in many different places,
     while App Store apps save their data in sandboxes that I can easily locate.
-    Also, there are known problems with App Store apps' data being removed during
-    updates, which is the main reason for making this program.
+    Also, the reason I made this program was because, at the time, there was a
+    known problem with App Store apps' data being removed during updates.
 
-2.  **Why does AppBackup crash when I open it?**
-    
-    You probably have "Enable at Launch" turned on in Backgrounder. To fix this
-    problem, turn off this option. (You can also turn it off just for AppBackup
-    by going into Overrides, adding AppBackup to the list, tapping AppBackup and
-    turning "Enable at Launch" off.)
-
-3.  **Does AppBackup work with iOS 4/5/6/7/14/1024?**
+2.  **Does AppBackup work with iOS 4/5/6/7/14/1024?**
     
     Some users have reported that AppBackup works on iOS 4 and 5, but I can't test
     AppBackup on iOS versions greater than 3.1.3 because I only have an iPhone 2G.
     However, if any problems are reported, I will try my best to fix them.
 
-4.  **Does iTunes back up data that I save through AppBackup?**
+3.  **Does iTunes back up data that I save through AppBackup?**
     
     Yes.  AppBackup stores its data under `/var/mobile/Library/Preferences`, which
     is backed up by iTunes.
 
-5.  **How do I get my AppBackup backups out of my backup in iTunes?**
+4.  **How do I get my AppBackup backups out of my backup in iTunes?**
     {: #extract-itunes-backup}
     
     For Windows:  (these instructions were tested in Windows 7 x64 Service Pack 1)
@@ -301,12 +288,15 @@ I use [Transifex](https://www.transifex.com/) to manage translations for AppBack
 If you would like to translate AppBackup to another language, or update an existing
 translation:
 
-**NOTE:  <span style="text-decoration: underline;">%@</span> is a placeholder for
-various items of text that are included at runtime.  You need to have the %@ in
-the appropriate places in your translations for AppBackup to work.**
+**NOTE:  <span style="text-decoration: underline;">%@</span> is a placeholder
+for various items of text that are included at runtime.  You need to have the
+%@ in the appropriate places in your translations for AppBackup to work.**  The
+instructions for each string containing %@ will tell you what the %@ stands for,
+although for many strings it will be obvious.
 
 1.  Go to [https://www.transifex.com/](https://www.transifex.com/).
-2.  Sign up for a free account or log in if you already have one.
+2.  Sign up for a free account or log in if you already have one.  (You will not
+    be able to see the resource otherwise).
 3.  Go to [https://www.transifex.com/projects/p/appbackup/resource/localizable-strings/](https://www.transifex.com/projects/p/appbackup/resource/localizable-strings/).
 4.  Click on your language and click **Translate Now**.  If your language is not
     there, click **Add Translation**, select your language, and click
@@ -340,13 +330,15 @@ released under the X11 License, which reads as follows:
     shall not be used in advertising or otherwise to promote the sale, use or
     other dealings in this Software without prior written authorization.
 
-See the LICENSE and CREDITS files for more information.
+See the [LICENSE.txt](http://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
+and [CREDITS](http://code.s.zeid.me/appbackup/src/master/CREDITS) files for
+more information.
 
 ## Source Code {#source}
 
 AppBackup's source code is available on Bitbucket at
 [http://code.s.zeid.me/appbackup](http://code.s.zeid.me/appbackup).
-AppBackup is written in Objective-C, Python 2.5, bash, and C.
+AppBackup is written in Objective-C, Python 2.5, POSIX shell, and C.
 
 ## Changes
 
