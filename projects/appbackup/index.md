@@ -79,25 +79,54 @@ If you want to help translate AppBackup into a different language, please see th
 > {: #ios-8-notice}
 > **AppBackup does not currently work on iOS 8.**
 > 
-> This is [being tracked as issue #2 on the bug tracker][issue-2]. 
-> I only have an original iPhone that cannot run anything greater than
-> iOS 3.x, and I need to actually play around with an iOS 8 installation
-> to find out precisely what needs to be done to fix it, so I have no ETA
-> for when it will be fixed, although I do *want* to fix it.
+> This is [being tracked as issue #6 on the bug tracker][issue-6]. 
+> I have no ETA for when it will be fixed, although I do *want* to fix it.
+> 
+> Currently, app listing works on iOS 8, but the GUI crashes due to bad
+> memory management on my part (probably because I wrote that part of the
+> code when I was in high school).
+> 
+> The command-line interface has been updated for iOS 8 and can be installed
+> on an iOS device as follows (run these commands on your device):
+> 
+>     $ sudo apt-get install setuptools
+>     $ sudo easy_install -U iosappbackup
+> 
+> Usage examples:
+> 
+>     $ iosappbackup ls
+>     Chrome (com.google.chrome.ios):  (not backed up)
+>     Facebook (com.facebook.Facebook):  (ignored)
+>     Test App, Please Ignore (example.Test-App--Please-Ignore):  2014-12-19 08:56:39
+>     $ iosappbackup backup com.google.chrome.ios
+>     $ iosappbackup unignore com.facebook.Facebook
+>     $ iosappbackup backup --all  # or -a
+>     $ iosappbackup ignore com.facebook.Facebook
+>     $ iosappbackup restore example.Test-App--Please-Ignore
+>     $ iosappbackup restore --all
+>     $ iosappbackup ls -l
+>     Chrome (com.google.chrome.ios):
+>                 Bundle name:  Chrome.app
+>       Bundle container path:  /var/mobile/Containers/Bundle/Application/B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
+>       Bundle container UUID:  B9DCED24-703C-4B08-B04D-3AE2EF0F6B71
+>         Data container path:  /var/mobile/Containers/Data/Application/67E32582-EB57-48B0-B5F8-9C6375E71641
+>         Data container UUID:  67E32582-EB57-48B0-B5F8-9C6375E71641
+>                     Useable:  True
+>                     Ignored:  False
+>                 Backup time:  2014-12-27 14:12:01
+>                 Backup path:  /var/mobile/Library/Preferences/AppBackup/tarballs/com.google.chrome.ios.tar.gz
+>     
+>     [...]
+> 
+> You can also run `iosappbackup --help` or just `iosappbackup` for more help
+> with the command-line interface, or `iosappbackup <command> --help` for help
+> with a particular command.
 > 
 > This page, the bug tracker, and the app's Facebook and Google+ pages
 > will be updated if and when I can get it fixed.  I am very sorry for
 > the problems this is causing for people.
 > 
-> In the meantime, please see [how to extract backups from iTunes][extract].
-> To manually restore backups, note that app data is now stored in
-> `/var/mobile/Containers/Data/<GUID>`, where `<GUID>` is random.  You
-> would need to find out for yourself which GUID folder belongs to which
-> app; this is one of the things I need to find out how to do programatically,
-> while retaining backwards compatibility with at least iOS **3.1.2** and later.
-> 
-> [issue-2]: http://code.s.zeid.me/appbackup/issue/2/add-support-for-ios-8
-> [extract]: #extract-itunes-backup
+> [issue-6]: http://code.s.zeid.me/appbackup/issue/6/fix-sporadic-crashes-on-ios-8
 
 **If you are using Backgrounder, disable the option to "Enable at Launch." If
 this is enabled, then AppBackup will crash when you open it.**  You can disable
