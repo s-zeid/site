@@ -19,21 +19,11 @@ if ($show_form) {
  </strong>
 </blockquote>
 
-<p>If you're contacting me about another problem with
+<p>If you're contacting me about a different problem with
  <a href="{% root %}/projects/appbackup/">AppBackup</a>,
  please attach the last crash log file from the
  <code>/var/mobile/Library/Logs/CrashReporter</code> folder that starts with
  <strong>AppBackupGUI_</strong>, if there is one.
-</p>
-
-<p>
- <strong>
-  If AppBackup is crashing on launch and you are using Backgrounder, disable
-  the option to "Enable at Launch."&nbsp;
- </strong>
- You can disable it just for AppBackup by going into Overrides, tapping Add,
- and choosing AppBackup.  Then select AppBackup and turn off "Enable at Launch."
- If AppBackup still crashes, continue filling out this form.
 </p>
 
 <p style="font-size: smaller;">
