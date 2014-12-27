@@ -1,8 +1,9 @@
 ---
 # vim: set fdm=marker fmr=[[[,]]]:
-layout: page
-title:  AppBackup
-icon:   icon.png
+layout:   page
+title:    AppBackup
+icon:     icon.png
+og-image: Square-Logo-Small.png
 
 description: >
  AppBackup is an app for jailbroken iOS devices that lets you back up and
@@ -29,9 +30,6 @@ stylus: |
   margin-top: 0;
  .screenshots > a > img
   height: 150px;
-
-head: |
- <meta property="og:image" content="./Square-Logo-Small.png" />
 
 ---
 
