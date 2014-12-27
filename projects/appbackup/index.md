@@ -18,7 +18,7 @@ contents:
  Backup location:                     backup-location
  FAQ:                                 faq
       Extracting backups from iTunes: extract-itunes-backup
- Command-line interface:              command-line-interface
+ Command-line interface:              cli
  Translations:                        translations
  Credits / License:                   credits-and-license
  Source Code:                         source
@@ -250,7 +250,7 @@ If you want to "backup the backups," you should back up the entire
     
     Mac OS X instructions coming soon.
 
-## Command-line interface
+## Command-line interface {#cli}
 
 AppBackup also has a command-line interface (which currently works with
 at least iOS 2.x—8.1.x).  It is available as part of the Cydia package or
@@ -267,7 +267,7 @@ between the two.
 To install the command-line interface from PyPI on a jailbroken iOS device,
 run these two commands on your device:
 
-    $ sudo apt-get install setuptools
+    $ sudo apt-get install python setuptools
     $ sudo easy_install -U iosappbackup
 
 Usage examples (only for the new `iosappbackup`):
