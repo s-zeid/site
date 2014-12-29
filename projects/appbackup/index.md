@@ -70,10 +70,11 @@ restore the saved data and settings of App Store apps.  **AppBackup DOES NOT
 back up the apps themselves, just the stuff they save (like settings, game
 progress, etc.)**
 
-AppBackup is [Free Software](https://www.gnu.org/philosophy/free-sw.html)
-released under [the X11 License](#credits-and-license). 
-[The source code for AppBackup](#source) is available on
-[Bitbucket](http://code.s.zeid.me/appbackup).
+AppBackup is [free software][free-sw], which means that [it respects your
+freedoms][free-sw].  [Its source code](#source) is freely available under
+the terms of [the X11 License](#credits-and-license).
+
+[free-sw]: https://www.gnu.org/philosophy/free-sw.html
 
 If you want to help translate AppBackup into a different language, please see the
 [Translations](#translations) section.
@@ -324,39 +325,24 @@ although for many strings it will be obvious.
 
 ## Credits / License {#credits-and-license}
 
-AppBackup is [Free Software](https://www.gnu.org/philosophy/free-sw.html)
-released under the X11 License, which reads as follows:
+AppBackup is [free software][free-sw], which means that [it respects your
+freedoms][free-sw].  [Its source code](#source) is freely available under
+the terms of the X11 License.  AppBackup also includes software released
+under similar free, permissive licenses.  For the full text of the license
+and copyright notices for AppBackup and all software included with it, see
+[the LICENSE.txt file](http://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
+in the source repository.
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+AppBackup would not have been possible without the work and help of others. 
+See [CREDITS.txt](http://code.s.zeid.me/appbackup/src/master/CREDITS.txt) for
+a list of these people.
 
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
-
-    Except as contained in this notice, the name(s) of the above copyright holders
-    shall not be used in advertising or otherwise to promote the sale, use or
-    other dealings in this Software without prior written authorization.
-
-See the [LICENSE.txt](http://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
-and [CREDITS.txt](http://code.s.zeid.me/appbackup/src/master/CREDITS.txt) files
-for more information.
+[free-sw]: https://www.gnu.org/philosophy/free-sw.html
 
 ## Source Code {#source}
 
 AppBackup's source code is available on Bitbucket at
-[http://code.s.zeid.me/appbackup](http://code.s.zeid.me/appbackup).
+[http://code.s.zeid.me/appbackup](http://code.s.zeid.me/appbackup). 
 AppBackup is written in Objective-C, Python 2.5, POSIX shell, and C.
 
 ## Changes
