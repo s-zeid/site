@@ -154,7 +154,7 @@ following packages are installed first:
 
 ## Usage
 
-To back up one app, open AppBackup, select the app, and then select Backup.
+To back up one app, open AppBackup, select the app, and then select Backup. 
 To restore an app, select it and then select Restore.  (If there is no restore
 option, then it hasn't been backed up yet.)  You can also choose to delete an
 app's backup, or to ignore or un-ignore the app (i.e. prevent it from being
@@ -167,7 +167,7 @@ option.)  You can also choose to delete all backups on your device (except thos
 for apps which have been ignored).
 
 The app list only shows apps that have already been installed through the App
-Store.  If you have just reset your device and you want to restore app data, then
+Store.  If you have just reset your device and you want to restore app data, then
 you must first reinstall the apps whose data you want to restore before AppBackup
 will let you restore their data.
 
@@ -175,7 +175,7 @@ will let you restore their data.
 
 Backups are stored in `/var/mobile/Library/Preferences/``AppBackup/tarballs`
 as files called `bundleid.tar.gz`, where `bundleid` is a given app's bundle
-identifier (e.g. com.ooi.supermonkeyball).  These files are regular
+identifier (e.g. com.ooi.supermonkeyball).  These files are regular
 [gzip-compressed tar archives](https://en.wikipedia.org/wiki/Tar_%28file_format%29)
 and can be opened with any program capable of viewing them (e.g. 
 [7-zip](http://www.7-zip.org/) on Windows).  Backup times are stored in an XML
@@ -190,15 +190,15 @@ If you want to "backup the backups," you should back up the entire
 1.  **Does AppBackup back up data from jailbreak apps (e.g. from Cydia or
     Installer 4)?**
     
-    No. This is because jailbreak apps store their data in many different places,
-    while App Store apps save their data in sandboxes that I can easily locate.
+    No.  This is because jailbreak apps store their data in many different places,
+    while App Store apps save their data in sandboxes that I can easily locate. 
     Also, the reason I made this program was because, at the time, there was a
     known problem with App Store apps' data being removed during updates.
 
 2.  **Does AppBackup work with iOS 4/5/6/7/14/1024?**
     
     Some users have reported that AppBackup works on iOS 4 and 5, but I can't test
-    AppBackup on iOS versions greater than 3.1.3 because I only have an iPhone 2G.
+    AppBackup on iOS versions greater than 3.1.3 because I only have an iPhone 2G. 
     However, if any problems are reported, I will try my best to fix them.
 
 3.  **Does iTunes back up data that I save through AppBackup?**
@@ -213,8 +213,8 @@ If you want to "backup the backups," you should back up the entire
     
     1.  Install the [MS Visual C++ 2010 x86 runtime](https://www.microsoft.com/download/en/details.aspx?id=5555)
         and .NET Framework 4 ([Web installer](https://www.microsoft.com/download/en/details.aspx?id=17851)
-        or [standalone](https://www.microsoft.com/download/en/details.aspx?id=17718)).
-        If you're on Windows XP, also install the [Microsoft IDN Mitigation APIs](https://www.microsoft.com/download/en/details.aspx?id=734).
+        or [standalone](https://www.microsoft.com/download/en/details.aspx?id=17718)). 
+        If you're on Windows XP, also install the [Microsoft IDN Mitigation APIs](https://www.microsoft.com/download/en/details.aspx?id=734). 
         All of these libraries are required to run the program in step 2.
     2.  Download [iPhone Backup Browser](https://code.google.com/p/iphonebackupbrowser/)
         (not to be confused with the non-free iPhone Backup Extractor) and
@@ -304,7 +304,7 @@ with a particular command.
 
 ## Translations
 
-I use [Transifex](https://www.transifex.com/) to manage translations for AppBackup.
+I use [Transifex](https://www.transifex.com/) to manage translations for AppBackup. 
 If you would like to translate AppBackup to another language, or update an existing
 translation:
 
@@ -315,7 +315,7 @@ instructions for each string containing %@ will tell you what the %@ stands for,
 although for many strings it will be obvious.
 
 1.  Go to [https://www.transifex.com/](https://www.transifex.com/).
-2.  Sign up for a free account or log in if you already have one.  (You will not
+2.  Sign up for a free account or log in if you already have one.  (You will not
     be able to see the resource otherwise).
 3.  Go to [https://www.transifex.com/projects/p/appbackup/resource/localizable-strings/](https://www.transifex.com/projects/p/appbackup/resource/localizable-strings/).
 4.  Click on your language and click **Translate Now**.  If your language is not
