@@ -90,7 +90,7 @@ If you want to help translate AppBackup into a different language, please see th
 > code when I was in high school).
 > 
 > The command-line interface has been updated for iOS 8.  [Instructions on
-> how to install and use it can be found here.](#command-line-interface)
+> how to install and use it can be found here.](#cli)
 > 
 > This page, the bug tracker, and the app's Facebook and Google+ pages
 > will be updated if and when I can get it fixed.  I am very sorry for
