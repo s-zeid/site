@@ -174,26 +174,31 @@ will let you restore their data.
 ## Backup location {#backup-location}
 
 Backups are stored in `/var/mobile/Library/Preferences/``AppBackup/tarballs`
-as files called `bundleid.tar.gz`, where `bundleid` is a given app's bundle
-identifier (e.g. com.ooi.supermonkeyball).  These files are regular
-[gzip-compressed tar archives](https://en.wikipedia.org/wiki/Tar_%28file_format%29)
+as files called `<bundle-id>.tar.gz`, where `<bundle-id>` is the respective
+app's bundle identifier (e.g. `com.ooi.supermonkeyball`).  These files are
+regular [gzip-compressed tar archives](https://en.wikipedia.org/wiki/Tar_%28file_format%29)
 and can be opened with any program capable of viewing them (e.g. 
-[7-zip](http://www.7-zip.org/) on Windows).  Backup times are stored in an XML
-property list at `/var/mobile/Library/Preferences/``AppBackup/backuptimes.plist`
-as Unix timestamps.
+[7-zip](http://www.7-zip.org/) on Windows).
 
-If you want to "backup the backups," you should back up the entire
+If you want to "back up the backups," you should back up the entire
 `/var/mobile/Library/Preferences/``AppBackup` directory tree.
+
+Backup times are stored as an XML property list at
+ `/var/mobile/Library/Preferences/``AppBackup/backuptimes.plist`
+as Unix timestamps. 
+The list of ignored apps is stored as a plain text file at
+ `/var/mobile/Library/Preferences/``AppBackup/ignore.txt`,
+with each app's bundle ID on a separate line.
 
 ## FAQ
 
-1.  **Does AppBackup back up data from jailbreak apps (e.g. from Cydia or
-    Installer 4)?**
+1.  **Does AppBackup back up data from jailbreak apps (e.g. from Cydia)?**
     
-    No.  This is because jailbreak apps store their data in many different places,
-    while App Store apps save their data in sandboxes that I can easily locate. 
-    Also, the reason I made this program was because, at the time, there was a
-    known problem with App Store apps' data being removed during updates.
+    No.  This is because jailbreak apps store their data in many different
+    places, while App Store apps save their data in sandboxes that I can
+    easily locate.  Also, the reason I made AppBackup was because, at the
+    time, there was a known problem with App Store apps' data being removed
+    during updates.
 
 2.  **Does AppBackup work with iOS 4/5/6/7/14/1024?**
     
@@ -230,7 +235,7 @@ If you want to "backup the backups," you should back up the entire
         ![](extract-windows/dropdown.png)
         
     5.	In the top pane, click on the entry whose Display Name is `---` and whose
-        Name is System.
+        Name is `System`.
         
         ![](extract-windows/system-select.png)
         
