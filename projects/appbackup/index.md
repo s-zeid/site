@@ -350,8 +350,8 @@ released under the X11 License, which reads as follows:
     other dealings in this Software without prior written authorization.
 
 See the [LICENSE.txt](http://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
-and [CREDITS](http://code.s.zeid.me/appbackup/src/master/CREDITS) files for
-more information.
+and [CREDITS.txt](http://code.s.zeid.me/appbackup/src/master/CREDITS.txt) files
+for more information.
 
 ## Source Code {#source}
 
