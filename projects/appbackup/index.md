@@ -277,6 +277,8 @@ run these two commands on your device:
     $ sudo apt-get install python setuptools
     $ sudo easy_install -U iosappbackup
 
+(The `-U` means to upgrade the package if it's already installed.)
+
 Usage examples (only for the new `iosappbackup`):
 
     $ iosappbackup ls
@@ -306,6 +308,40 @@ Usage examples (only for the new `iosappbackup`):
 You can also run `iosappbackup --help` or just `iosappbackup` for more help
 with the command-line interface, or `iosappbackup <command> --help` for help
 with a particular command.
+
+*                         *                          *                         *
+
+You can also install the AppBackup command-line interface on a Mac (e.g. to
+use it with the iOS Simulator), or even on a non-Apple operating system such
+as GNU/Linux.  To do so, first install pip if you don't have it already:
+
+    # On a Mac (OS X comes with Python 2.7 and setuptools):
+    $ sudo easy_install -U pip
+    # ...or on certain Linux distributions:
+    ubuntu$ sudo apt-get install python-pip
+    fedora$ sudo apt-get install python-pip
+      arch$ sudo pacman -S python2-pip
+
+Then install `iosappbackup` using `pip` (on Arch, use `pip2`):
+
+    $ sudo pip install -U --pre iosappbackup
+
+(As with `easy_install`, the `-U` means to upgrade the package if it's already
+installed.)
+
+(Using `pip` is recommended as it allows you to uninstall packages, whereas
+`easy_install` doesn't.  On an iDevice, however, you must use `easy_install`
+because `pip` doesn't work with Python 2.5.)
+
+If you are not using `iosappbackup` on an iOS device, you will need to tell
+it where your apps are with the `-r` (or `--root`) option:
+
+    $ iosappbackup -r ~/Library/Developer/CoreSimulator/Devices/<uuid>/data ls
+    $ iosappbackup -r stuffs/var-mobile backup com.mojang.minecraftpe
+
+It will use the `Library/Preferences/AppBackup` directory inside the directory
+given with `-r` as the backup and data location.  You can also use the `-c` (or
+`--config-dir`) option to use a different location.
 
 ## Translations
 
