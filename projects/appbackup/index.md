@@ -260,7 +260,7 @@ with each app's bundle ID on a separate line.
 ## Command-line interface {#cli}
 
 AppBackup also has a command-line interface (which currently works with
-at least iOS 2.x—8.1.x).  It is available as part of the Cydia package or
+at least iOS 2.x–8.1.x).  It is available as part of the Cydia package or
 [from the Python Package Index](https://pypi.python.org/pypi/iosappbackup).
 
 The command-line interface that comes with the Cydia package is called
