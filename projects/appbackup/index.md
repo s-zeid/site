@@ -272,8 +272,9 @@ thing, but the name difference will remain in order to avoid conflicts
 between the two.
 
 To install the command-line interface from PyPI on a jailbroken iOS device,
-run these two commands on your device:
+run these three commands on your device:
 
+    $ sudo apt-get update
     $ sudo apt-get install python setuptools
     $ sudo easy_install -U iosappbackup
 
@@ -318,7 +319,7 @@ as GNU/Linux.  To do so, first install pip if you don't have it already:
     # On a Mac (OS X comes with Python 2.7 and setuptools):
     $ sudo easy_install -U pip
     # ...or on certain Linux distributions:
-    ubuntu$ sudo apt-get install python-pip
+    ubuntu$ sudo apt-get update; sudo apt-get install python-pip
     fedora$ sudo apt-get install python-pip
       arch$ sudo pacman -S python2-pip
 
@@ -341,7 +342,7 @@ it where your apps are with the `-r` (or `--root`) option:
 
 It will use the `Library/Preferences/AppBackup` directory inside the directory
 given with `-r` as the backup and data location.  You can also use the `-c` (or
-`--config-dir`) option to use a different location.
+`--config-dir`) option to use a different location for the backups and data.
 
 ## Translations
 
