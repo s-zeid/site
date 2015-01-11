@@ -52,7 +52,8 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 * Uses [Jekyll](https://github.com/jekyll/jekyll),
   [Stylus](http://learnboost.github.com/stylus/),
   GNU `make`, and a little bit of PHP (for
-  [the contact form](http://code.s.zeid.me/site/src/master/contact/) and
+  [blog comments](http://code.s.zeid.me/freecomment),
+  [the contact form](http://code.s.zeid.me/site/src/master/contact/), and
   [redirecting](http://code.s.zeid.me/site-design/src/master/static/redirect.php)
   [old URLs](http://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
   [See the source here.](http://code.s.zeid.me/site/src)
