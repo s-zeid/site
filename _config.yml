@@ -29,3 +29,4 @@ portal:         # Optional integration with <http://code.s.zeid.me/portal>
  url:                //s.zeid.me/more/    # Uncomment to enable
  highlight:          s.zeid.me
  theme:              new
+ max-icons:          16    # Controls the width of the portal's iframe (n*24px)
