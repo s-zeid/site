@@ -17,7 +17,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 ## Tech
 
 * Linux (currently Fedora), Android (I have a Nexus 5 and a 2013 Nexus 7
-  running CyanogenMod 12, and a Xoom running CyanogenMod 10), Firefox
+  running CyanogenMod 12), Firefox
 * [IPv6 sage](http://ipv6.he.net/certification/scoresheet.php?pass_name=scottywz)
 * [Minceraft](https://craft.bnay.me/)
 * [Anti-Apple](https://www.stallman.org/apple.html)
