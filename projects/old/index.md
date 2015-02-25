@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: subpage-list
 title: Old
 nav:
  sort-key: /projects/zzz/old
