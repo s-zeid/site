@@ -50,7 +50,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 ## About this Web site {#site}
 
 * Uses [Jekyll](https://github.com/jekyll/jekyll),
-  [Stylus](http://learnboost.github.com/stylus/),
+  [Stylus](https://learnboost.github.io/stylus/),
   GNU `make`, and a little bit of PHP (for
   [blog comments](http://code.s.zeid.me/freecomment),
   [the contact form](http://code.s.zeid.me/site/src/master/contact/), and
