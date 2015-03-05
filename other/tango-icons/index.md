@@ -19,11 +19,11 @@ This is very loosely based on
 [the App\_bootman icon](//uploads.s.zeid.me/tango-icons/Boot/App_bootman.svg)
 from [the Haiku operating system](https://www.haiku-os.org/).
 
-<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="//uploads.s.zeid.me/tango-icons/display.php?icon=Boot" width="448"><!----></iframe>
+{% include_relative icon.html name="Boot" %}
 
 **SVGs:**
-[16x16](//uploads.s.zeid.me/tango-icons/Boot/Boot-16.svg)
-[48x48](//uploads.s.zeid.me/tango-icons/Boot/Boot-48.svg)
+[16x16]({% include_relative icon.html name="Boot" url="16.svg" %})
+[48x48]({% include_relative icon.html name="Boot" url="48.svg" %})
 
 [Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:Boot_icon.svg)
 
@@ -38,13 +38,13 @@ This icon was made on July 29 and 30, 2014.
 
 ## Google+ {#google-plus}
 
-<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="//uploads.s.zeid.me/tango-icons/display.php?icon=Google-Plus" width="448"><!----></iframe>
+{% include_relative icon.html name="Google-Plus" %}
 
 **SVGs:**
-[16x16](//uploads.s.zeid.me/tango-icons/Google-Plus/Google-Plus-16.svg)
-[22x22](//uploads.s.zeid.me/tango-icons/Google-Plus/Google-Plus-22.svg)
-[32x32](//uploads.s.zeid.me/tango-icons/Google-Plus/Google-Plus-32.svg)
-[48x48](//uploads.s.zeid.me/tango-icons/Google-Plus/Google-Plus-48.svg)
+[16x16]({% include_relative icon.html name="Google-Plus" url="16.svg" %})
+[22x22]({% include_relative icon.html name="Google-Plus" url="22.svg" %})
+[32x32]({% include_relative icon.html name="Google-Plus" url="32.svg" %})
+[48x48]({% include_relative icon.html name="Google-Plus" url="48.svg" %})
 
 ## iTunes
 
@@ -53,12 +53,12 @@ This is a combination of
 [media-optical.svg](//uploads.s.zeid.me/tango-icons/iTunes/media-optical.svg),
 both from the Tango project.
 
-<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="//uploads.s.zeid.me/tango-icons/display.php?icon=iTunes" width="448"><!----></iframe>
+{% include_relative icon.html name="iTunes" %}
 
 **SVGs:**
 
-[16x16](//uploads.s.zeid.me/tango-icons/iTunes/iTunes-16.svg)
-[48x48](//uploads.s.zeid.me/tango-icons/iTunes/iTunes-48.svg)
+[16x16]({% include_relative icon.html name="iTunes" url="16.svg" %})
+[48x48]({% include_relative icon.html name="iTunes" url="48.svg" %})
 
 [Windows<sup>®</sup> icon file](//uploads.s.zeid.me/tango-icons/iTunes/iTunes.ico)
 
@@ -78,13 +78,13 @@ icon for [TilEm](http://lpg.ticalc.org/prj_tilem/) and
 the TilEm project as the application's official icon,
 [with a different image on the calculator's screen](//uploads.srwz.us/tango-icons/TI-84-Plus-Silver-Edition/TilEm-48.png).
 
-<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="//uploads.s.zeid.me/tango-icons/display.php?icon=TI-84-Plus-Silver-Edition" width="448"><!----></iframe>
+{% include_relative icon.html name="TI-84-Plus-Silver-Edition" %}
 
 **SVGs:**
-[16x16](//uploads.s.zeid.me/tango-icons/TI-84-Plus-Silver-Edition/TI-84-Plus-Silver-Edition-16.svg)
-[24x24](//uploads.s.zeid.me/tango-icons/TI-84-Plus-Silver-Edition/TI-84-Plus-Silver-Edition-24.svg)
-[32x32](//uploads.s.zeid.me/tango-icons/TI-84-Plus-Silver-Edition/TI-84-Plus-Silver-Edition-32.svg)
-[48x48](//uploads.s.zeid.me/tango-icons/TI-84-Plus-Silver-Edition/TI-84-Plus-Silver-Edition-48.svg)
+[16x16]({% include_relative icon.html name="TI-84-Plus-Silver-Edition" url="16.svg" %})
+[24x24]({% include_relative icon.html name="TI-84-Plus-Silver-Edition" url="24.svg" %})
+[32x32]({% include_relative icon.html name="TI-84-Plus-Silver-Edition" url="32.svg" %})
+[48x48]({% include_relative icon.html name="TI-84-Plus-Silver-Edition" url="48.svg" %})
 
 [Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:Calculator-ti-84-plus-silver-edition.svg)
 
@@ -98,12 +98,12 @@ This icon was made on September 13, 2008.
 
 I made this from an SVG of the real TiVo logo.
 
-<iframe style="width: 448px; height: 256px; overflow: hidden; border-style: none;" height="256" src="//uploads.s.zeid.me/tango-icons/display.php?icon=TiVo" width="448"><!----></iframe>
+{% include_relative icon.html name="TiVo" %}
 
 **SVGs:**
-[16x16](//uploads.s.zeid.me/tango-icons/TiVo/TiVo-16.svg)
-[22x22](//uploads.s.zeid.me/tango-icons/TiVo/TiVo-22.svg)
-[48x48](//uploads.s.zeid.me/tango-icons/TiVo/TiVo-48.svg)
+[16x16]({% include_relative icon.html name="TiVo" url="16.svg" %})
+[22x22]({% include_relative icon.html name="TiVo" url="22.svg" %})
+[48x48]({% include_relative icon.html name="TiVo" url="48.svg" %})
 
 ## License
 
