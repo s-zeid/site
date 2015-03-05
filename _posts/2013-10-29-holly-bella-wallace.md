@@ -4,7 +4,7 @@ title:  Holly Bella Wallace
 date:   2013-10-29 06:31
 ---
 
-[![](2013-01-07%2016.07.55_m3.small.jpg)](2013-01-07%2016.07.55_m3.jpg)<!--_-->  
+[![]({% dir %}/2013-01-07%2016.07.55_m3.small.jpg)]({% dir %}/2013-01-07%2016.07.55_m3.jpg)<!--_-->  
 <span style="font-size: small;">Monday, January 7, 2013</span>
 
 ## HOLLY BELLA WALLACE
@@ -16,5 +16,5 @@ date:   2013-10-29 06:31
 I will always love you, sweet Holly.  You beautiful, sweet baby girl.
 
    
-[![](00008.small.jpg)](00008.jpg)  
+[![]({% dir %}/00008.small.jpg)]({% dir %}/00008.jpg)  
 <span style="font-size: small;">Saturday, March 29, 2008</span>

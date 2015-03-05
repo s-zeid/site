@@ -11,13 +11,13 @@ iTunes only because it's from the *iTunes Festival*; I avoid anything made by
 Apple to the fullest extent possible), when I found this:
 
 ![The album "Selected Letters of Sergei Rachmaninoff" by Anton Batagov in the
-iTunes US search results for "Einaudi".]({% postfile album-in-search-results.png %})
+iTunes US search results for "Einaudi".]({% dir %}/album-in-search-results.png)
 
 I was wondering why it would show up in the search results for Einaudi, so I
 clicked on it only to find this:
 
 ![The album page in the iTunes app.  Track 5 has 100% popularity, and the other
-tracks have zero popularity.]({% postfile album-page-itunes.png %})
+tracks have zero popularity.]({% dir %}/album-page-itunes.png)
 
 Of course, it doesn't show the full track names in a tooltip, so I go to the
 Web page for it.  Of course, *it* doesn't show tooltips either, so I fiddle
@@ -25,7 +25,7 @@ around with the CSS a bit to widen the column and see this:
 
 ![The album page in the iTunes Web site, modified to show the full track names.
 Track 5 is called "Letter from Sergei Rachmaninoff to Ludovico Einaudi", and
-Ludovico Einaudi's name is highlighted.]({% postfile album-page-web.png %})
+Ludovico Einaudi's name is highlighted.]({% dir %}/album-page-web.png)
 
 I looked back at the page in the iTunes app and noticed that track five is the
 only popular song on the album.  After seeing the full name of the track, it's
