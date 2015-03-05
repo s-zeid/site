@@ -10,20 +10,20 @@ description: >
  restore the saved data and settings of App Store apps.
 
 contents:
- Introduction:                        intro
- Download AppBackup:                  download
- Screenshots:                         screenshots
- Requirements:                        requirements
- Installation:                        installation
- Usage:                               usage
- Backup location:                     backup-location
- FAQ:                                 faq
-      Extracting backups from iTunes: extract-itunes-backup
- Command-line interface:              cli
- Translations:                        translations
- Credits / License:                   credits-and-license
- Source Code:                         source
- Changes:                             changes
+ Introduction:                       intro
+ Download AppBackup:                 download
+ Screenshots:                        screenshots
+ Requirements:                       requirements
+ Installation:                       installation
+ Usage:                              usage
+ Backup location:                    backup-location
+ FAQ:                                faq
+   Extracting backups from iTunes  : extract-itunes-backup
+ Command-line interface:             cli
+ Translations:                       translations
+ Credits / License:                  credits-and-license
+ Source Code:                        source
+ Changes:                            changes
 
 stylus: |
  article > :first-child + aside + p
