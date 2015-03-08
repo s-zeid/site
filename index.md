@@ -32,7 +32,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 ## Music
 
 * Current favorites:  Ludovico Einaudi, Nils Frahm
-* I also like Celtic music (especially [Solas][] and [Lúnasa][]), [Antje Duvekot][Antje],
+* I also like Celtic music (especially [Solas][] and [Lúnasa][]{: title="Kevin Crawford gave me a free CD!"}), [Antje Duvekot][Antje],
   Le Vent du Nord, Marconi Union, Blow Up Hollywood, and Ludovico Einaudi.
 * I sing second bass and I am a proud member of [Eric Whitacre's Virtual Choir][EWVC],
   starting with [version 2.0 ("Sleep")][Sleep]{: style="display: inline-block;"}.
