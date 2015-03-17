@@ -32,5 +32,5 @@ $.get($("html").attr("data-root") + "/more/?json", function(portal) {
    return "";
   });
   return span.append(a);
- })()).show();
+ })()).removeClass("hide").show();
 }, "json");
