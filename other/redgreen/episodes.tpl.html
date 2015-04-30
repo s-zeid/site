@@ -71,20 +71,17 @@ stylus: |
   <main>
    <header>
     <nav>
-     <p>
-      <ul>
-       {% for i in page.contents %}
-       <li><a href="#{{ i[1] }}">{{ i[0] }}</a></li>
-       {% endfor %}
-      </ul>
-     </p>
+     <ul>
+      {% for i in page.contents %}
+      <li><a href="#{{ i[1] }}">{{ i[0] }}</a></li>
+      {% endfor %}
+     </ul>
     </nav>
    </header>
    <hr />
    <article>
     {% capture episodes_md %}{% include_relative episodes.md %}{% endcapture %}
-{% endstrip %}{% indent 4 %}{{ episodes_md | markdownify }}{% endindent %}{% strip %}
-   </article>
+{% endstrip %}{% indent 4 %}{{ episodes_md | markdownify }}{% endindent %}{% strip %}   </article>
   </main>
  </body>
 </html>{% endstrip %}{% endrootify %}{% if page.after-html %}{{ page.after-html }}{% endif %}{% comment %}
