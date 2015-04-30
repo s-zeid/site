@@ -1,0 +1,105 @@
+---
+layout: none
+title: Red Green Episodes
+contents:
+ Season 1 (Episodes 1–24):     season-1
+ Season 2 (Episodes 25–48):    season-2
+ Season 3 (Episodes 49–72):    season-3
+ Season 4 (Episodes 73–96):    season-4
+ Season 5 (Episodes 97–120):   season-5
+ Season 6 (Episodes 121–144):  season-6
+ Season 7 (Episodes 145–161):  season-7
+ Season 8 (Episodes 162–175):  season-8
+ Season 9 (Episodes 176–191):  season-9
+ Season 10 (Episodes 192–210): season-10
+ Season 11 (Episodes 211–227): season-11
+ Season 12 (Episodes 228–245): season-12
+ Season 13 (Episodes 246–263): season-13
+ Season 14 (Episodes 264–281): season-14
+ Season 15 (Episodes 282–300): season-15
+nav:
+ hide: True
+stylus: |
+ @import "../../_config"  //_
+ header > nav
+  ul
+   margin: 0;
+   padding-left: 1.2em;
+   > li
+    margin-top: 0.5em;
+    list-style: none;
+    line-height: 1.25em;
+    &:first-child
+     margin-top: 0.75em;
+  > ul
+   padding-left: 0;
+  + nav
+   margin-top: 1em;
+ h3
+  text-transform: none;
+  letter-spacing: normal;
+ h2, h3
+  a[href^="#"]
+   float: right;
+   letter-spacing: normal;
+   opacity: 0.125;
+   color: $text-lighter;
+   &:hover
+    opacity: 1;
+    color: $links;
+---
+
+{% if page.before-html %}{{ page.before-html }}{% endif %}<!DOCTYPE html>
+{% rootify %}{% strip %}
+{% if page.title == "Home" %}{% assign home = true %}{% endif %}
+<html data-root="{% capture root_html_data %}{% root %}{% endcapture %}{{ root_html_data | xml_escape }}">
+ <head>
+  <meta charset="utf-8" />
+  <title>{% strip %}
+   {% if page.html-title and home == null %}
+   {% if page.raw-html-title %}{{ page.html-title }}{% else %}{{ page.html-title|strip_html }}{% endif %} &middot; {{ site.name | strip_html }}
+   {% elsif page.title and home == null %}
+   {% if page.raw-html-title %}{{ page.title }}{% else %}{{ page.title|strip_html }}{% endif %} &middot; {{ site.name | strip_html }}
+   {% else %}
+   {{ site.name | strip_html }}
+   {% endif %}
+  {% endstrip %}</title>
+  <meta name="viewport" content="width=device-width; minimum-scale=1.0; initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="{% root %}/styles/basic.css" />{% endstrip %}{% if page.stylus or page.css %}
+  <style type="text/css"> /* Page-specific styles */
+{% indent 3 %}{% if page.stylus %}/* Compiled Stylus code */
+{% stylus %}{{ page.stylus }}{% endstylus %}{% endif %}{% if page.css %}/* Plain CSS */
+{{ page.css }}{% endif %}{% endindent %}  </style>{% endif %}{% strip %}
+ </head>
+ <body>
+  <h1>{% strip %}{% unless home or page.h1 == false %}
+   {% if page.h1 and page.h1 != true %}
+    {{ page.h1 }}
+   {% elsif page.title == null or page.title == "" %}
+    {% slug %}
+   {% else %}
+    {{ page.title }}
+   {% endif %}
+  {% endunless %}{% endstrip %}</h1>
+  <main>
+   <header>
+    <nav>
+     <p>
+      <ul>
+       {% for i in page.contents %}
+       <li><a href="#{{ i[1] }}">{{ i[0] }}</a></li>
+       {% endfor %}
+      </ul>
+     </p>
+    </nav>
+   </header>
+   <hr />
+   <article>
+    {% capture episodes_md %}{% include_relative episodes.md %}{% endcapture %}
+{% endstrip %}{% indent 4 %}{{ episodes_md | markdownify }}{% endindent %}{% strip %}
+   </article>
+  </main>
+ </body>
+</html>{% endstrip %}{% endrootify %}{% if page.after-html %}{{ page.after-html }}{% endif %}{% comment %}
+vim: set ft=liquid: {% endcomment %}
+
