@@ -1,11 +1,12 @@
 {$ template $}
 ---
-layout: none
+layout: basic
 title: Red Green Episodes
 contents:
 {$ contents $}
 nav:
  hide: True
+show-copyright: False
 stylus: |
  @import "../../_config"  //_
  header > nav
@@ -36,53 +37,5 @@ stylus: |
     color: $links;
 ---
 
-{% if page.before-html %}{{ page.before-html }}{% endif %}<!DOCTYPE html>
-{% rootify %}{% strip %}
-{% if page.title == "Home" %}{% assign home = true %}{% endif %}
-<html data-root="{% capture root_html_data %}{% root %}{% endcapture %}{{ root_html_data | xml_escape }}">
- <head>
-  <meta charset="utf-8" />
-  <title>{% strip %}
-   {% if page.html-title and home == null %}
-   {% if page.raw-html-title %}{{ page.html-title }}{% else %}{{ page.html-title|strip_html }}{% endif %} &middot; {{ site.name | strip_html }}
-   {% elsif page.title and home == null %}
-   {% if page.raw-html-title %}{{ page.title }}{% else %}{{ page.title|strip_html }}{% endif %} &middot; {{ site.name | strip_html }}
-   {% else %}
-   {{ site.name | strip_html }}
-   {% endif %}
-  {% endstrip %}</title>
-  <meta name="viewport" content="width=device-width; minimum-scale=1.0; initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="{% root %}/styles/basic.css" />{% endstrip %}{% if page.stylus or page.css %}
-  <style type="text/css"> /* Page-specific styles */
-{% indent 3 %}{% if page.stylus %}/* Compiled Stylus code */
-{% stylus %}{{ page.stylus }}{% endstylus %}{% endif %}{% if page.css %}/* Plain CSS */
-{{ page.css }}{% endif %}{% endindent %}  </style>{% endif %}{% strip %}
- </head>
- <body>
-  <h1>{% strip %}{% unless home or page.h1 == false %}
-   {% if page.h1 and page.h1 != true %}
-    {{ page.h1 }}
-   {% elsif page.title == null or page.title == "" %}
-    {% slug %}
-   {% else %}
-    {{ page.title }}
-   {% endif %}
-  {% endunless %}{% endstrip %}</h1>
-  <main>
-   <header>
-    <nav>
-     <ul>
-      {% for i in page.contents %}
-      <li><a href="#{{ i[1] }}">{{ i[0] }}</a></li>
-      {% endfor %}
-     </ul>
-    </nav>
-   </header>
-   <hr />
-   <article>
-    {% capture episodes_md %}{% include_relative episodes.md %}{% endcapture %}
-{% endstrip %}{% indent 4 %}{{ episodes_md | markdownify }}{% endindent %}{% strip %}   </article>
-  </main>
- </body>
-</html>{% endstrip %}{% endrootify %}{% if page.after-html %}{{ page.after-html }}{% endif %}{% comment %}
-vim: set ft=liquid: {% endcomment %}
+{% capture episodes_md %}{% include_relative episodes.md %}{% endcapture %}
+{{ episodes_md | markdownify }}
