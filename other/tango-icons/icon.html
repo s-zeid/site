@@ -1,8 +1,11 @@
-{% strip %}{% capture base %}https://uploads.s.zeid.me/tango-icons{% endcapture %}
+{% strip %}
+{% capture base %}https://uploads.s.zeid.me/tango-icons{% endcapture %}
 {% if include.url %}
-{{ base }}/{{ include.name }}/{{ include.name }}-{{ include.url }}{% else %}
+{{ base }}/{{ include.name }}/{{ include.name }}-{{ include.url }}
+{% else %}
 {% capture url %}{{ base }}/display.php?icon={{ include.name }}{% endcapture %}
 <iframe src="{{ url }}" style="width: 448px; height: 256px; overflow: hidden; border-style: none;">
  <a href="{{ url }}">Click here to preview the icon.</a>
 </iframe>
-{% endif %}{% endstrip %}
+{% endif %}
+{% endstrip %}
