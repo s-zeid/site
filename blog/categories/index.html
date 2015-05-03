@@ -3,13 +3,16 @@ layout: blog
 title:  Categories
 ---
 
-{% strip %}{% for i in site.categories %}<nav>
+{% strip %}
+{% for i in site.categories %}
+<nav>
  <h2>
   <a href="{% root %}/blog/categories/{{ i[0] | uri_escape }}">{{ i[0] }}</a>
  </h2>
  <ul>{% assign n = "*" %}
  {% for p in site.posts %}{% if p.categories contains i[0] %}
-  {% if n contains "*******" %}{% elsif n contains "******" %}
+  {% if n contains "*******" %}
+  {% elsif n contains "******" %}
   <li>
    <a href="{% root %}/blog/categories/{{ i[0] | uri_escape }}">
     More... ({{ i[1] | size }} total)
@@ -26,4 +29,6 @@ title:  Categories
   {% capture n %}{{ n }}*{% endcapture %}
  {% endif %}{% endfor %}
  </ul>
-</nav>{% endfor %}{% endstrip %}
+</nav>
+{% endfor %}
+{% endstrip %}

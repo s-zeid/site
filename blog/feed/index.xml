@@ -1,6 +1,7 @@
 ---
 ---
 
+{% strip %}
 <?xml version="1.0" encoding="utf-8"?>{% capture slug %}{% slug %}{% endcapture %}
 <feed xmlns="http://www.w3.org/2005/Atom">
  <id>{{ site.full-url | xml_escape }}/</id>
@@ -13,7 +14,8 @@
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <link href="{{ site.full-url | xml_escape }}{{ slug | xml_escape }}" rel="self" />
  <link href="{{ site.full-url | xml_escape }}/" />
- {% for p in site.posts limit:15 %}{% strip %}
+ {% endstrip %}{% for p in site.posts limit:15 %}
+ {% strip %}
  <entry>
   <id>{{ site.full-url | xml_escape }}{{ p.url | xml_escape }}</id>
   <title>{{ p.title | xml_escape }}</title>
@@ -21,7 +23,10 @@
   <published>{{ p.date | date_to_xmlschema }}</published>
   <link href="{{ site.full-url | xml_escape }}{{ p.url | xml_escape }}" />
   <content type="html"><![CDATA[
-{% endstrip %}{% indent 3 %}{{ p.content }}{% endindent %}{% strip %}
+  {% endstrip %}
+{% indent 3 %}{{ p.content }}{% endindent %}
+  {% strip %}
   ]]></content>
  </entry>
-{% endstrip %}{% endfor %}</feed>
+ {% endstrip %}{% endfor %}
+</feed>
