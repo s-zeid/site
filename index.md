@@ -25,7 +25,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 ## Coding
 
 * Python, PHP, HTML 5/CSS 3, JavaScript, shell, C/C++/Objective-C
-* Vim ([rc](http://s.zeid.me/vimrc))
+* Vim ([rc](https://s.zeid.me/vimrc))
 * I indent with one space.
 * [Bitbucket](http://code.s.zeid.me/)
 
