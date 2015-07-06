@@ -9,43 +9,76 @@ contents:
  About this Web site: site
 description: >
  I am a computer science student and sometimes penguin in Dallas, Texas.
+stylus: |
+ #music + ul a[href*="ericwhitacre.com"] ~ a  //*
+  display: inline-block;
+head: |
+ <script type="text/javascript">
+  /* Collapse extra whitespace in link tooltips in the main article */
+  $(document).ready(function() {
+   $("main > article a[title]").attr("title", function(i, value) {
+    return value.replace(/[\n\t ]+/g, " ");
+   });
+  });
+ </script>
 
 ---
 
 I am a computer science student and sometimes penguin in Dallas, Texas.
 
+
 ## Tech
 
-* Linux (currently Fedora), Android (I have a Nexus 5 and a 2013 Nexus 7
-  running CyanogenMod 12), Firefox
-* [IPv6 sage](http://ipv6.he.net/certification/scoresheet.php?pass_name=scottywz)
-* [Minceraft](https://craft.bnay.me/)
-* [Anti-Apple](https://www.stallman.org/apple.html)
+* Linux (currently Fedora), Android (I have a Nexus 5 and an LTE 2013 Nexus 7
+  running CyanogenMod 12.x), Firefox
+* [Anti-Apple](https://www.stallman.org/apple.html){:
+   title="''Those who would give up essential Liberty, to purchase a little
+          temporary Safety, deserve neither Liberty nor Safety.''
+                                                    —Benjamin Franklin"}
+* I believe in [free software](https://www.gnu.org/philosophy/free-sw.html)
+  and prefer to use it when possible.
+* If necessary, I use virtual machines (using QEMU/KVM) to run software that
+  is not available for Linux.
+* Games I like include SuperTux, Minecraft, SNES Yoshi's Island, Super Mario
+  Sunshine, and Super Mario 64.
+
 
 ## Coding
 
-* Python, PHP, HTML 5/CSS 3, JavaScript, shell, C/C++/Objective-C
+* Python, [portable shell][], HTML 5/CSS 3, JavaScript, PHP, Objective-C
+  (kinda), some Ruby, *a little* C/C++
 * Vim ([rc](https://s.zeid.me/vimrc))
 * I indent with one space.
 * [Bitbucket](http://code.s.zeid.me/)
 
+[portable shell]: https://www.gnu.org/software/autoconf/manual/html_node/Portable-Shell.html
+
+
 ## Music
 
-* Current favorites:  Ludovico Einaudi, Nils Frahm
-* I also like Celtic music (especially [Solas][] and [Lúnasa][]{: title="Kevin Crawford gave me a free CD!"}), [Antje Duvekot][Antje],
-  Le Vent du Nord, Marconi Union, Blow Up Hollywood, and Ludovico Einaudi.
-* I sing second bass and I am a proud member of [Eric Whitacre's Virtual Choir][EWVC],
-  starting with [version 2.0 ("Sleep")][Sleep]{: style="display: inline-block;"}.
+* Current favorites:  Ludovico Einaudi; Irish/Celtic music, including
+  [Solas][]{: title="my favorite band since I was 10"}
+  and [Lúnasa][]{: title="Kevin Crawford gave me a free CD!"};
+  [Antje Duvekot][Antje]{:
+   title="One of her first songs, ''The Poisonjester's Mask'', ironically got me
+          into Irish music when I was 10 and I heard Solas cover it.  It remains
+          one of my favorite songs of all time."};
+  Ewan MacColl; Nils Frahm; and Ludovico Einaudi.
+* I sing second bass and I have participated in [Eric Whitacre's Virtual Choir][EWVC]:
+  versions [2.0 ("Sleep")][VC2], [3 ("Water Night")][VC3], and
+  [4 ("Fly to Paradise")][VC4].  I'm not currently in a choir.
 * [My Last.fm profile](https://www.last.fm/user/ScottyWZ)
   <span class="fill-in-last-fm-status hide"> — </span>
-* [A graph of my music listening trends]({% root %}/other/lastgraph/)
 * Did I mention I like Ludovico Einaudi's music?
 
 [Solas]:     http://www.solasmusic.com/
 [Lúnasa]:    http://www.lunasa.ie/
 [Antje]:     http://www.antjeduvekot.com/
-[EWVC]:      http://ericwhitacre.com/the-virtual-choir
-[Sleep]:     https://www.youtube.com/watch?v=6WhWDCw3Mng
+[EWVC]:      https://ericwhitacre.com/the-virtual-choir
+[VC2]:       https://www.youtube.com/watch?v=6WhWDCw3Mng
+[VC3]:       https://www.youtube.com/watch?v=V3rRaL-Czxw
+[VC4]:       https://www.youtube.com/watch?v=Y8oDnUga0JU
+
 
 ## About this Web site {#site}
 
