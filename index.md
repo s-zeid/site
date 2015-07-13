@@ -93,7 +93,7 @@ I am a computer science student and sometimes penguin in Dallas, Texas.
 * Designed by me.  Supports all modern Web browsers (including mobile) and
   IE 8 (older versions of IE get the color scheme and fonts and that's it). 
   Uses responsive design.
-* The design is maintained separately in its
+* The design is maintained separately in
   [its own Git repository](http://code.s.zeid.me/site-design).
 * Hosted at [prgmr.com](http://prgmr.com/) on a {% lsbrelease %} VPS. 
   (I'm currently on their 256 MB package.)
