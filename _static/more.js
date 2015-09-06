@@ -15,9 +15,22 @@ $.get($("html").attr("data-root") + "/more/?json", function(portal) {
     a.children().first().append(icon);
    }
    a.children().last().html(site.name);
-   $("<li></li>").append(a).appendTo(list);
-   if (site.url.replace(/https?:/gi, "") == "//"+document.location.hostname+"/")
-    a.parent().addClass("current");
+   var li = $("<li></li>");
+   li.append(a).appendTo(list);
+   var highlight_slug = null;
+   if (SITENAV_PAGE_INFO.nav.highlight) {
+    highlight_slug = SITENAV_PAGE_INFO.nav.highlight.match(/\/more\/+([^\/]+)\/*$/);
+    if (highlight_slug)
+     highlight_slug = highlight_slug[1];
+   }
+   if (highlight_slug === slug) {
+    if (SITENAV_PAGE_INFO.nav["highlight-as-current"])
+     li.addClass("current");
+    else
+     li.addClass("parent"); 
+   } else if (site.url.replace(/https?:/gi, "") == "//"+document.location.hostname+"/") {
+    li.addClass("current");
+   }
   }
  });
  $(".fill-in-last-fm-status").append((function() {
