@@ -43,15 +43,22 @@ virtual machine host.*
 Source code
 -----------
 
-**Both amirunninglinux.com and the Android app are [free software][free-sw];
-therefore, *YOU* can verify everything in this privacy policy (except what
-happens once analytics information reaches Google) by viewing the source code
-for the Web site or app:**
+**All parts of Am I Running Linux? are [free software][free-sw]; therefore,
+*YOU* or someone you trust can verify everything this privacy policy says about
+Am I Running Linux? by viewing the source code for the Web site or app:**
 
  * [The Web site's source code](http://code.s.zeid.me/amirunninglinux.com)
  * [The Android app's source code](http://code.s.zeid.me/amirunninglinux.apk)
 
-**This is the most important part of the privacy policy.**
+***This is the most important part of the privacy policy.***
+
+**Note that this privacy policy makes no guarantees about how your information
+is used by other Web sites or entities.  Also, if you use a non-free Web browser
+or operating system to visit or run Am I Running Linux? or to view, modify, or
+share its source code, no guarantees can be made about what such non-free
+software may do.**
+
+***For maximum privacy, use only free software whenever possible.***
 
 [free-sw]: https://gnu.org/philosophy/free-sw.html
 
@@ -59,15 +66,16 @@ for the Web site or app:**
 Personal information
 --------------------
 
-Am I Running Linux? does not intentionally collect any personal information.
+Am I Running Linux? does not intentionally collect any personal information
+from people of any age.
 
 
 Analytics
 ---------
 
-The copy of amirunninglinux.com hosted at amirunninglinux.com and its
-subdomains uses Google Analytics to collect non-personal information about
-visitors, such as country, referring Web page, and technical information
+The copy of the Am I Running Linux? Web site hosted at amirunninglinux.com
+and its subdomains uses Google Analytics to collect non-personal information
+about visitors, such as country, referring Web page, and technical information
 about the device used to access the site.  The Android app is based on
 the Web site and thus also uses Google Analytics.  For more privacy-related
 information regarding Google Analytics, see:
