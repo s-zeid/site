@@ -6,13 +6,13 @@ nav:
  title: Privacy Policy
  highlight: /more/amirunninglinux/
 contents:
- Source code:          source-code
- Personal information: personal-information
- Analytics:            analytics
- Social platforms:     social-platforms
- App permissions:      app-permissions
- Contact:              contact
- History:              history
+ Source code:           source-code
+ Information collected: information-collected
+ Analytics:             analytics
+ Social platforms:      social-platforms
+ App permissions:       app-permissions
+ Contact:               contact
+ History:               history
 ---
 
 [amirunninglinux.com]: http://amirunninglinux.com/
@@ -64,11 +64,22 @@ software may do.**
 [free-sw]: https://gnu.org/philosophy/free-sw.html
 
 
-Personal information
---------------------
+Information collected
+---------------------
 
-Am I Running Linux? does not intentionally collect any personal information
-from people of any age.
+**Am I Running Linux? does not intentionally collect any personal information
+from people of any age.**
+
+Am I Running Linux? collects your browser's [user agent string][user-agent] in
+order to try to determine whether you are running Linux.  Your user agent string
+is not stored.  Note that if you have a unique enough user agent string, [that
+could theoretically be used to identify you even though it doesn't technically
+contain personal information](https://panopticlick.eff.org/).
+
+Your browser will also send your IP address, which could be used to guess your
+geographical location, but Am I Running Linux? ignores it.
+
+[user-agent]: https://en.wikipedia.org/wiki/User_agent
 
 
 Analytics
