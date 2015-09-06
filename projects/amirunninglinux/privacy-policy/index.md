@@ -15,14 +15,6 @@ contents:
  History:              history
 ---
 
-<script type="text/javascript">
- (function() {
-  var more = $("body > header nav > ul > li a[href$='//more.s.zeid.me/'] + ul");
-  more.find("li").removeClass("current");
-  more.find("li a[href$='//amirunninglinux.com/']").parent().addClass("parent");
- })();
-</script>
-
 [amirunninglinux.com]: http://amirunninglinux.com/
 [amirunninglinux.apk]: http://code.s.zeid.me/amirunninglinux.apk
 
