@@ -4,6 +4,7 @@ $.get($("html").attr("data-root") + "/more/?json", function(portal) {
  
  var more = $("body > header nav [href$='//more.s.zeid.me/']").parent();
  var list = $("<ul></ul>").appendTo(more.addClass("has-children"));
+ var highlightedEl = null;
  $.each(portal.sites, function(slug, site) {
   if ((showIndexIcons   || site.index   !== false) &&
       (showMinibarIcons || site.minibar !== false))  {
@@ -17,19 +18,24 @@ $.get($("html").attr("data-root") + "/more/?json", function(portal) {
    a.children().last().html(site.name);
    var li = $("<li></li>");
    li.append(a).appendTo(list);
-   var highlight_slug = null;
+   var highlightSlug = null;
    if (SITENAV_PAGE_INFO.nav.highlight) {
-    highlight_slug = SITENAV_PAGE_INFO.nav.highlight.match(/\/more\/+([^\/]+)\/*$/);
-    if (highlight_slug)
-     highlight_slug = highlight_slug[1];
+    highlightSlug = SITENAV_PAGE_INFO.nav.highlight.match(/\/more\/+([^\/]+)\/*$/);
+    if (highlightSlug)
+     highlightSlug = highlightSlug[1];
    }
-   if (highlight_slug === slug) {
+   if (site.url.replace(/https?:/gi, "") == "//"+document.location.hostname+"/") {
+    if (!highlightedEl)
+     highlightedEl = li.addClass("current");
+   }
+   if (highlightSlug && highlightSlug === slug) {
+    if (highlightedEl)
+     highlightedEl.removeClass("current").removeClass("parent");
+    highlightedEl = li;
     if (SITENAV_PAGE_INFO.nav["highlight-as-current"])
      li.addClass("current");
     else
      li.addClass("parent"); 
-   } else if (site.url.replace(/https?:/gi, "") == "//"+document.location.hostname+"/") {
-    li.addClass("current");
    }
   }
  });
