@@ -30,7 +30,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 ## Tech
 
 * Linux (currently Fedora), Android (I have a Nexus 5 and an LTE 2013 Nexus 7
-  running CyanogenMod 12.x), Firefox
+  running CyanogenMod 12.1), Firefox
 * [Anti-Apple](https://www.stallman.org/apple.html){:
    title="''Those who would give up essential Liberty, to purchase a little
           temporary Safety, deserve neither Liberty nor Safety.''
