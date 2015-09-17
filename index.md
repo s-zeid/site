@@ -96,6 +96,6 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 * The design is maintained separately in
   [its own Git repository](http://code.s.zeid.me/site-design).
 * Hosted at [prgmr.com](http://prgmr.com/) on a {% lsbrelease %} VPS. 
-  (I'm currently on their 256 MB package.)
+  (I'm currently on their $8/month 512 MiB package.)
 * The owner of this Web site is a Ludovico Einaudi fan.
 * `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net)
