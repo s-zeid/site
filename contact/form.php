@@ -28,8 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $subject = ($_POST["subject"]) ? $subject_prefix.$_POST["subject"] : "";
   
   $result = super_mailer_bros(
-   $_POST["name"], $_POST["email"], $to, $subject, $_POST["message"],
-   $_FILES, $max_file_size, $max_body_size
+   $_POST["name"], $_POST["email"], $send_from, $to,
+   $subject, $_POST["message"], $_FILES,
+   $max_file_size, $max_body_size
   );
   
   if ($result === true) {

@@ -1,6 +1,7 @@
 <?php
 
 $to             = "someone@example.com";
+$send_from      = "robot+@example.com";
 $subject_prefix = "[example.com] ";
 $max_file_size  = 16 * 1024 * 1024;
 $max_body_size  = 24 * 1024 * 1024;

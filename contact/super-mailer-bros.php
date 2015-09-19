@@ -32,15 +32,26 @@ $SMB_TYPES = array(
  "other"       => TYPEOTHER
 );
 
-/* Most arguments are self-explanatory.  $uploads is an associative array
- * of attachments in the same format as $_FILES.  $max_body_size refers to
- * the total size of the MIME body after processing, right before mail()
- * is called.  $to should be a plain e-mail address.
+/* Most arguments are self-explanatory.
  * 
- * The message will have the user's IP address prepended to the beginning,
- * and the HTML version will have a link to a WHOIS lookup of the IP
+ * $send_from is the address to use in the From header.  If $from_email
+ * is user-provided, then $send_from should be an address on a domain you
+ * control in order to prevent messages from being eaten by hungry spam
+ * filters, although you can set it to null to make it use the $from_email
+ * address instead.  If $send_from contains a plus sign right before the at
+ * sign, then a random hexadecimal number will be inserted between the plus
+ * and at signs.  This prevents similar messages from different senders from
+ * being grouped together in various threaded email clients.  $from_email,
+ * $send_from, and $to should be plain email addresses
+ * 
+ * $uploads is an associative array of attachments in the same format as
+ * $_FILES.  $max_body_size refers to the total size of the MIME body after
+ * processing, right before mail() is called.
+ * 
+ * The message will include the user's IP address and email address at the
+ * end, and the HTML version will have a link to a WHOIS lookup of the IP
  * address (currently using bgp.he.net).  The text "(Sent by Super Mailer
- * Bros. 3)" will be appended to the end of the message.
+ * Bros. 3)" will also appear at the end of the message.
  * 
  * Returns true on success or false if mail() fails.  If one or more
  * arguments failed to validate, it returns an indexed array containing
@@ -50,9 +61,9 @@ $SMB_TYPES = array(
  * contain *only* "body_size".
  * 
  */
-function super_mailer_bros($from_name, $from_email, $to, $subject,
-                           $message, $uploads=array(), $max_file_size=0,
-                           $max_body_size=0) {
+function super_mailer_bros($from_name, $from_email, $send_from, $to,
+			   $subject, $message, $uploads=array(),
+			   $max_file_size=0, $max_body_size=0) {
  global $SMB_TYPES;
  $file_sizes_ok = true;
  $attachments = array();
@@ -73,10 +84,19 @@ function super_mailer_bros($from_name, $from_email, $to, $subject,
   }
  }
  
+ if (empty($send_from)) {
+  $send_from = $from_email;
+ } else if (strpos($send_from, "+@") !== false) {
+  $random_part = dechex(rand(0x10000000, 0xffffffff));
+  $send_from = str_replace("+@", "+$random_part@", $send_from);
+ }
+ 
  if ($from_name && strpos($from_email, "@") !== false &&
      $subject && $message && $file_sizes_ok) {
   $headers = array(
-   "from" => "$from_name <$from_email>",
+   "from" => "$from_name <$send_from>",
+   "reply_to" => $from_email,
+   "in_reply_to" => $from_email,
    "custom_headers" => array(
     "X-Mailer: Super Mailer Bros./3.0-bnay-6"
    )
@@ -84,17 +104,18 @@ function super_mailer_bros($from_name, $from_email, $to, $subject,
   $content_array = array(
    array( "type" => TYPEMULTIPART, "subtype" => "alternative" ),
    array(
-    "type" => "text", "subtype" => "plain", charset => "utf8",
+    "type" => "text", "subtype" => "plain", "charset" => "utf8",
     "contents.data" => ""
      ."$message\r\n\r\n"
      ."\r\n"
      ."--\r\n"
      ."Sent by Super Mailer Bros. 3\r\n"
      ."\r\n"
+     ."Sender's email address:  $from_email\r\n"
      ."Sender's IP address:  {$_SERVER["REMOTE_ADDR"]}\r\n"
    ),
    array(
-    "type" => "text", "subtype" => "html", charset => "utf8",
+    "type" => "text", "subtype" => "html", "charset" => "utf8",
     "contents.data" => ""
      ."<pre style='white-space: pre-wrap; font-family: inherit;'>"
      .  smb_esc($message)
@@ -106,6 +127,11 @@ function super_mailer_bros($from_name, $from_email, $to, $subject,
      ."  Sent by Super Mailer Bros. 3\r\n"
      ." </p>\r\n"
      ." <p>\r\n"
+     ."  <strong>Sender's email address:</strong>&nbsp; \r\n"
+     ."  <a href=\"mailto:".smb_esc($from_email)."\">\r\n"
+     ."   ".smb_esc($from_email)."\r\n"
+     ."  </a>\r\n"
+     ."  <br />\r\n"
      ."  <strong>Sender's IP address:</strong>&nbsp; \r\n"
      ."  <a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
      ."   {$_SERVER["REMOTE_ADDR"]}\r\n"
