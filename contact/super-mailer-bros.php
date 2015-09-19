@@ -85,21 +85,33 @@ function super_mailer_bros($from_name, $from_email, $to, $subject,
    array( "type" => TYPEMULTIPART, "subtype" => "alternative" ),
    array(
     "type" => "text", "subtype" => "plain", charset => "utf8",
-    "contents.data" =>
-     "IP Address:  {$_SERVER["REMOTE_ADDR"]}\r\n\r\n{$message}\r\n\r\n"
-     ."(Sent by Super Mailer Bros. 3)\r\n"
+    "contents.data" => ""
+     ."$message\r\n\r\n"
+     ."\r\n"
+     ."--\r\n"
+     ."Sent by Super Mailer Bros. 3\r\n"
+     ."\r\n"
+     ."Sender's IP address:  {$_SERVER["REMOTE_ADDR"]}\r\n"
    ),
    array(
     "type" => "text", "subtype" => "html", charset => "utf8",
-    "contents.data" =>
-     "<p><strong>IP Address:</strong>&nbsp; "
-     ."<a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">"
-     ."{$_SERVER["REMOTE_ADDR"]}</a>"
-     ."</p>\r\n\r\n"
-     ."<pre style='font-size: medium;'>".smb_esc($message)."</pre>\r\n\r\n"
-     ."<p style='font-size: smaller;'>\r\n"
-     ." (Sent by Super Mailer Bros. 3)\r\n"
-     ."</p>\r\n"
+    "contents.data" => ""
+     ."<pre style='white-space: pre-wrap; font-family: inherit;'>"
+     .  smb_esc($message)
+     ."</pre>\r\n\r\n"
+     ."\r\n<br />\r\n"
+     ."<div style='font-size: smaller;'>\r\n"
+     ." <p>\r\n"
+     ."  --<br />\r\n"
+     ."  Sent by Super Mailer Bros. 3\r\n"
+     ." </p>\r\n"
+     ." <p>\r\n"
+     ."  <strong>Sender's IP address:</strong>&nbsp; \r\n"
+     ."  <a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
+     ."   {$_SERVER["REMOTE_ADDR"]}\r\n"
+     ."  </a>\r\n"
+     ." </p>\r\n"
+     ."</div>\r\n"
    )
   );
   if ($attachments) {
