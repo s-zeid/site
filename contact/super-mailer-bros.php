@@ -1,7 +1,7 @@
 <?php
 
 /* Super Mailer Bros. 3
- * Copyright (c) 2012 Scott Zeid.  Released under the X11 License.
+ * Copyright (c) 2012-2015 Scott Zeid.  Released under the X11 License.
  * 
  * This isn't my best code, but here it is anyway.  It uses
  * imap_mail_compose() to generate the MIME code for the attachments
@@ -120,6 +120,10 @@ function super_mailer_bros($from_name, $from_email, $to, $subject,
   }
   if ($max_body_size && strlen($body) > $max_body_size)
    return array("body_size");
+  // when mail() uses sendmail (i.e. if we're not on Windoze) to send messages,
+  // native line endings need to be used
+  if (strtolower(substr(php_uname("s"), 0, 3)) !== "win")
+   $body = str_replace("\r\n", PHP_EOL, $body);
   return mail($to, $subject, $body, $headers);
  } else {
   $failed = array();
