@@ -63,7 +63,8 @@ if ($show_form) {
    </option>
    <option value="AppBackup">AppBackup (other)</option>
    <option value="Other project">Other project</option>
-   <option>General</option>
+   <option value="Security issue">Security issue</option>
+   <option value="General">General</option>
   </select>
   <?php if (in_array("subject", $result)) { ?>
    <p><strong>Please choose a subject.</strong></p>
