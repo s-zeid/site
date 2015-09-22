@@ -96,7 +96,6 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
   $headers = array(
    "from" => "$from_name <$send_from>",
    "reply_to" => $from_email,
-   "in_reply_to" => $from_email,
    "custom_headers" => array(
     "X-Mailer: Super Mailer Bros./3.0-bnay-6"
    )
