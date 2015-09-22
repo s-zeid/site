@@ -12,8 +12,8 @@
  * display properly in all MUAs.  It's hackish, but it works.
  * 
  * I know I could have used PHPMailer or something, but I wanted to do
- * it myself, and besides, this comes out to be about 3.5 KB excluding
- * comments (~5 KB with comments), and it also has a funny name.
+ * it myself, and besides, this comes out to be about 4 KB excluding
+ * comments (~7 KB with comments), and it also has a funny name.
  * 
  * Requires a `file` command with the `--brief` and `--mime-type` (not
  * just `-i`) options, and PHP >= 5.1 with the IMAP extension
@@ -50,8 +50,8 @@ $SMB_TYPES = array(
  * 
  * The message will include the user's IP address and email address at the
  * end, and the HTML version will have a link to a WHOIS lookup of the IP
- * address (currently using bgp.he.net).  The text "(Sent by Super Mailer
- * Bros. 3)" will also appear at the end of the message.
+ * address (currently using bgp.he.net).  The text "Sent by Super Mailer
+ * Bros. 3" will also appear at the end of the message.
  * 
  * Returns true on success or false if mail() fails.  If one or more
  * arguments failed to validate, it returns an indexed array containing
