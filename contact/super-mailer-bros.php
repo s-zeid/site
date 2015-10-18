@@ -62,8 +62,8 @@ $SMB_TYPES = array(
  * 
  */
 function super_mailer_bros($from_name, $from_email, $send_from, $to,
-			   $subject, $message, $uploads=array(),
-			   $max_file_size=0, $max_body_size=0) {
+                           $subject, $message, $uploads=array(),
+                           $max_file_size=0, $max_body_size=0) {
  global $SMB_TYPES;
  $file_sizes_ok = true;
  $attachments = array();
