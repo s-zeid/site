@@ -10,6 +10,7 @@ categories:
 on Cydia soon.  It fixes the bug where the app was hanging on the Please Wait screen.
 
 Changes:
+
  * Fixed the problem where AppBackup was hanging on the Please Wait screen for many
    people.
  * Fixed a cosmetic bug with the Please Wait screen.
