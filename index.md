@@ -56,7 +56,9 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 
 ## Music
 
-* Current favorites:  Ludovico Einaudi; Irish/Celtic music, including
+* Current favorites: 
+  [Ludovico Einaudi][]{: title="Four Dimensions is the best element!"};
+  Irish/Celtic music, including
   [Solas][]{: title="my favorite band since I was 10"}
   and [Lúnasa][]{: title="Kevin Crawford gave me a free CD!"};
   [Antje Duvekot][Antje]{:
@@ -71,13 +73,14 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   <span class="fill-in-last-fm-status hide"> — </span>
 * Did I mention I like Ludovico Einaudi's music?
 
-[Solas]:     http://www.solasmusic.com/
-[Lúnasa]:    http://www.lunasa.ie/
-[Antje]:     http://www.antjeduvekot.com/
-[EWVC]:      https://ericwhitacre.com/the-virtual-choir
-[VC2]:       https://www.youtube.com/watch?v=6WhWDCw3Mng
-[VC3]:       https://www.youtube.com/watch?v=V3rRaL-Czxw
-[VC4]:       https://www.youtube.com/watch?v=Y8oDnUga0JU
+[Ludovico Einaudi]: https://www.youtube.com/watch?v=Sva8DUn1l0A
+[Solas]:            http://www.solasmusic.com/
+[Lúnasa]:           http://www.lunasa.ie/
+[Antje]:            http://www.antjeduvekot.com/
+[EWVC]:             https://ericwhitacre.com/the-virtual-choir
+[VC2]:              https://www.youtube.com/watch?v=6WhWDCw3Mng
+[VC3]:              https://www.youtube.com/watch?v=V3rRaL-Czxw
+[VC4]:              https://www.youtube.com/watch?v=Y8oDnUga0JU
 
 
 ## About this Web site {#site}
