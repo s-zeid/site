@@ -221,11 +221,11 @@ with each app's bundle ID on a separate line.
         or [standalone](https://www.microsoft.com/download/en/details.aspx?id=17718)). 
         If you're on Windows XP, also install the [Microsoft IDN Mitigation APIs](https://www.microsoft.com/download/en/details.aspx?id=734). 
         All of these libraries are required to run the program in step 2.
-    2.  Download [iPhone Backup Browser](https://code.google.com/p/iphonebackupbrowser/)
+    2.  Download [iPhone Backup Browser](https://code.google.com/archive/p/iphonebackupbrowser/downloads)
         (not to be confused with the non-free iPhone Backup Extractor) and
         extract it to somewhere you can remember.  It does not come with an
         installer.  This program is free software released under the revised
-        BSD license.
+        BSD license.  ([Its source code is now on GitHub.](https://github.com/rene-d/iphonebackupbrowser))
     3.  Go to the folder where you extracted iPhone Backup Browser to and open
         **`iphonebackupbrowser.exe`** as an administrator (on Vista/7, right-click
         and click Run as administrator).
