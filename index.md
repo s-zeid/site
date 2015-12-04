@@ -49,7 +49,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   (kinda), some Ruby, *a little* C/C++
 * Vim ([rc](https://s.zeid.me/vimrc))
 * I indent with one space.
-* [Bitbucket](http://code.s.zeid.me/)
+* [Projects on Bitbucket](https://code.s.zeid.me/)
 
 [portable shell]: https://www.gnu.org/software/autoconf/manual/html_node/Portable-Shell.html
 
@@ -88,17 +88,18 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 * Uses [Jekyll](https://github.com/jekyll/jekyll),
   [Stylus](https://learnboost.github.io/stylus/),
   GNU `make`, and a little bit of PHP (for
-  [blog comments](http://code.s.zeid.me/freecomment),
-  [the contact form](http://code.s.zeid.me/site/src/master/contact/), and
-  [redirecting](http://code.s.zeid.me/site-design/src/master/static/redirect.php)
-  [old URLs](http://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
-  [See the source here.](http://code.s.zeid.me/site/src)
+  [blog comments](https://code.s.zeid.me/freecomment),
+  [the contact form](https://code.s.zeid.me/site/src/master/contact/), and
+  [redirecting](https://code.s.zeid.me/site-design/src/master/static/redirect.php)
+  [old URLs](https://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
+  [See the source here.](https://code.s.zeid.me/site/src)
 * Designed by me.  Supports all modern Web browsers (including mobile) and
   IE 8 (older versions of IE get the color scheme and fonts and that's it). 
   Uses responsive design.
 * The design is maintained separately in
-  [its own Git repository](http://code.s.zeid.me/site-design).
-* Hosted at [prgmr.com](http://prgmr.com/) on a {% lsbrelease %} VPS. 
+  [its own Git repository](https://code.s.zeid.me/site-design).
+* Hosted at [prgmr.com](https://prgmr.com/) on a {% lsbrelease %} VPS. 
   (I'm currently on their $8/month 512 MiB package.)
+* [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
 * `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net)

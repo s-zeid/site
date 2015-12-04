@@ -12,7 +12,7 @@ stylus: |
 ---
 
 <aside style="float: right; text-align: center; margin: 0.25em 0 1em 1em;">
- <iframe id="rain" src="//s.zeid.me/_/ti-rain/#embed" class="no-print"
+ <iframe id="rain" src="https://ti-rain.s.zeid.me/#embed" class="no-print"
          style="width: 192px; height: 128px; border: none; background: transparent;">
   <img src="screenshot.png" alt="" />
  </iframe>
@@ -26,17 +26,17 @@ written in Axe.
 
 ## [Download from ticalc.org](http://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
 
-## [Download from uploads.s.zeid.me](//uploads.s.zeid.me/rain2.0.zip)
+## [Download from uploads.s.zeid.me](https://uploads.s.zeid.me/rain2.0.zip)
 
 ## Web-based Version {#web}
 
 A Web-based version of this animation is available at
-[ti-rain.s.zeid.me](http://ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
+[ti-rain.s.zeid.me](https://ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
 browser, such as Firefox or Google Chrome, that supports the HTML 5 Canvas
 element.&nbsp; It may also work in Internet Explorer 7 or later; however, I have only
 tested it in Google Chrome at the time of this writing.
 
-[The source is on Bitbucket.](http://code.s.zeid.me/ti-rain)
+[The source is on Bitbucket.](https://code.s.zeid.me/ti-rain)
 
 ## Installation and Running Rain {#installation}
 
@@ -170,4 +170,4 @@ computer.&nbsp; If the arrows, greater-than-or-equal-to signs, etc. don't displa
 properly, make sure your text editor/viewer/Web browser is set to display the
 files in UTF-8 (Unicode) encoding.
 
-[The source code for the Web version is on Bitbucket.](http://code.s.zeid.me/ti-rain)
+[The source code for the Web version is on Bitbucket.](https://code.s.zeid.me/ti-rain)

@@ -15,8 +15,8 @@ contents:
  History:               history
 ---
 
-[amirunninglinux.com]: http://amirunninglinux.com/
-[amirunninglinux.apk]: http://code.s.zeid.me/amirunninglinux.apk
+[amirunninglinux.com]: https://amirunninglinux.com/
+[amirunninglinux.apk]: https://code.s.zeid.me/amirunninglinux.apk
 
 This is the privacy policy for Am I Running Linux?, which consists of
 [a Web site][amirunninglinux.com] and [an Android app][amirunninglinux.apk].
@@ -48,8 +48,8 @@ Source code
 *YOU* or someone you trust can verify everything this privacy policy says about
 Am I Running Linux? by viewing the source code for the Web site or app:**
 
- * [The Web site's source code](http://code.s.zeid.me/amirunninglinux.com)
- * [The Android app's source code](http://code.s.zeid.me/amirunninglinux.apk)
+ * [The Web site's source code](https://code.s.zeid.me/amirunninglinux.com)
+ * [The Android app's source code](https://code.s.zeid.me/amirunninglinux.apk)
 
 ***This is the most important part of the privacy policy.***
 
@@ -121,7 +121,7 @@ App permissions
 The Android app uses the following permission:
 
 * **Full network access:** The app is a single-site browser for
-  <http://amirunninglinux.com/>, and as such, it needs to access the Internet
+  <https://amirunninglinux.com/>, and as such, it needs to access the Internet
   to be able to display the site. This permission is not used for anything
   else, and you can verify that by viewing the source code (see above).
 
@@ -138,4 +138,4 @@ History
 -------
 
 The history of this privacy policy may be viewed at
-<http://code.s.zeid.me/site/history-node/master/projects/amirunninglinux/privacy-policy/index.md>.
+<https://code.s.zeid.me/site/history-node/master/projects/amirunninglinux/privacy-policy/index.md>.

@@ -96,7 +96,7 @@ If you want to help translate AppBackup into a different language, please see th
 > will be updated if and when I can get it fixed.  I am very sorry for
 > the problems this is causing for people.
 > 
-> [issue-6]: http://code.s.zeid.me/appbackup/issue/6/fix-sporadic-crashes-on-ios-8
+> [issue-6]: https://code.s.zeid.me/appbackup/issue/6/fix-sporadic-crashes-on-ios-8
 
 **Compatibility Note:**  I am unable to test AppBackup on iOS 4 or later because
 I only have a 2G iPhone.  However, users have reported that AppBackup does work
@@ -117,13 +117,13 @@ saved data in the process).
  </section>
 <!--]]]--></aside>
 
-## [Download AppBackup](//uploads.s.zeid.me/AppBackup/latest.php) {#download}
+## [Download AppBackup](https://uploads.s.zeid.me/AppBackup/latest.php) {#download}
 
 AppBackup is available via BigBoss's repository
-(or [mine]({% root %}/iphone/cydia-repository))
+(or [mine]({% root %}/other/cydia-repository))
 on Cydia!  You can find it under the Utilities section.
 
-[You can find older versions here.](//uploads.s.zeid.me/AppBackup/)
+[You can find older versions here.](https://uploads.s.zeid.me/AppBackup/)
 
 [Get the source code here.](#source)
 
@@ -131,8 +131,8 @@ on Cydia!  You can find it under the Utilities section.
 
 <div class="screenshots">{% for i in (1..6) %}
  <a data-lightbox="screenshots"
-    href="//uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png">
-  <img src="//uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png" alt="" />
+    href="https://uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png">
+  <img src="https://uploads.s.zeid.me/AppBackup/Screenshots/{{i}}.png" alt="" />
  </a>{% endfor %}
 </div>
 
@@ -372,11 +372,11 @@ freedoms][free-sw].  [Its source code](#source) is freely available under
 the terms of the X11 License.  AppBackup also includes software released
 under similar free, permissive licenses.  For the full text of the license
 and copyright notices for AppBackup and all software included with it, see
-[the LICENSE.txt file](http://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
+[the LICENSE.txt file](https://code.s.zeid.me/appbackup/src/master/LICENSE.txt)
 in the source repository.
 
 AppBackup would not have been possible without the work and help of others. 
-See [CREDITS.txt](http://code.s.zeid.me/appbackup/src/master/CREDITS.txt) for
+See [CREDITS.txt](https://code.s.zeid.me/appbackup/src/master/CREDITS.txt) for
 a list of these people.
 
 [free-sw]: https://www.gnu.org/philosophy/free-sw.html
@@ -384,8 +384,8 @@ a list of these people.
 ## Source Code {#source}
 
 AppBackup's source code is available on Bitbucket at
-[http://code.s.zeid.me/appbackup](http://code.s.zeid.me/appbackup). 
-AppBackup is written in Objective-C, Python 2.5, POSIX shell, and C.
+<https://code.s.zeid.me/appbackup>.  AppBackup is written in Objective-C,
+Python 2.5, POSIX shell, and C.
 
 ## Changes
 

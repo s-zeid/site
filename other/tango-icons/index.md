@@ -16,7 +16,7 @@ Here are some Tango-style icons I've made.
 ## Boot {#boot}
 
 This is very loosely based on
-[the App\_bootman icon](//uploads.s.zeid.me/tango-icons/Boot/App_bootman.svg)
+[the App\_bootman icon](https://uploads.s.zeid.me/tango-icons/Boot/App_bootman.svg)
 from [the Haiku operating system](https://www.haiku-os.org/).
 
 {% include_relative icon.html name="Boot" %}
@@ -49,8 +49,8 @@ This icon was made on July 29 and 30, 2014.
 ## iTunes
 
 This is a combination of
-[emblem-music.svg](//uploads.s.zeid.me/tango-icons/iTunes/emblem-music.svg) and
-[media-optical.svg](//uploads.s.zeid.me/tango-icons/iTunes/media-optical.svg),
+[emblem-music.svg](https://uploads.s.zeid.me/tango-icons/iTunes/emblem-music.svg) and
+[media-optical.svg](https://uploads.s.zeid.me/tango-icons/iTunes/media-optical.svg),
 both from the Tango project.
 
 {% include_relative icon.html name="iTunes" %}
@@ -60,7 +60,7 @@ both from the Tango project.
 [16x16]({% include_relative icon.html name="iTunes" url="16.svg" %})
 [48x48]({% include_relative icon.html name="iTunes" url="48.svg" %})
 
-[Windows<sup>®</sup> icon file](//uploads.s.zeid.me/tango-icons/iTunes/iTunes.ico)
+[Windows<sup>®</sup> icon file](https://uploads.s.zeid.me/tango-icons/iTunes/iTunes.ico)
 
 [Wikimedia Commons page](https://commons.wikimedia.org/wiki/File:ITunes.svg)
 
