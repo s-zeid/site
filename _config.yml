@@ -11,7 +11,7 @@ full-url:            //s.zeid.me
 default-scheme:      https    # only needed with protocol-relative {full-,}url
 ganalytics:          UA-382238-6    # Optional; uncomment to enable
 
-freecomment:    # Free/libre comment system <http://code.s.zeid.me/freecomment>
+freecomment:    # Free/libre comment system <https://code.s.zeid.me/freecomment>
  enabled:            True    # Uncomment to enable
  highlight:     # Comments with these Gravatar ID(s) will be highlighted
   - e318793d5d8a9c12094908f3a58aaf3d
@@ -25,7 +25,7 @@ internet-defense-league:    # Internet Defense League campaigns
  variant:            modal    # The variant to use (e.g. banner, modal; default: banner)
  url:                # URL of custom message
 
-portal:         # Optional integration with <http://code.s.zeid.me/portal>
+portal:         # Optional integration with <https://code.s.zeid.me/portal>
  url:                //s.zeid.me/more/    # Uncomment to enable
  highlight:          s.zeid.me
  theme:              new
