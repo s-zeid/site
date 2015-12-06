@@ -29,7 +29,7 @@ constructor").)
 It's worth noting that Google Reader JSON files *do* contain the full contents of
 each article, and Stella does let you view those.
 
-[The source code to Stella is available on Bitbucket][Stella-BB] and is released
+[The source code to Stella is available on GitLab][Stella-repo] and is released
 under the X11 License.  If you modify the JavaScript or CSS files, run `make` to
 regenerate the `stella.combined.{js,css}` files; otherwise, you won't see your
 changes.
@@ -78,8 +78,8 @@ is the date that Google Reader shuts down.
 
 [notice]:      http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
 [Takeout]:     https://goo.gl/zijsh
-[Stella]:      http://stella.s.zeid.me/
-[Stella-BB]:   http://code.s.zeid.me/stella
+[Stella]:      https://stella.s.zeid.me/
+[Stella-repo]: https://code.s.zeid.me/stella
 [FileReader]:  https://developer.mozilla.org/en-US/docs/DOM/FileReader
 [Firefox]:     https://www.mozilla.org/en-US/firefox/fx/
 [Blob]:        https://developer.mozilla.org/en-US/docs/DOM/Blob#Browser_compatibility

@@ -49,7 +49,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   (kinda), some Ruby, *a little* C/C++
 * Vim ([rc](https://s.zeid.me/vimrc))
 * I indent with one space.
-* [Projects on Bitbucket](https://code.s.zeid.me/)
+* [Projects on GitLab](https://code.s.zeid.me/)
 
 [portable shell]: https://www.gnu.org/software/autoconf/manual/html_node/Portable-Shell.html
 

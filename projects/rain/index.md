@@ -36,7 +36,7 @@ browser, such as Firefox or Google Chrome, that supports the HTML 5 Canvas
 element.&nbsp; It may also work in Internet Explorer 7 or later; however, I have only
 tested it in Google Chrome at the time of this writing.
 
-[The source is on Bitbucket.](https://code.s.zeid.me/ti-rain)
+[The source is on GitLab.](https://code.s.zeid.me/ti-rain)
 
 ## Installation and Running Rain {#installation}
 
@@ -170,4 +170,4 @@ computer.&nbsp; If the arrows, greater-than-or-equal-to signs, etc. don't displa
 properly, make sure your text editor/viewer/Web browser is set to display the
 files in UTF-8 (Unicode) encoding.
 
-[The source code for the Web version is on Bitbucket.](https://code.s.zeid.me/ti-rain)
+[The source code for the Web version is on GitLab.](https://code.s.zeid.me/ti-rain)

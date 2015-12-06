@@ -6,4 +6,4 @@ nav:
 ---
 
 Some projects of mine.  There's more on
-[my Bitbucket profile](http://code.s.zeid.me/).
+[my GitLab profile](https://code.s.zeid.me/).

@@ -30,7 +30,7 @@ policy ***only*** applies to the official distributions:
 **Android app:**
 
 * As distributed through a source code repository or Web page owned by the user
-  `scottywz` on Bitbucket, GitLab, GitHub, or hosted on the server that hosts
+  `scottywz` on GitLab, Bitbucket, GitHub, or hosted on the server that hosts
   `s.zeid.me`
 * As distributed through [the official Google Play listing][google-play]
 
