@@ -138,4 +138,4 @@ History
 -------
 
 The history of this privacy policy may be viewed at
-<https://code.s.zeid.me/site/history-node/master/projects/amirunninglinux/privacy-policy/index.md>.
+<https://code.s.zeid.me/site/commits/master/projects/amirunninglinux/privacy-policy/index.md>.
