@@ -29,8 +29,8 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 
 ## Tech
 
-* Linux (currently Fedora), Android (I have a Nexus 5 and an LTE 2013 Nexus 7
-  running CyanogenMod 12.1), Firefox
+* Linux (currently Fedora), Android (I have a Nexus 5 and an LTE 2013 Nexus 7,
+  each running CyanogenMod), Firefox
 * [Anti-Apple](https://www.stallman.org/apple.html){:
    title="''Those who would give up essential Liberty, to purchase a little
           temporary Safety, deserve neither Liberty nor Safety.''
@@ -102,4 +102,4 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   (I'm currently on their $8/month 512 MiB package.)
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
-* `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net)
+* `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
