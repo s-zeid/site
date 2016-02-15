@@ -102,4 +102,4 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   (I'm currently on their $8/month 512 MiB package.)
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
-* `2605:2700:1:1003::``5c07:2e1d`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
+* `2605:2700:1:1003::``6:d9ca`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
