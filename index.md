@@ -99,7 +99,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 * The design is maintained separately in
   [its own Git repository](https://code.s.zeid.me/site-design).
 * Hosted at [prgmr.com](https://prgmr.com/) on a {% lsbrelease %} VPS. 
-  (I'm currently on their $8/month 512 MiB package.)
+  (I'm currently grandfathered into their old $8/month 512 MiB package.)
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
-* `2605:2700:1:1003::``6:d9ca`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
+* `2605:2700:1:1003::``b49e`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
