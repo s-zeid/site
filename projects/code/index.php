@@ -18,6 +18,9 @@ description: >
 
 require("update.php");
 
+// This only affects links to projects.
+$link_base = "https://code.s.zeid.me";  //"https://gitlab.com/$user_esc";
+
 ?><p>
  These are my personal projects from
  <a href="https://gitlab.com/<?=$user_esc?>">my GitLab profile</a>.
@@ -38,6 +41,8 @@ elseif (time() >= filemtime($cache) + 90) {
  }
 }
 
+$link_base_esc = htmlentities($link_base, ENT_QUOTES, "UTF-8");
+
 $projects = json_decode(file_get_contents($cache), true);
 
 ?><nav class="subpage">
@@ -45,8 +50,8 @@ $projects = json_decode(file_get_contents($cache), true);
 <?php foreach ($projects as $p):
 ?>  <li>
    <span>
-    <a href="https://code.s.zeid.me/<?=$p["%path"]?>"></a>
-    <a href="https://code.s.zeid.me/<?=$p["%path"]?>"><?=$p["%name"]?></a>
+    <a href="<?=$link_base_esc?>/<?=$p["%path"]?>"></a>
+    <a href="<?=$link_base_esc?>/<?=$p["%path"]?>"><?=$p["%name"]?></a>
    </span>
 <?php if ($p["description"]):
 ?>   <p>
