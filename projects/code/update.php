@@ -62,15 +62,17 @@ function update() {
    "updated" => $updated,
    "updated_display" => strftime("%Y-%m-%d %H:%M:%S", strtotime($updated)),
   ];
+  // HTML-escape each value and store in array as `&<key>`
   foreach (array_keys($entry) as $k) {
-   $entry["%$k"] = htmlentities($entry[$k], ENT_QUOTES, "UTF-8");
+   $entry["&$k"] = htmlentities($entry[$k], ENT_QUOTES, "UTF-8");
   }
-  $entry["%description"] = preg_replace_callback(
+  // linkify the HTML-escaped description
+  $entry["&description"] = preg_replace_callback(
    "@(https?://[^\s\)\}\]]+)@i",
    function($m) {
     return "<a href=\"$m[0]\">$m[0]</a>";
    },
-   $entry["%description"]
+   $entry["&description"]
   );
   $projects[] = $entry;
  }

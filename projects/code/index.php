@@ -53,15 +53,15 @@ $projects = json_decode(file_get_contents($cache), true);
 <?php foreach ($projects as $p):
 ?>  <li>
    <span>
-    <a href="<?=$link_base_esc?>/<?=$p["%path"]?>"></a>
-    <a href="<?=$link_base_esc?>/<?=$p["%path"]?>"><?=$p["%name"]?></a>
+    <a href="<?=$link_base_esc?>/<?=$p["&path"]?>"></a>
+    <a href="<?=$link_base_esc?>/<?=$p["&path"]?>"><?=$p["&name"]?></a>
    </span>
 <?php if ($p["description"]):
 ?>   <p>
     <span></span>
     <span>
-     <span><?=$p["%description"]?></span>
-     <time datetime="<?=$p["%updated"]?>">Last updated: <?=$p["%updated_display"]?></time>
+     <span><?=$p["&description"]?></span>
+     <time datetime="<?=$p["&updated"]?>">Last updated: <?=$p["&updated_display"]?></time>
     </span>
    </p>
 <?php endif;
