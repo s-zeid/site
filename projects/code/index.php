@@ -32,12 +32,15 @@ libxml_disable_entity_loader(true);
 
 if (!is_file($cache))
  update();
-elseif (time() >= filemtime($cache) + 90) {
- touch($cache);
- $atom = simplexml_load_string(file_get_contents("https://gitlab.com/$user.atom"));
- if (isset($atom->updated)) {
-  if (strtotime($atom->updated) > filemtime($cache))
-   update();
+else {
+ $mtime = filemtime($cache);
+ if (time() >= $mtime + 90) {
+  touch($cache);
+  $atom = simplexml_load_string(file_get_contents("https://gitlab.com/$user.atom"));
+  if (isset($atom->updated)) {
+   if (strtotime($atom->updated) > $mtime)
+    update();
+  }
  }
 }
 
@@ -58,7 +61,7 @@ $projects = json_decode(file_get_contents($cache), true);
     <span></span>
     <span>
      <span><?=$p["%description"]?></span>
-     <time datetime="<?=$p["updated"]?>">Last updated: <?=$p["updated_display"]?></time>
+     <time datetime="<?=$p["%updated"]?>">Last updated: <?=$p["%updated_display"]?></time>
     </span>
    </p>
 <?php endif;
