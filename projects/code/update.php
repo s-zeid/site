@@ -77,6 +77,10 @@ function update() {
   $projects[] = $entry;
  }
  
+ usort($projects, function($a, $b) {
+  return strtotime($b["updated"]) - strtotime($a["updated"]);
+ });
+ 
  if (!empty($projects))
   file_put_contents($cache, json_encode($projects, JSON_PRETTY_PRINT));
 }
