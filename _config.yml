@@ -9,7 +9,7 @@ author:
 url:                 
 full-url:            //s.zeid.me
 default-scheme:      https    # only needed with protocol-relative {full-,}url
-ganalytics:          UA-382238-6    # Optional; uncomment to enable
+ganalytics:              # Optional; uncomment to enable
 
 freecomment:    # Free/libre comment system <https://code.s.zeid.me/freecomment>
  enabled:            True    # Uncomment to enable

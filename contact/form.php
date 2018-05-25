@@ -9,20 +9,24 @@ require("config.php");   // hidden from directory listing
 
 $result = array();
 $show_form = false;
-$coppa_checked = ($_POST["coppa"] == 1) ? ' checked="checked"' : "";
+$gdpr_age_checked = ($_POST["gdpr-age"] == 1) ? ' checked="checked"' : "";
+$consent_checked = ($_POST["consent"] == 1) ? ' checked="checked"' : "";
 
 require("super-mailer-bros.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
- if (!$coppa_checked) {
+ if (!$gdpr_age_checked) {
 ?>
 <p>
  <strong>
-  You must be at least 13 years old to use this contact form.&nbsp;
+  You must be at least 16 years old to use this contact form.&nbsp;
  </strong>
- (<a href="https://en.wikipedia.org/wiki/COPPA" target="_blank">Why?</a>)
+ (<a href="https://gdpr-info.eu/art-8-gdpr/" target="_blank">Why?</a>)
 </p>
 <?php
+ } elseif (!$consent_checked) {
+  $result[] = "consent";
+  $show_form = true;
  } else {
   
   $subject = ($_POST["subject"]) ? $subject_prefix.$_POST["subject"] : "";

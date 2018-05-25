@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 nav:
- sort-key: /zzz/contact
+ sort-key: /yyy/contact
 ---
 
 <?php
@@ -11,6 +11,9 @@ require("form.php");
 
 if ($show_form) {
 ?>
+
+<a id="form"></a>
+
 <blockquote>
  <strong>
   <a href="{% root %}/projects/appbackup/#ios-8-notice">
@@ -24,15 +27,6 @@ if ($show_form) {
  please attach the last crash log file from the
  <code>/var/mobile/Library/Logs/CrashReporter</code> folder that starts with
  <strong>AppBackupGUI_</strong>, if there is one.
-</p>
-
-<p style="font-size: smaller;">
- <b>Privacy policy:</b>&nbsp; I will not share your info with anyone
- unless I need to in order to fulfill your request (or to receive it),
- if I am required to by law, or if you tell me I can.&nbsp;  I will see
- everything you enter into this form, as well as your IP address, what
- Web browser you're using, the address of the page from which you came,
- and the date and time of your visit and of your message.
 </p>
 
 <p>All fields except the attachments field are required.</p>
@@ -64,6 +58,7 @@ if ($show_form) {
    <option value="AppBackup">AppBackup (other)</option>
    <option value="Other project">Other project</option>
    <option value="Security issue">Security issue</option>
+   <option value="Personal information">Personal information</option>
    <option value="General">General</option>
   </select>
   <?php if (in_array("subject", $result)) { ?>
@@ -100,12 +95,29 @@ if ($show_form) {
  </section>
  <section>
   <span></span>
-  <input type="checkbox" name="coppa" id="coppa" value="1"<?php
-   echo $coppa_checked; ?> />
-  <label for="coppa">
-   I am at least 13 years of age.
-   (<a href="https://en.wikipedia.org/wiki/COPPA" target="_blank">Why?</a>)
+  <input type="checkbox" name="gdpr-age" id="gdpr-age" value="1"<?php
+   echo $gdpr_age_checked; ?> />
+  <label for="gdpr-age">
+   I am at least 16 years of age.
+   (<a href="https://gdpr-info.eu/art-8-gdpr/" target="_blank">Why?</a>)
   </label>
+ </section>
+ <section>
+  <span></span>
+  <input type="checkbox" name="consent" id="consent" value="1"<?php
+   echo $consent_checked; ?> />
+  <label for="consent">
+   I understand <a href="{% root %}/legal/privacy-policy/">the privacy
+   policy</a>, and I consent to you using my information to receive and answer
+   my message and for other reasons listed in the privacy policy.
+  </label>
+  <?php if (in_array("consent", $result)) { ?>
+   <p><strong>
+    You need to consent before I can receive your message or do
+    anything with it.  Please read <a href="{% root %}/legal/privacy-policy/">the
+    privacy policy</a> before consenting.
+   </strong></p>
+  <?php } ?>
  </section>
  <section>
   <span></span>
