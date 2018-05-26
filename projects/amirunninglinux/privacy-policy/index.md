@@ -8,7 +8,6 @@ nav:
 contents:
  Source code:           source-code
  Information collected: information-collected
- Analytics:             analytics
  Social platforms:      social-platforms
  App permissions:       app-permissions
  Contact:               contact
@@ -39,6 +38,12 @@ virtual machine host.*
 
 [free-sw]: https://gnu.org/philosophy/free-sw.html
 [google-play]: https://play.google.com/store/apps/details?id=com.amirunninglinux
+
+
+**This privacy policy is a supplement to [my main privacy
+policy]({% root %}/legal/privacy-policy/), which contains some important
+information not included here.  This privacy policy overrides that one in
+case of any conflicts.**
 
 
 Source code
@@ -72,36 +77,17 @@ from people of any age.**
 
 Am I Running Linux? collects your browser's [user agent string][user-agent] in
 order to try to determine whether you are running Linux.  Your user agent string
-is not stored.  Note that if you have a unique enough user agent string, [that
-could theoretically be used to identify you even though it doesn't technically
-contain personal information](https://panopticlick.eff.org/).
+is not stored by me.  Note that if you have a unique enough user agent string,
+[that could theoretically be used to identify you even though it doesn't
+technically contain personal information](https://panopticlick.eff.org/).
 
 Your browser will also send your IP address, which could be used to guess your
 geographical location, but Am I Running Linux? ignores it.
 
+Your user agent string and IP address could be stored by my hosting providers,
+who are listed in [my main privacy policy]({% root %}/legal/privacy-policy/).
+
 [user-agent]: https://en.wikipedia.org/wiki/User_agent
-
-
-Analytics
----------
-
-The copy of the Am I Running Linux? Web site hosted at amirunninglinux.com
-and its subdomains uses Google Analytics to collect non-personal information
-about visitors, such as country, referring Web page, and technical information
-about the device used to access the site.  The Android app is based on
-the Web site and thus also uses Google Analytics.  For more privacy-related
-information regarding Google Analytics, see:
-
-* [How Google uses data when you use our partners' sites or apps](https://www.google.com/policies/privacy/partners/)
-* [Safeguarding your data - Google Analytics Help](https://support.google.com/analytics/answer/6004245)
-* [Google Privacy Policy](https://www.google.com/policies/privacy/)
-
-**Since Google does not publish the source code for Google Analytics,
-*NOTHING* in the above documents can be verified.  If you wish to block
-Google Analytics, it is recommended that you do not use their browser add-on
-as it is also not free software.  Instead, use a free software content blocker
-such as [uBlock Origin](https://github.com/gorhill/uBlock#installation) to
-block Google Analytics.**
 
 
 Social platforms
