@@ -68,16 +68,22 @@ stylus: |
   link to their privacy policies):
 
     * [Prgmr.com, Inc.](https://prgmr.com/privacy.html)
-      \- my hosting provider, for the purpose of forwarding your message
-         or blog comment to my account at Google LLC
+      \- my hosting provider, for the purposes of showing you my Web sites
+         and forwarding your message or blog comment (if you send one) to
+         my account at Google LLC.  They will see your IP address, the domain
+         name of the site you visit, and the date and time of your visit.  If
+         (and only if) you visit without using a secure connection, then they
+         will also see your Web browser, the page you visit, and the page from
+         which you came.  My server will redirect most insecure requests to
+         secure versions, including all pages with contact or comment forms.
     
     * [Google LLC](https://policies.google.com/privacy)
       \- my email provider and Web fonts provider, for the purposes of
          delivering your message or blog comment to me and to provide
          fonts for some of my Web sites.  In the case of fonts, they
          will see your IP address, Web browser, the domain name of
-         the site you visited, the page you visited, the page from
-         which you came, and the date and time of your visit.
+         the site you visit, the page you visit, the page from which
+         you came, and the date and time of your visit.
     
     * [Hurricane Electric LLC](https://he.net/privacy.html)
       \- my DNS host; they will see your IP address and the domain name
