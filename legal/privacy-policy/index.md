@@ -72,8 +72,12 @@ stylus: |
          or blog comment to my account at Google LLC
     
     * [Google LLC](https://policies.google.com/privacy)
-      \- my email provider, for the purpose of delivering your message
-         or blog comment to me
+      \- my email provider and Web fonts provider, for the purposes of
+         delivering your message or blog comment to me and to provide
+         fonts for some of my Web sites.  In the case of fonts, they
+         will see your IP address, Web browser, the domain name of
+         the site you visited, the page you visited, the page from
+         which you came, and the date and time of your visit.
     
     * [Hurricane Electric LLC](https://he.net/privacy.html)
       \- my DNS host; they will see your IP address and the domain name
@@ -133,11 +137,13 @@ stylus: |
 
 * My Web site does not use cookies or any other form of tracking.  (But some
   applications on my Web sites might use cookies to perform their functions;
-  they will tell you separately if they do.)  However, Fight for the Future
-  (see above) displays political messages on my Web site from time to time
-  and they might use cookies or other forms of tracking under their own
-  privacy policy, and they may also use cookies to hide political messages
-  you have already seen.
+  they will tell you separately if they do.)  However, some of the companies
+  and organizations listed above might do so under their own privacy policies.
+  For example, cookies are used by Google LLC (when providing fonts),
+  Automattic Inc. (when providing Gravatar images), and Fight for the Future
+  (to hide political messages you have already seen).  These and other
+  companies and organizations may still use cookies or tracking in other
+  cases.
 
 * There is no automated decision making or profiling by me or (to my knowledge)
   Prgmr.com, Inc.  Google LLC and Automattic Inc. might do those things with
