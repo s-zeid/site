@@ -2115,6 +2115,8 @@ simple engine for his canoe out of PVC pips and Bromo Seltzer.
 
 (60 Minute Special)
 
+[Watch on YouTube](https://www.youtube.com/watch?v=OKWoITk7GLo){: target="_blank"}
+
 * * * *
 
 Season 12 (Episodes 228–245) [#](#season-12) {#season-12}
