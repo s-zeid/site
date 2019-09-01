@@ -96,9 +96,7 @@ Social platforms
 Am I Running Linux? contains links to share the site/app via various social
 networking or social news platforms.  See their privacy policies for details
 on how they may use your information.  **Most of their privacy practices *CAN
-NOT* be verified because they are not free software.  One exception is reddit,
-whose source code is available at <https://github.com/reddit/> with [a few
-exceptions](https://github.com/reddit/reddit/wiki/FAQ#is-this-all-of-the-code).**
+NOT* be verified because they are not free software.**
 
 
 App permissions
