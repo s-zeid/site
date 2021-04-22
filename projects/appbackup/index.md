@@ -41,28 +41,6 @@ stylus: |
    <img src="Square-Logo-Small.png" alt="" />
   </a>
  </section>
- <section>
-  <a href="https://flattr.com/thing/445035/AppBackup" target="_blank">
-   <img title="Flattr this" src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" />
-  </a>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-        style="display: block; margin-top: 0;">
-   <input type="hidden" name="cmd" value="_donations"/>
-   <input type="hidden" name="business" value="KUJN8PX8J93F2"/>
-   <input type="hidden" name="lc" value="US"/>
-   <input type="hidden" name="item_name" value="Scott Zeid"/>
-   <input type="hidden" name="no_note" value="0"/>
-   <input type="hidden" name="cn" value="Add special instructions to the seller:"/>
-   <input type="hidden" name="no_shipping" value="1"/>
-   <input type="hidden" name="rm" value="1"/>
-   <input type="hidden" name="return" value="{{ site.full-url }}"/>
-   <input type="hidden" name="cancel_return" value="{{ site.full-url }}"/>
-   <input type="hidden" name="currency_code" value="USD"/>
-   <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted"/>
-   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" style="border-style: none;" name="submit" alt="Donate via PayPal"/>
-   <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" style="border-style: none; width: 1px; height: 1px;" />
-  </form>
- </section>
 <!--]]]--></aside>
 
 AppBackup is an app for jailbroken iOS devices that lets you back up and
@@ -103,19 +81,6 @@ I only have a 2G iPhone.  However, users have reported that AppBackup does work
 on iOS 7.  If you have problems, please [contact me]({% root %}/contact). 
 You may also try uninstalling and reinstalling AppBackup (you will not lose your
 saved data in the process).
-
-<div id="social"><!--[[[--></div>  
-<aside class="screen-only" style="float: right;clear: right;margin: 1em 0 1em 0.5em;">
- <section>
-  <iframe style="border-style: none; overflow: hidden; width: 292px; height: 250px;" src="https://www.facebook.com/connect/connect.php?id=116861589753&amp;connections=10&amp;stream=0"><!-- Facebook widget --></iframe>
-  <p style="font-size: .75em; line-height: 1em;">
-   <a href="https://www.facebook.com/appbackup">AppBackup</a> on Facebook
-  </p>
- </section>
- <section>
-  <a style="display: inline-block; color: #333; font: 13px/16px arial,sans-serif;" href="https://plus.google.com/117298410911708515087?prsrc=3"><span style="display: inline-block; font-weight: bold; vertical-align: top; margin-right: 5px; margin-top: 8px;">AppBackup</span><span style="display: inline-block; vertical-align: top; margin-right: .5em; margin-top: 8px;">on</span><img style="border: 0; width: 32px; height: 32px;" src="https://ssl.gstatic.com/images/icons/gplus-32.png" alt="" /></a>
- </section>
-<!--]]]--></aside>
 
 ## [Download AppBackup](https://uploads.s.zeid.me/AppBackup/latest.php) {#download}
 
