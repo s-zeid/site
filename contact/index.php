@@ -51,7 +51,7 @@ if ($show_form) {
    <option value="One of your personal projects">One of your personal projects</option>
    <option value="Security issue">Security issue</option>
    <option value="Personal information">Personal information</option>
-   <option value="General">General</option>
+   <option value="Other">Other</option>
   </select>
   <?php if (in_array("subject", $result)) { ?>
    <p><strong>Please choose a subject.</strong></p>
@@ -108,7 +108,7 @@ if ($show_form) {
   <p style="font-size: smaller; max-width: 30.8em;">
    <em>
     Powered by
-    <a href="https://code.s.zeid.me/site/src/master/contact/super-mailer-bros.php"
+    <a href="https://code.s.zeid.me/site/src/main/contact/super-mailer-bros.php"
      >Super Mailer Bros. 3</a>.
    </em>
   </p>
