@@ -19,8 +19,6 @@ contents:
 
 ---
 
-<img src="/wp-content/uploads/2011/01/iTango.png" alt="" class="right" />
-
 This is a WinterBoard theme for the iPhone and iPod touch that uses Tango-style
 icons.
 
@@ -40,8 +38,8 @@ icons.
 iTango is available on the Planet-iPhones repo via Cydia.  If you want to install
 it manually, or if you want the source files:
 
-* [Theme](http://uploads.srwz.us/iTango/iTango-3.1.zip)
-* [Source files](http://uploads.srwz.us/iTango/iTango-3.1_Source.zip)
+* [Theme](https://uploads.s.zeid.me/iTango/iTango-3.1.zip)
+* [Source files](https://uploads.s.zeid.me/iTango/iTango-3.1_Source.zip)
   - These require [The GIMP](http://www.gimp.org/) and include a wealth of
     standalone icons and SVGs that form the basis of this theme.
     [See below for credits.](#credits)
@@ -56,7 +54,7 @@ it manually, or if you want the source files:
 iTango is available on the Planet-iPhones repo via Cydia.  If you want to install
 it manually (i.e. without using Cydia):
 
-1.  [Download iTango](http://uploads.srwz.us/iTango/iTango-3.1.zip) and extract it.
+1.  [Download iTango](https://uploads.s.zeid.me/iTango/iTango-3.1.zip) and extract it.
 2.  Copy the `iTango` folder to `/Library/Themes` on your device. &#x2a;
 3.  Open WinterBoard.
 4.  Select iTango, exit, and wait for it to respring.

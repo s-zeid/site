@@ -6,7 +6,7 @@ title: deb-process
 This takes one or more .deb files and makes info pages based on their control
 files.&nbsp; The format of the info pages is defined by a template.
 
-## [Download](http://uploads.srwz.us/deb-process.zip)
+## [Download](https://uploads.s.zeid.me/deb-process.zip)
 
 ## Usage
 

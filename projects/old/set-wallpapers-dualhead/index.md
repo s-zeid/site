@@ -27,7 +27,7 @@ Two file selection dialogs will appear, one for each wallpaper.&nbsp; Then, the
 script will scale them to fit your monitors, combine them into one image file,
 and set that file as your wallpaper.
 
-## [Download](http://uploads.srwz.us/script/set-wallpapers-dualhead)
+## [Download](https://uploads.s.zeid.me/script/set-wallpapers-dualhead)
 
 ## Requirements
 

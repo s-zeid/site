@@ -20,12 +20,12 @@ to be nice to people who want it.
 
 ## Files
 
-* [mod_vd.c](http://uploads.srwz.us/mod_vd-2.0/mod_vd.c)
+* [mod_vd.c](https://uploads.s.zeid.me/mod_vd-2.0/mod_vd.c)
   - this is all you need to build it on &#x2a;nix
-* [LICENSE.TXT](http://uploads.srwz.us/mod_vd-2.0/LICENSE.TXT)
-* [index.shtml](http://uploads.srwz.us/mod_vd-2.0/index.shtml)
+* [LICENSE.TXT](https://uploads.s.zeid.me/mod_vd-2.0/LICENSE.TXT)
+* [index.shtml](https://uploads.s.zeid.me/mod_vd-2.0/index.shtml)
   - documentation
-* [Full archive for the NetWare build in which I found this](http://uploads.srwz.us/mod_vd-2.0-2.2.10-nw.zip)
+* [Full archive for the NetWare build in which I found this](https://uploads.s.zeid.me/mod_vd-2.0-2.2.10-nw.zip)
 * [Browse the archive](https://uploads.srwz.us/mod_vd-2.0/)
 
 ## Installation
@@ -60,7 +60,7 @@ I found the source file in the archive for a NetWare build of it I found
 
 The original Web site for mod_vd, which has of course been removed, is
 [here](http://www.snert.com/Software/mod_vd/index.shtml).  The archive contains
-a (maybe older) [copy of it](http://uploads.srwz.us/mod_vd-2.0/index.shtml).
+a (maybe older) [copy of it](https://uploads.s.zeid.me/mod_vd-2.0/index.shtml).
 
 ## TIP:  How to map subdomains using mod_vd {#mapping-subdomains}
 To use mod_vd to map subdomains to a corresponding directory in your document

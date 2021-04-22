@@ -4,7 +4,7 @@ title: appdir
 ---
 
 **Note:**  This is obsolete, especially with iOS 8 changing the layout of
-apps on disk.  Use my [`iosapplist`](http://code.s.zeid.me/iosapplist)
+apps on disk.  Use my [`iosapplist`](https://code.s.zeid.me/iosapplist)
 package instead.
 
 `iosapplist` is also cross-platform; you can use it with a copy of an iOS
@@ -28,7 +28,7 @@ and that GUID says nothing about the app itself.&nbsp; This script works by
 iterating through each of these directories and finding out which one, if any,
 has a subdirectory for the app in question.
 
-## [Download](http://uploads.srwz.us/script/appdir)
+## [Download](https://uploads.s.zeid.me/script/appdir)
 
 ## Requirements
 
