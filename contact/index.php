@@ -14,10 +14,22 @@ if ($show_form) {
 
 <a id="form"></a>
 
-<p>All fields except the attachments field are required.</p>
+<p>All fields are required.</p>
 
 <form action="{% root %}/contact/" method="post"
       enctype="multipart/form-data">
+<?php if (in_array("other", $result)) { ?>
+ <section>
+  <span></span>
+  <p><strong>There was a problem validating your message.</strong></p>
+ </section>
+<?php } ?>
+<?php if (in_array("file_attached", $result)) { ?>
+ <section>
+  <span></span>
+  <p><strong>Attachments are not allowed.</strong></p>
+ </section>
+<?php } ?>
  <section>
   <label for="name">Name</label>
   <input type="text" name="name" value="<?php echo smb_esc($_POST["name"]); ?>" />
@@ -57,20 +69,8 @@ if ($show_form) {
   <?php if (in_array("message", $result)) { ?>
    <p><strong>Please enter a message.</strong></p>
   <?php } ?>
- </section>
- <section>
-  <label>Attachments</label>
-  <p style="font-size: smaller; max-width: 30.8em;">
-   You may attach up to three files.&nbsp;
-   Each must be no larger than 16 MB, and the total size of all files
-   must be no greater than 24 MB.
-  </p>
-  <div><input type="file" name="attachment-1" /></div>
-  <div><input type="file" name="attachment-2" /></div>
-  <div><input type="file" name="attachment-3" /></div>
-  <?php if (in_array("file_size", $result) ||
-            in_array("body_size", $result)) { ?>
-   <p><strong>Please check the sizes of your attachments.</strong></p>
+  <?php if (in_array("body_size", $result)) { ?>
+   <p><strong>Please reduce the length of your message.</strong></p>
   <?php } ?>
  </section>
  <section>

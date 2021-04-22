@@ -3,7 +3,15 @@
 $to             = "someone@example.com";
 $send_from      = "robot+@example.com";
 $subject_prefix = "[example.com] ";
-$max_file_size  = 16 * 1024 * 1024;
-$max_body_size  = 24 * 1024 * 1024;
+
+// NOTE: If you leave attachments disabled, also consider setting
+// `file_uploads = Off` in `php.ini`.
+$max_file_size  = 0;  // if 0, attachments will be rejected
+$max_body_size  = 4 * 1024;
+
+// Uncomment the lines below to allow attachments.
+// Note that they will not affect `upload_max_filesize` in `php.ini`.
+//$max_file_size  = 16 * 1024 * 1024;
+//$max_body_size  = 24 * 1024 * 1024;
 
 ?>

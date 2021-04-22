@@ -1,7 +1,7 @@
 <?php
 
 /* Super Mailer Bros. 3
- * Copyright (c) 2012-2015 Scott Zeid.  Released under the X11 License.
+ * Copyright (c) 2012-2015, 2021 S. Zeid.  Released under the X11 License.
  * 
  * This isn't my best code, but here it is anyway.  It uses
  * imap_mail_compose() to generate the MIME code for the attachments
@@ -58,19 +58,28 @@ $SMB_TYPES = array(
  * the name(s) of the argument(s).  If an individual file exceeds
  * $max_file_size, the array will also contain "file_size", and if the
  * size of the MIME body exceeds $max_body_size, then the array will
- * contain *only* "body_size".
+ * contain *only* "body_size".  If $max_file_size is zero and any file
+ * is attached, the array will contain "file_attached" instead of
+ * "file_size".
  * 
  */
 function super_mailer_bros($from_name, $from_email, $send_from, $to,
                            $subject, $message, $uploads=array(),
                            $max_file_size=0, $max_body_size=0) {
  global $SMB_TYPES;
+ $failed = array();
+ $other_failure = false;
  $file_sizes_ok = true;
  $attachments = array();
  foreach ($uploads as $field => $file) {
   if ($file["tmp_name"]) {
-   if ($max_file_size)
+   if ($max_file_size) {
     $file_sizes_ok = $file_sizes_ok && ($file["size"] <= $max_file_size);
+   } else {
+    $failed[] = "file_attached";
+    $other_failure = true;
+    break;
+   }
    $filename = basename($file["name"]);
    $mime = explode("/", smb_mime($file["tmp_name"]));
    $attachments[] = array(
@@ -92,7 +101,7 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
  }
  
  if ($from_name && strpos($from_email, "@") !== false &&
-     $subject && $message && $file_sizes_ok) {
+     $subject && $message && $file_sizes_ok && !$other_failure) {
   $headers = array(
    "from" => "$from_name <$send_from>",
    "reply_to" => $from_email,
@@ -163,13 +172,14 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
    $body = str_replace("\r\n", PHP_EOL, $body);
   return mail($to, $subject, $body, $headers);
  } else {
-  $failed = array();
   $vars = explode(",","from_name,from_email,to,subject,message");
   foreach($vars as $var) {
    if (!$$var) $failed[] = $var;
   }
   if (!$file_sizes_ok)
    $failed[] = "file_size";
+  if ($other_failure && !count($failed))
+   $failed[] = "other";
   return $failed;
  }
 }
