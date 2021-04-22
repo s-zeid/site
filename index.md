@@ -90,7 +90,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   GNU `make`, and a little bit of PHP (for
   [blog comments](https://code.s.zeid.me/freecomment),
   [the contact form](https://code.s.zeid.me/site/src/master/contact/), and
-  [redirecting](https://code.s.zeid.me/site-design/src/master/static/redirect.php)
+  [redirecting](https://code.s.zeid.me/site-design/src/main/static/redirect.php)
   [old URLs](https://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
   [See the source here.](https://code.s.zeid.me/site/src)
 * Designed by me.  Supports all modern Web browsers (including mobile) and
