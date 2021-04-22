@@ -24,29 +24,28 @@ head: |
 
 ---
 
-I am a software engineering student and sometimes penguin in Dallas, Texas.
+I am a sometimes penguin in Dallas, Texas.
 
 
 ## Tech
 
-* Linux (currently Fedora), Android (I have a Nexus 5 and an LTE 2013 Nexus 7,
-  each running CyanogenMod), Firefox
-* [Anti-Apple](https://www.stallman.org/apple.html){:
+* Linux, Android, Firefox
+* [Anti-Apple](https://en.wikipedia.org/wiki/Criticism_of_Apple){:
    title="''Those who would give up essential Liberty, to purchase a little
           temporary Safety, deserve neither Liberty nor Safety.''
                                                     —Benjamin Franklin"}
-* I believe in [free software](https://www.gnu.org/philosophy/free-sw.html)
+* I believe in [free software](https://en.wikipedia.org/wiki/Free_software)
   and prefer to use it when possible.
 * If necessary, I use virtual machines (using QEMU/KVM) to run software that
   is not available for Linux.
-* Games I like include SuperTux, Minecraft, SNES Yoshi's Island, Super Mario
-  Sunshine, and Super Mario 64.
+* Games I like include SuperTux, Minecraft, Minetest, SNES Yoshi's Island,
+  Super Mario Sunshine, and Super Mario 64.
 
 
 ## Coding
 
-* Python, [portable shell][], HTML 5/CSS 3, JavaScript, PHP, Objective-C
-  (kinda), some Ruby, *a little* C/C++
+* Python, [portable shell][], HTML 5/CSS 3, JavaScript, PHP, some Rust,
+  some Ruby, Objective-C (kinda), *a little* C/C++
 * Vim ([rc](https://s.zeid.me/vimrc))
 * I indent with one space.
 * [Projects on GitLab](https://code.s.zeid.me/)
@@ -59,6 +58,7 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 * Current favorites: 
   [Ludovico Einaudi][]{: title="Four Dimensions is the best element!"};
   Irish/Celtic music, including
+  [Anúna][],
   [Solas][]{: title="my favorite band since I was 10"}
   and [Lúnasa][]{: title="Kevin Crawford gave me a free CD!"};
   [Antje Duvekot][Antje]{:
@@ -69,14 +69,13 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
 * I sing second bass and I have participated in [Eric Whitacre's Virtual Choir][EWVC]:
   versions [2.0 ("Sleep")][VC2], [3 ("Water Night")][VC3], and
   [4 ("Fly to Paradise")][VC4].  I'm not currently in a choir.
-* [My Last.fm profile](https://www.last.fm/user/ScottyWZ)
-  <span class="fill-in-last-fm-status hide"> — </span>
 * Did I mention I like Ludovico Einaudi's music?
 
-[Ludovico Einaudi]: https://www.youtube.com/watch?v=Sva8DUn1l0A
-[Solas]:            http://www.solasmusic.com/
-[Lúnasa]:           http://www.lunasa.ie/
-[Antje]:            http://www.antjeduvekot.com/
+[Ludovico Einaudi]: https://www.youtube.com/watch?v=caxZFKKcyGU "Four Dimensions"
+[Anúna]:            https://www.anuna.ie/
+[Solas]:            https://en.wikipedia.org/wiki/Solas_(group)
+[Lúnasa]:           https://www.lunasamusic.com/
+[Antje]:            https://antjeduvekot.com/
 [EWVC]:             https://ericwhitacre.com/the-virtual-choir
 [VC2]:              https://www.youtube.com/watch?v=6WhWDCw3Mng
 [VC3]:              https://www.youtube.com/watch?v=V3rRaL-Czxw
@@ -89,17 +88,16 @@ I am a software engineering student and sometimes penguin in Dallas, Texas.
   [Stylus](https://learnboost.github.io/stylus/),
   GNU `make`, and a little bit of PHP (for
   [blog comments](https://code.s.zeid.me/freecomment),
-  [the contact form](https://code.s.zeid.me/site/src/master/contact/), and
+  [the contact form](https://code.s.zeid.me/site/src/main/contact/), and
   [redirecting](https://code.s.zeid.me/site-design/src/main/static/redirect.php)
-  [old URLs](https://code.s.zeid.me/site/src/master/_redirects)).  Edited in Vim. 
+  [old URLs](https://code.s.zeid.me/site/src/main/_redirects)).  Edited in Vim. 
   [See the source here.](https://code.s.zeid.me/site/src)
 * Designed by me.  Supports all modern Web browsers (including mobile) and
   IE 8 (older versions of IE get the color scheme and fonts and that's it). 
   Uses responsive design.
 * The design is maintained separately in
   [its own Git repository](https://code.s.zeid.me/site-design).
-* Hosted at [prgmr.com](https://prgmr.com/) on a {% lsbrelease %} VPS. 
-  (I'm currently grandfathered into their old $8/month 512 MiB package.)
+* Hosted at [prgmr.com](https://prgmr.com/).
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
 * `2605:2700:1:1003::``b49e`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
