@@ -24,7 +24,7 @@ This TI-83+/84+ program is an animation of rain as viewed from
 written in Axe.
 {: style="margin-top: 0;"}
 
-## [Download from ticalc.org](http://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
+## [Download from ticalc.org](https://www.ticalc.org/archives/files/fileinfo/429/42946.html) {#download}
 
 ## [Download from uploads.s.zeid.me](https://uploads.s.zeid.me/rain2.0.zip)
 
@@ -32,9 +32,7 @@ written in Axe.
 
 A Web-based version of this animation is available at
 [ti-rain.s.zeid.me](https://ti-rain.s.zeid.me/).&nbsp; It requires a recent Web
-browser, such as Firefox or Google Chrome, that supports the HTML 5 Canvas
-element.&nbsp; It may also work in Internet Explorer 7 or later; however, I have only
-tested it in Google Chrome at the time of this writing.
+browser, such as Firefox or Google Chrome.
 
 [The source is on GitLab.](https://code.s.zeid.me/ti-rain)
 
@@ -47,7 +45,7 @@ shell like Ion or MirageOS, or use the Asm( command under `2nd+[CATALOG]`, as lo
 as it's not archived.
 
 If you want to use CalcUtil, it may be found at
-[http://www.ticalc.org/archives/files/fileinfo/400/40029.html](http://www.ticalc.org/archives/files/fileinfo/400/40029.html).
+<https://www.ticalc.org/archives/files/fileinfo/400/40029.html>.
 
 Please note that these programs have been tested on a TI-84+ SE calculator running
 TI-OS version 2.43, with and without CalcUtil.
