@@ -54,33 +54,17 @@ the terms of [the X11 License](#credits-and-license).
 
 [free-sw]: https://www.gnu.org/philosophy/free-sw.html
 
-If you want to help translate AppBackup into a different language, please see the
-[Translations](#translations) section.
-
 > {: #ios-8-notice}
-> **AppBackup does not currently work on iOS 8.**
+> **AppBackup does not work on iOS 8 or later.**
 > 
-> This is [being tracked as issue #6 on the bug tracker][issue-6]. 
-> I have no ETA for when it will be fixed, although I do *want* to fix it.
-> 
-> Currently, app listing works on iOS 8, but the GUI crashes due to bad
-> memory management on my part (probably because I wrote that part of the
-> code when I was in high school).
+> I am no longer maintaining AppBackup, so this will likely never be fixed.
 > 
 > The command-line interface has been updated for iOS 8.  [Instructions on
 > how to install and use it can be found here.](#cli)
-> 
-> This page, the bug tracker, and the app's Facebook and Google+ pages
-> will be updated if and when I can get it fixed.  I am very sorry for
-> the problems this is causing for people.
-> 
-> [issue-6]: https://code.s.zeid.me/appbackup/issue/6/fix-sporadic-crashes-on-ios-8
 
 **Compatibility Note:**  I am unable to test AppBackup on iOS 4 or later because
 I only have a 2G iPhone.  However, users have reported that AppBackup does work
-on iOS 7.  If you have problems, please [contact me]({% root %}/contact). 
-You may also try uninstalling and reinstalling AppBackup (you will not lose your
-saved data in the process).
+on iOS 7.
 
 ## [Download AppBackup](https://uploads.s.zeid.me/AppBackup/latest.php) {#download}
 
@@ -167,9 +151,14 @@ with each app's bundle ID on a separate line.
 
 2.  **Does AppBackup work with iOS 4/5/6/7/14/1024?**
     
-    Some users have reported that AppBackup works on iOS 4 and 5, but I can't test
-    AppBackup on iOS versions greater than 3.1.3 because I only have an iPhone 2G. 
-    However, if any problems are reported, I will try my best to fix them.
+    **AppBackup does not work on iOS 8 or later.**  Some users have reported that
+    AppBackup works on iOS 4 and 5, but I can't test AppBackup on iOS versions
+    greater than 3.1.3 because I only have an iPhone 2G. 
+    
+    I am no longer maintaining AppBackup, so this will likely never be fixed.
+    
+    The command-line interface has been updated for iOS 8.  [Instructions on
+    how to install and use it can be found here.](#cli)
 
 3.  **Does iTunes back up data that I save through AppBackup?**
     
@@ -569,8 +558,7 @@ Python 2.5, POSIX shell, and C.
   in `/var/mobile/Applications` (thanks Ryan H.)
 * Changed some strings to stress that this doesn't backup the actual apps, but
   just their saved data
-* **Added support for localization. If you want to help translate AppBackup into
-  a different language, please [contact me]({% root %}/contact}}).**
+* **Added support for localization.**
 * Other small code changes
 
 ### AppBackup 1.0.1 (2008-08-19) 
