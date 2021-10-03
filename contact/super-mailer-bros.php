@@ -130,7 +130,7 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
     ."  </a>\r\n"
     ."  <br />\r\n"
     ."  <strong>Sender's IP address:</strong>&nbsp; \r\n"
-    ."  <a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
+    ."  <a href=\"https://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
     ."   {$_SERVER["REMOTE_ADDR"]}\r\n"
     ."  </a>\r\n"
     ." </p>\r\n"
