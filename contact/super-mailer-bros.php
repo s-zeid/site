@@ -3,34 +3,30 @@
 /* Super Mailer Bros. 3
  * Copyright (c) 2012-2015, 2021 S. Zeid.  Released under the X11 License.
  * 
- * This isn't my best code, but here it is anyway.  It uses
- * imap_mail_compose() to generate the MIME code for the attachments
- * and the main message separately, and then it pastes the two together,
- * as imap_mail_compose() doesn't let you put a multipart/alternative
- * part inside a multipart/mixed, which is necessary to combine HTML
- * and plain text versions of the message and attachments and have it
- * display properly in all MUAs.  It's hackish, but it works.
+ * This isn't my best code, but here it is anyway.  It uses the Mail_Mime
+ * PEAR package to generate the MIME message.  Previously, this used
+ * imap_mail_compose() from the IMAP extension, which is no longer being
+ * shipped by various distributions due to it using uw-imap, which has
+ * been unmaintained for over a decade.  See:
+ * 
+ * - <https://bugzilla.redhat.com/show_bug.cgi?id=1933406#c1>
+ * - <https://bugzilla.opensuse.org/show_bug.cgi?id=1089061#c18>
  * 
  * I know I could have used PHPMailer or something, but I wanted to do
- * it myself, and besides, this comes out to be about 4 KB excluding
- * comments (~7 KB with comments), and it also has a funny name.
+ * it myself (aside from using Mail_Mime to generate the MIME message),
+ * and besides, this comes out to be about 4 KB excluding comments
+ * (~7 KB with comments), and it also has a funny name.
  * 
  * Requires a `file` command with the `--brief` and `--mime-type` (not
- * just `-i`) options, and PHP >= 5.1 with the IMAP extension
- * (`sudo apt-get install php5-imap`).
+ * just `-i`) options, and PHP >= 5.1 with the Mail_Mime PEAR package
+ * (`apt install php-mail-mime`, `dnf install php-pear-Mail-Mime`,
+ * `apk add php8-pear php8-openssl && pear8 install Mail_Mime`).
  * 
  */
 
-$SMB_TYPES = array(
- "text"        => TYPETEXT,
- "multipart"   => TYPEMULTIPART,
- "message"     => TYPEMESSAGE,
- "application" => TYPEAPPLICATION,
- "audio"       => TYPEAUDIO,
- "image"       => TYPEIMAGE,
- "video"       => TYPEVIDEO,
- "other"       => TYPEOTHER
-);
+
+require_once("Mail/mime.php");
+
 
 /* Most arguments are self-explanatory.
  * 
@@ -66,7 +62,6 @@ $SMB_TYPES = array(
 function super_mailer_bros($from_name, $from_email, $send_from, $to,
                            $subject, $message, $uploads=array(),
                            $max_file_size=0, $max_body_size=0) {
- global $SMB_TYPES;
  $failed = array();
  $other_failure = false;
  $file_sizes_ok = true;
@@ -81,14 +76,11 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
     break;
    }
    $filename = basename($file["name"]);
-   $mime = explode("/", smb_mime($file["tmp_name"]));
+   $mime_type = smb_mime($file["tmp_name"]);
    $attachments[] = array(
-    "type" => $SMB_TYPES[$mime[0]], "subtype" => $mime[1],
-    "encoding" => ENCBINARY, "description" => $filename,
-    "disposition.type" => "attachment",
-    "disposition" => array("filename" => $filename),
-    "type.parameters" => array("name" => $filename),
-    "contents.data" => file_get_contents($file["tmp_name"])
+    "type" => $mime_type,
+    "name" => $filename,
+    "data" => file_get_contents($file["tmp_name"]),
    );
   }
  }
@@ -102,75 +94,83 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
  
  if ($from_name && strpos($from_email, "@") !== false &&
      $subject && $message && $file_sizes_ok && !$other_failure) {
+  $mime = new Mail_Mime(array(
+   "text_charset" => "utf-8",
+   "html_charset" => "utf-8",
+  ));
   $headers = array(
-   "from" => "$from_name <$send_from>",
-   "reply_to" => $from_email,
-   "custom_headers" => array(
-    "X-Mailer: Super Mailer Bros./3.0-bnay-6"
-   )
+   "From" => "$from_name <$send_from>",
+   "Reply-To" => $from_email,
+   "X-Mailer" => "Super Mailer Bros./3.0-bnay-6",
   );
   $content_array = array(
-   array( "type" => TYPEMULTIPART, "subtype" => "alternative" ),
-   array(
-    "type" => "text", "subtype" => "plain", "charset" => "utf8",
-    "contents.data" => ""
-     ."$message\r\n\r\n"
-     ."\r\n"
-     ."--\r\n"
-     ."Sent by Super Mailer Bros. 3\r\n"
-     ."\r\n"
-     ."Sender's email address:  $from_email\r\n"
-     ."Sender's IP address:  {$_SERVER["REMOTE_ADDR"]}\r\n"
-   ),
-   array(
-    "type" => "text", "subtype" => "html", "charset" => "utf8",
-    "contents.data" => ""
-     ."<pre style='white-space: pre-wrap; font-family: inherit;'>"
-     .  smb_esc($message)
-     ."</pre>\r\n\r\n"
-     ."\r\n<br />\r\n"
-     ."<div style='font-size: smaller;'>\r\n"
-     ." <p>\r\n"
-     ."  --<br />\r\n"
-     ."  Sent by Super Mailer Bros. 3\r\n"
-     ." </p>\r\n"
-     ." <p>\r\n"
-     ."  <strong>Sender's email address:</strong>&nbsp; \r\n"
-     ."  <a href=\"mailto:".smb_esc($from_email)."\">\r\n"
-     ."   ".smb_esc($from_email)."\r\n"
-     ."  </a>\r\n"
-     ."  <br />\r\n"
-     ."  <strong>Sender's IP address:</strong>&nbsp; \r\n"
-     ."  <a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
-     ."   {$_SERVER["REMOTE_ADDR"]}\r\n"
-     ."  </a>\r\n"
-     ." </p>\r\n"
-     ."</div>\r\n"
-   )
+   "text" => ""
+    ."$message\r\n\r\n"
+    ."\r\n"
+    ."--\r\n"
+    ."Sent by Super Mailer Bros. 3\r\n"
+    ."\r\n"
+    ."Sender's email address:  $from_email\r\n"
+    ."Sender's IP address:  {$_SERVER["REMOTE_ADDR"]}\r\n"
+   ,
+   "html" => ""
+    ."<pre style='white-space: pre-wrap; font-family: inherit;'>"
+    .  smb_esc($message)
+    ."</pre>\r\n\r\n"
+    ."\r\n<br />\r\n"
+    ."<div style='font-size: smaller;'>\r\n"
+    ." <p>\r\n"
+    ."  --<br />\r\n"
+    ."  Sent by Super Mailer Bros. 3\r\n"
+    ." </p>\r\n"
+    ." <p>\r\n"
+    ."  <strong>Sender's email address:</strong>&nbsp; \r\n"
+    ."  <a href=\"mailto:".smb_esc($from_email)."\">\r\n"
+    ."   ".smb_esc($from_email)."\r\n"
+    ."  </a>\r\n"
+    ."  <br />\r\n"
+    ."  <strong>Sender's IP address:</strong>&nbsp; \r\n"
+    ."  <a href=\"http://bgp.he.net/ip/{$_SERVER["REMOTE_ADDR"]}#_whois\">\r\n"
+    ."   {$_SERVER["REMOTE_ADDR"]}\r\n"
+    ."  </a>\r\n"
+    ." </p>\r\n"
+    ."</div>\r\n"
+   ,
   );
-  if ($attachments) {
-   $content = explode("\r\n", imap_mail_compose(array(), $content_array), 2);
-   $content = $content[1];
-   $parts = explode("\r\n\r\n", imap_mail_compose($headers, array_merge(array(
-    array( "type" => TYPEMULTIPART, "subtype" => "mixed" ),
-   ), $attachments)), 2);
-   $headers    = $parts[0];
-   $body_parts = explode("\r\n", $parts[1], 2);
-   // $body_parts[0] = MIME boundary; [1] = attachments
-   $body      = $body_parts[0]."\r\n".$content."\r\n";
-   $body     .= $body_parts[0]."\r\n".$body_parts[1];
-  } else { // no attachments
-   $parts     = explode("\r\n\r\n", imap_mail_compose($headers, $content_array), 2);
-   $headers   = $parts[0];
-   $body      = $parts[1];
+  $mime->setTxtBody($content_array["text"]);
+  $mime->setHTMLBody($content_array["html"]);
+  if (count($attachments)) {
+   foreach ($attachments as $attachment) {
+    $mime->addAttachment(
+     $attachment["data"],  // string $file
+     $attachment["type"],  // string $c_type
+     $attachment["name"],  // string $name
+     false,  // boolean $isFile
+     "base64",  // string $encoding
+     "attachment",  // string $disposition
+     "",  // string $charset
+     "",  // string $language
+     "",  // string $location (RFC 2557.4)
+     null,  // string $n_encoding (Content-Type filename)
+     null,  // string $f_encoding (Content-Disposition filename)
+     $attachment["name"],  // string $description
+     null,  // string $h_charset (headers)
+    );
+   }
   }
+  $body = $mime->get(
+   null,  // array $param
+   null,  // resource $filename
+   true,  // boolean $skip_head
+  );
+  $mail_headers = $mime->headers($headers);
   if ($max_body_size && strlen($body) > $max_body_size)
    return array("body_size");
   // when mail() uses sendmail (i.e. if we're not on Windoze) to send messages,
   // native line endings need to be used
   if (strtolower(substr(php_uname("s"), 0, 3)) !== "win")
    $body = str_replace("\r\n", PHP_EOL, $body);
-  return mail($to, $subject, $body, $headers);
+  return mail($to, $subject, $body, $mail_headers);
  } else {
   $vars = explode(",","from_name,from_email,to,subject,message");
   foreach($vars as $var) {
@@ -184,9 +184,11 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
  }
 }
 
+
 function smb_esc($s) {
  return htmlentities($s, ENT_QUOTES, "UTF-8");
 }
+
 
 function smb_mime($f) {
  return trim(exec("file --brief --mime-type ".escapeshellarg($f)));
