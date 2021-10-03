@@ -118,7 +118,7 @@ function super_mailer_bros($from_name, $from_email, $send_from, $to,
     .  smb_esc($message)
     ."</pre>\r\n\r\n"
     ."\r\n<br />\r\n"
-    ."<div style='font-size: smaller;'>\r\n"
+    ."<div style='opacity: 0.75;'>\r\n"
     ." <p>\r\n"
     ."  --<br />\r\n"
     ."  Sent by Super Mailer Bros. 3\r\n"
