@@ -4,7 +4,7 @@ title:  Syntax Highlighting Test
 ---
 
 {% highlight lua %}{% raw %}
--- (c) 2012-2014 Scott Zeid.  X11 License.  Uses Pygments.
+-- (c) 2012-2014 S. Zeid.  X11 License.  Uses Pygments.
 -- <https://s.zeid.me/.highlight.lua>
 -- <https://s.zeid.me/.highlight.lua;highlight>
 -- 

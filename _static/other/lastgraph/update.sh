@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LAST_FM_USERNAME=ScottyWZ
+LAST_FM_USERNAME=s-zeid
 
 cd "$(dirname -- "$0")"
 

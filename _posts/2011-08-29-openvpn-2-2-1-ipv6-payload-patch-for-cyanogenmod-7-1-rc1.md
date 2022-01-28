@@ -21,7 +21,7 @@ CM source tree someday, but here are the goods in the meantime.
   * `cd /path/to/cm/source/external/openvpn`
   * `zcat /path/to/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz | patch -p1`
   * [SHA-256 sum](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-cm7.1rc1-20110826-1.patch.gz.sha256sum)
-* [GitHub fork of CyanogenMod/android_external_openvpn](https://github.com/scottywz/android_external_openvpn_ipv6)
+* [GitHub fork of CyanogenMod/android_external_openvpn](https://github.com/s-zeid/android_external_openvpn_ipv6)
 * [I had to rebase Gert's patch for OpenVPN 2.2.1.  Here it is.](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-20110825-1.patch.gz)
   * [SHA-256 sum](https://uploads.s.zeid.me/openvpn-2.2.1-ipv6-20110825-1.patch.gz.sha256sum)
 

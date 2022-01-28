@@ -60,7 +60,7 @@ $mtime = filemtime(__DIR__."/graph.svg");
 </figure>
 
 <p>
- <a href="http://www.last.fm/user/ScottyWZ">My Last.fm profile</a>
+ <a href="https://www.last.fm/user/s-zeid">My Last.fm profile</a>
  <span class="fill-in-last-fm-status hide"> &mdash; </span>
 </p>
 

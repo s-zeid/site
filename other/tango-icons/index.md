@@ -32,7 +32,7 @@ This icon is dual-licensed under the [X11 License](#license) and
 [the Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
 The original icon from Haiku is released under [the MIT License](https://tldrlegal.com/license/mit-license).
 For the Creative Commons license, the suggested attribution is
-**Scott Zeid, based on work by the Haiku project**.
+**S. Zeid, based on work by the Haiku project**.
 
 This icon was made on July 29 and 30, 2014.
 
@@ -125,7 +125,7 @@ of all licenses, including
 and Creative Commons works. For these dual-licensed icons, you may choose which
 license you use the icons under as long as you follow the terms of the license
 you choose. Both licenses require that you give me credit. At minimum, you need
-to reproduce the copyright notice ("Copyright (C) (year) Scott Zeid.") and
+to reproduce the copyright notice ("Copyright (C) (year) S. Zeid.") and
 reproduce the license text (for the X11 License) or linking to the license
 (Creative Commons). Both licenses prohibit you from using my name in advertising
 or promotions, or to suggest an endorsement.
@@ -134,7 +134,7 @@ Some icons are only licensed under one license.
 
 The text of the X11 License is reproduced below:
 
-    Copyright (C) (year) Scott Zeid.
+    Copyright (C) (year) S. Zeid.
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
