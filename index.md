@@ -8,7 +8,7 @@ contents:
  Music:               music
  About this Web site: site
 description: >
- I am a software engineering student and sometimes penguin in Dallas, Texas.
+ I am a sometimes penguin in Dallas, Texas.
 stylus: |
  #music + ul a[href*="ericwhitacre.com"] ~ a  //*
   display: inline-block;
