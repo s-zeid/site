@@ -67,7 +67,7 @@ stylus: |
 * Your info will be shared with these companies and organizations (their names
   link to their privacy policies):
 
-    * [Prgmr.com, Inc.](https://prgmr.com/privacy.html)
+    * [Hetzner Online GmbH](https://www.hetzner.com/legal/privacy-policy)
       \- my hosting provider, for the purposes of showing you my Web sites
          and forwarding your message or blog comment (if you send one) to
          my account at Google LLC.  They will see your IP address, the domain
@@ -76,6 +76,10 @@ stylus: |
          will also see your Web browser, the page you visit, and the page from
          which you came.  My server will redirect most insecure requests to
          secure versions, including all pages with contact or comment forms.
+         My server with Hetzner Online GmbH is physically located in Ashburn,
+         Virginia, United States, but Hetzner Online GmbH is headquartered
+         in Germany, so any data they see might be transferred to Germany
+         or other countries.
     
     * [Google LLC](https://policies.google.com/privacy)
       \- my email provider and Web fonts provider, for the purposes of
@@ -152,10 +156,11 @@ stylus: |
   cases.
 
 * There is no automated decision making or profiling by me or (to my knowledge)
-  Prgmr.com, Inc.  Google LLC and Automattic Inc. might do those things with
-  the contents of your message or blog comment.  Automattic Inc. and Fight for
-  the Future might do those things with the information they collect.  Hurricane
-  Electric LLC might do those things with your IP address and my domain name.
+  Hetzner Online GmbH.  Google LLC and Automattic Inc. might do those things
+  with the contents of your message or blog comment.  Automattic Inc. and Fight
+  for the Future might do those things with the information they collect.
+  Hurricane Electric LLC might do those things with your IP address and my
+  domain name.
 
 * I use a strong password and other standard security measures to protect
   your info.  Your info will be encrypted as it is sent from your device to
