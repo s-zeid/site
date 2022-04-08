@@ -42,8 +42,7 @@ the default on Ubuntu is non-threaded).
 
 I've tested this on this server, which <del>is</del> was running
 Ubuntu Minimal 10.04 x86 with Apache 2.2.14 (packages `apache2-mpm-prefork`
-and `apache2-prefork-dev` 2.2.14-5ubuntu8) at the time of this writing (now it's
-running {% lsbrelease %} and [lighttpd](http://www.lighttpd.net/)).
+and `apache2-prefork-dev` 2.2.14-5ubuntu8) at the time of this writing.
 
 ## Credits
 
