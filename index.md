@@ -97,7 +97,8 @@ I am a sometimes penguin in Dallas, Texas.
   Uses responsive design.
 * The design is maintained separately in
   [its own Git repository](https://code.s.zeid.me/site-design).
-* Hosted at [prgmr.com](https://prgmr.com/).
+* Hosted on a VPS running [Alpine Linux](https://alpinelinux.org/) at
+  [Hetzner](https://www.hetzner.com/cloud) in Ashburn, Virginia.
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
-* `2605:2700:1:1003::``b49e`, `71.19.148.114`, [dns.he.net](https://dns.he.net/)
+* `2a01:4ff:f0:11e5::``b49e`, `5.161.58.124`, [dns.he.net](https://dns.he.net/)
