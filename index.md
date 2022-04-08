@@ -29,7 +29,8 @@ I am a sometimes penguin in Dallas, Texas.
 
 ## Tech
 
-* Linux, Android, Firefox
+* Linux, [postmarketOS](https://postmarketos.org/) on
+  [PinePhone](https://www.pine64.org/pinephone/), Firefox
 * [Anti-Apple](https://en.wikipedia.org/wiki/Criticism_of_Apple){:
    title="''Those who would give up essential Liberty, to purchase a little
           temporary Safety, deserve neither Liberty nor Safety.''
