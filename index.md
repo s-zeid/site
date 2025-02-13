@@ -99,7 +99,7 @@ I am a sometimes penguin in Dallas, Texas.
 * The design is maintained separately in
   [its own Git repository](https://code.s.zeid.me/site-design).
 * Hosted on a VPS running [Alpine Linux](https://alpinelinux.org/) at
-  [Hetzner](https://www.hetzner.com/cloud) in Ashburn, Virginia.
+  [Hetzner](https://www.hetzner.com/cloud) in Nuremberg.
 * [Let's Encrypt!](https://letsencrypt.org/)
 * The owner of this Web site is a Ludovico Einaudi fan.
-* `2a01:4ff:f0:11e5::``b49e`, `5.161.58.124`, [dns.he.net](https://dns.he.net/)
+* `2a01:4f8:1c1b:644a::``b49e`, `128.140.109.39`, [dns.he.net](https://dns.he.net/)
